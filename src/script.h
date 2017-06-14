@@ -134,8 +134,8 @@ enum
     // discouraged NOPs fails the script. This verification flag will never be
     // a mandatory flag applied to scripts in a block. NOPs that are not
     // executed, e.g.  within an unexecuted IF ENDIF block, are *not* rejected.
-    SCRIPT_VERIFY_DISCOURAGE_UPGRADABLE_NOPS  = (1U << 7)
-
+    SCRIPT_VERIFY_DISCOURAGE_UPGRADABLE_NOPS  = (1U << 7),
+ SCRIPT_VERIFY_CHECKLOCKTIMEVERIFY = (1U << 8), // support CHECKLOCKTIMEVERIFY opcode
 };
 
 /** IsMine() return codes */
@@ -320,8 +320,8 @@ enum opcodetype
 
     // expansion
     OP_NOP1 = 0xb0,
-    OP_NOP2 = 0xb1,
-    OP_NOP3 = 0xb2,
+	OP_CHECKLOCKTIMEVERIFY = 0xb1,    
+	OP_NOP3 = 0xb2,
     OP_NOP4 = 0xb3,
     OP_NOP5 = 0xb4,
     OP_NOP6 = 0xb5,
