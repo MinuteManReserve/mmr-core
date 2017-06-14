@@ -1880,8 +1880,8 @@ This label turns red, if the priority is smaller than "medium".
         <translation>オプション:</translation>
     </message>
     <message>
-        <source>Specify configuration file (default: ion.conf)</source>
-        <translation>設定ファイルを特定する (デファルト: ion.conf)</translation>
+        <source>Specify configuration file (default: mmr.conf)</source>
+        <translation>設定ファイルを特定する (デファルト: mmr.conf)</translation>
     </message>
     <message>
         <source>Specify pid file (default: mmrd.pid)</source>

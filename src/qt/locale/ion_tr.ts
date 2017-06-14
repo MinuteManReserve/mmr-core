@@ -1889,8 +1889,8 @@ This label turns red, if the priority is smaller than "medium".
         <translation>Seçenekler:</translation>
     </message>
     <message>
-        <source>Specify configuration file (default: ion.conf)</source>
-        <translation>Konfigürasyon dosyasını belirt (varsayılan: ion.conf)</translation>
+        <source>Specify configuration file (default: mmr.conf)</source>
+        <translation>Konfigürasyon dosyasını belirt (varsayılan: mmr.conf)</translation>
     </message>
     <message>
         <source>Specify pid file (default: mmrd.pid)</source>

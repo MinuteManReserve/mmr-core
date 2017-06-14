@@ -272,7 +272,7 @@ QT_TRANSLATE_NOOP("bitcoin-core", "Set the number of threads to service RPC call
 QT_TRANSLATE_NOOP("bitcoin-core", "Shrink debug.log file on client startup (default: 1 when no -debug)"),
 QT_TRANSLATE_NOOP("bitcoin-core", "Signing failed."),
 QT_TRANSLATE_NOOP("bitcoin-core", "Signing timed out."),
-QT_TRANSLATE_NOOP("bitcoin-core", "Specify configuration file (default: ion.conf)"),
+QT_TRANSLATE_NOOP("bitcoin-core", "Specify configuration file (default: mmr.conf)"),
 QT_TRANSLATE_NOOP("bitcoin-core", "Specify connection timeout in milliseconds (default: 5000)"),
 QT_TRANSLATE_NOOP("bitcoin-core", "Specify data directory"),
 QT_TRANSLATE_NOOP("bitcoin-core", "Specify masternode configuration file (default: masternode.conf)"),

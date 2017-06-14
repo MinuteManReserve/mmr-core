@@ -1877,8 +1877,8 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
         <translation>Setări:</translation>
     </message>
     <message>
-        <source>Specify configuration file (default: ion.conf)</source>
-        <translation>Specifica fisier de configurare(implicit: ion.conf)</translation>
+        <source>Specify configuration file (default: mmr.conf)</source>
+        <translation>Specifica fisier de configurare(implicit: mmr.conf)</translation>
     </message>
     <message>
         <source>Specify pid file (default: mmrd.pid)</source>

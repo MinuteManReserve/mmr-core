@@ -1736,8 +1736,8 @@ Adresse: %4</translation>
         <translation>Optionen:</translation>
     </message>
     <message>
-        <source>Specify configuration file (default: ion.conf)</source>
-        <translation>Konfigurationsdatei angeben (Standard: ion.conf)</translation>
+        <source>Specify configuration file (default: mmr.conf)</source>
+        <translation>Konfigurationsdatei angeben (Standard: mmr.conf)</translation>
     </message>
     <message>
         <source>Specify pid file (default: mmrd.pid)</source>

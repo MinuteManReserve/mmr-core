@@ -1901,12 +1901,12 @@ Dit betekend dat een fee van %2 is vereist.</translation>
         <translation>Opties:</translation>
     </message>
     <message>
-        <source>Specify configuration file (default: ion.conf)</source>
-        <translation>Selecteer configuratie bestand (standaard: ion.conf)</translation>
+        <source>Specify configuration file (default: mmr.conf)</source>
+        <translation>Selecteer configuratie bestand (standaard: mmr.conf)</translation>
     </message>
     <message>
         <source>Specify pid file (default: mmrd.pid)</source>
-        <translation>Selecteer pid bestand (standaard: ion.conf)</translation>
+        <translation>Selecteer pid bestand (standaard: mmr.conf)</translation>
     </message>
     <message>
         <source>Specify wallet file (within data directory)</source>
