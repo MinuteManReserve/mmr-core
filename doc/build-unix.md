@@ -97,10 +97,10 @@ Berkeley DB
 It is recommended to use Berkeley DB 4.8. If you have to build it yourself:
 
 ```bash
-ION_ROOT=$(pwd)
+MMR_ROOT=$(pwd)
 
 # Pick some path to install BDB to, here we create a directory within the ion directory
-BDB_PREFIX="${ION_ROOT}/db4"
+BDB_PREFIX="${MMR_ROOT}/db4"
 mkdir -p $BDB_PREFIX
 
 # Fetch the source and verify that it is not tampered with
@@ -116,7 +116,7 @@ cd db-4.8.30.NC/build_unix/
 make install
 
 # Configure MMR Core to use our own-built instance of BDB
-cd $ION_ROOT
+cd $MMR_ROOT
 ./autogen.sh
 ./configure LDFLAGS="-L${BDB_PREFIX}/lib/" CPPFLAGS="-I${BDB_PREFIX}/include/" # (other args...)
 ```
