@@ -3,7 +3,7 @@
 </p>
 # **MMR-Core (MMR) v1.0**
 
-[![Build Status](https://travis-ci.org/minutemanreserve/mmr-core.svg?branch=master)](https://travis-ci.org/MinuteManReserve/mmr-core)
+[![Build Status](https://api.travis-ci.org/MinuteManReserve/mmr-core.svg?branch=master)](https://travis-ci.org/MinuteManReserve/mmr-core)
 
 MMR Integration/Staging Tree
 ================================
