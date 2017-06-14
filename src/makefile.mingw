@@ -6,7 +6,8 @@ USE_UPNP:=1
 USE_WALLET:=1
 USE_IPV6:=1
 
-BOOST_SUFFIX?=-mgw49-mt-s-1_55
+BOOST_SUFFIX?=-mgw46-1_55
+#-mgw49-mt-s-1_55
 
 INCLUDEPATHS= \
  -I"$(CURDIR)" \
@@ -18,10 +19,10 @@ INCLUDEPATHS= \
 
 LIBPATHS= \
  -L"$(CURDIR)/leveldb" \
- -L"c:/deps/boost_1_55_0" \
+ -L"c:/deps/boost_1_55_0/stage/lib" \
  -L"c:/deps/db-4.8.30.NC/build_unix" \
- -L"c:/deps/openssl-1.0.1u/lib" \
- -L"c:/deps/Secp256k1/lib" \
+ -L"c:/deps/openssl-1.0.1u" \
+ -L"c:/deps/Secp256k1/.libs" \
  -L"c:/deps/miniupnpc-1.8"
 
 LIBS= \
@@ -30,7 +31,7 @@ LIBS= \
  -l boost_system$(BOOST_SUFFIX) \
  -l boost_filesystem$(BOOST_SUFFIX) \
  -l boost_program_options$(BOOST_SUFFIX) \
- -l boost_thread$(BOOST_SUFFIX) \
+ -l boost_thread-mgw46-mt-1_55 \
  -l boost_chrono$(BOOST_SUFFIX) \
  -l db_cxx \
  -l ssl \
