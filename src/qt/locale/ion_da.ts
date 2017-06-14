@@ -2,12 +2,12 @@
 <context>
     <name>AboutDialog</name>
     <message>
-        <source>About Ion</source>
-        <translation>Om Ion</translation>
+        <source>About MMR</source>
+        <translation>Om MMR</translation>
     </message>
     <message>
-        <source>&lt;b&gt;Ion&lt;/b&gt; version</source>
-        <translation>&lt;b&gt;Ion&lt;/b&gt; version</translation>
+        <source>&lt;b&gt;MMR&lt;/b&gt; version</source>
+        <translation>&lt;b&gt;MMR&lt;/b&gt; version</translation>
     </message>
     </context>
 <context>
@@ -36,8 +36,8 @@
         <translation>&amp;Ny adresse</translation>
     </message>
     <message>
-        <source>These are your Ion addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
-        <translation>Dette er dine Ion adresser til at modtage betalinger. Du ønsker måske at give en anden en til af hver afsender, så du kan holde styr på hvem der betaler dig.</translation>
+        <source>These are your MMR addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <translation>Dette er dine MMR adresser til at modtage betalinger. Du ønsker måske at give en anden en til af hver afsender, så du kan holde styr på hvem der betaler dig.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -48,8 +48,8 @@
         <translation>Vis &amp;QR kode</translation>
     </message>
     <message>
-        <source>Sign a message to prove you own a Ion address</source>
-        <translation>Signerer en meddelelse for at bevise du ejer en Ion adresse</translation>
+        <source>Sign a message to prove you own a MMR address</source>
+        <translation>Signerer en meddelelse for at bevise du ejer en MMR adresse</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -60,8 +60,8 @@
         <translation>Slet den markerede adresse fra listen</translation>
     </message>
     <message>
-        <source>Verify a message to ensure it was signed with a specified Ion address</source>
-        <translation>Bekræft en meddelelse for at sikre, den blev underskrevet med en specificeret Ion adresse</translation>
+        <source>Verify a message to ensure it was signed with a specified MMR address</source>
+        <translation>Bekræft en meddelelse for at sikre, den blev underskrevet med en specificeret MMR adresse</translation>
     </message>
     <message>
         <source>&amp;Verify Message</source>
@@ -186,8 +186,8 @@
         <translation>Tegnebog krypteret</translation>
     </message>
     <message>
-        <source>Ion will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
-        <translation>Ion lukker nu for at afslutte krypteringen. Husk at en krypteret  tegnebog ikke fuldt ud beskytter dine mønter mod at blive stjålet af malware som har inficeret din computer.</translation>
+        <source>MMR will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
+        <translation>MMR lukker nu for at afslutte krypteringen. Husk at en krypteret  tegnebog ikke fuldt ud beskytter dine mønter mod at blive stjålet af malware som har inficeret din computer.</translation>
     </message>
     <message>
         <source>Wallet encryption failed</source>
@@ -259,8 +259,8 @@
         <translation>Afslut program</translation>
     </message>
     <message>
-        <source>Show information about Ion</source>
-        <translation>Vis oplysninger om Ion</translation>
+        <source>Show information about MMR</source>
+        <translation>Vis oplysninger om MMR</translation>
     </message>
     <message>
         <source>About &amp;Qt</source>
@@ -291,12 +291,12 @@
         <translation>&amp;Eksporter...</translation>
     </message>
     <message>
-        <source>Send coins to a Ion address</source>
-        <translation>Send mønter til en Ion adresse</translation>
+        <source>Send coins to a MMR address</source>
+        <translation>Send mønter til en MMR adresse</translation>
     </message>
     <message>
-        <source>Modify configuration options for Ion</source>
-        <translation>Ændre indstillingsmuligheder for Ion</translation>
+        <source>Modify configuration options for MMR</source>
+        <translation>Ændre indstillingsmuligheder for MMR</translation>
     </message>
     <message>
         <source>Export the data in the current tab to a file</source>
@@ -327,16 +327,16 @@
         <translation>Verificér besked...</translation>
     </message>
     <message>
-        <source>Ion</source>
-        <translation>Ion</translation>
+        <source>MMR</source>
+        <translation>MMR</translation>
     </message>
     <message>
         <source>Wallet</source>
         <translation>Tegnebog</translation>
     </message>
     <message>
-        <source>&amp;About Ion</source>
-        <translation>&amp;Om Ion</translation>
+        <source>&amp;About MMR</source>
+        <translation>&amp;Om MMR</translation>
     </message>
     <message>
         <source>&amp;Show / Hide</source>
@@ -375,12 +375,12 @@
         <translation>[testnetværk]</translation>
     </message>
     <message>
-        <source>Ion client</source>
-        <translation>Ion klient</translation>
+        <source>MMR client</source>
+        <translation>MMR klient</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Ion network</source>
-        <translation><numerusform>%n aktiv forbindelse til Ion netværk</numerusform><numerusform>%n aktive forbindelser til Ion netværk</numerusform></translation>
+        <source>%n active connection(s) to MMR network</source>
+        <translation><numerusform>%n aktiv forbindelse til MMR netværk</numerusform><numerusform>%n aktive forbindelser til MMR netværk</numerusform></translation>
     </message>
     <message>
         <source>Not staking because wallet is locked</source>
@@ -439,8 +439,8 @@ Adresse: %4
         <translation>URI håndtering</translation>
     </message>
     <message>
-        <source>URI can not be parsed! This can be caused by an invalid Ion address or malformed URI parameters.</source>
-        <translation>URI kan ikke tolkes! Dette kan skyldes en ugyldig Ion adresse eller misdannede URI parametre.</translation>
+        <source>URI can not be parsed! This can be caused by an invalid MMR address or malformed URI parameters.</source>
+        <translation>URI kan ikke tolkes! Dette kan skyldes en ugyldig MMR adresse eller misdannede URI parametre.</translation>
     </message>
     <message>
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt;</source>
@@ -487,7 +487,7 @@ Adresse: %4
         <translation>Ingen rente</translation>
     </message>
     <message>
-        <source>A fatal error occurred. Ion can no longer continue safely and will quit.</source>
+        <source>A fatal error occurred. MMR can no longer continue safely and will quit.</source>
         <translation>Der opstod en fejl under forsøg på at gemme dataene i tegnebogen til den nye placering.</translation>
     </message>
 </context>
@@ -751,8 +751,8 @@ Det betyder, at et gebyr på mindst %2 er påkrævet.</translation>
         <translation>Den indtastede adresse "%1" er allerede i adressebogen.</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Ion address.</source>
-        <translation>Den indtastede adresse "%1" er ikke en gyldig Ion adresse.</translation>
+        <source>The entered address "%1" is not a valid MMR address.</source>
+        <translation>Den indtastede adresse "%1" er ikke en gyldig MMR adresse.</translation>
     </message>
     <message>
         <source>Could not unlock wallet.</source>
@@ -837,20 +837,20 @@ Det betyder, at et gebyr på mindst %2 er påkrævet.</translation>
         <translation>Reserve</translation>
     </message>
     <message>
-        <source>Automatically start Ion after logging in to the system.</source>
-        <translation>Automatisk start Ion efter at have logget ind på systemet.</translation>
+        <source>Automatically start MMR after logging in to the system.</source>
+        <translation>Automatisk start MMR efter at have logget ind på systemet.</translation>
     </message>
     <message>
-        <source>&amp;Start Ion on system login</source>
-        <translation>&amp;Start Ion ved systems login</translation>
+        <source>&amp;Start MMR on system login</source>
+        <translation>&amp;Start MMR ved systems login</translation>
     </message>
     <message>
         <source>&amp;Network</source>
         <translation>Netværk</translation>
     </message>
     <message>
-        <source>Automatically open the Ion client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Automatisk åbne Ion klient-port på routeren. Dette virker kun, når din router understøtter UPnP og er det er aktiveret.</translation>
+        <source>Automatically open the MMR client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Automatisk åbne MMR klient-port på routeren. Dette virker kun, når din router understøtter UPnP og er det er aktiveret.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -901,8 +901,8 @@ Det betyder, at et gebyr på mindst %2 er påkrævet.</translation>
         <translation>Brugergrænsefladesprog:</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting Ion.</source>
-        <translation>Sproget i brugergrænsefladen kan indstilles her. Denne indstilling vil træde i kraft efter genstart af Ion tegnebog.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting MMR.</source>
+        <translation>Sproget i brugergrænsefladen kan indstilles her. Denne indstilling vil træde i kraft efter genstart af MMR tegnebog.</translation>
     </message>
     <message>
         <source>&amp;Unit to show amounts in:</source>
@@ -941,8 +941,8 @@ Det betyder, at et gebyr på mindst %2 er påkrævet.</translation>
         <translation>Advarsel</translation>
     </message>
     <message>
-        <source>This setting will take effect after restarting Ion.</source>
-        <translation>Denne indstilling vil træde i kraft efter genstart af Ion.</translation>
+        <source>This setting will take effect after restarting MMR.</source>
+        <translation>Denne indstilling vil træde i kraft efter genstart af MMR.</translation>
     </message>
     <message>
         <source>The supplied proxy address is invalid.</source>
@@ -956,8 +956,8 @@ Det betyder, at et gebyr på mindst %2 er påkrævet.</translation>
         <translation>Formular</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Ion network after a connection is established, but this process has not completed yet.</source>
-        <translation>De viste oplysninger kan være forældet. Din tegnebog synkroniserer automatisk med Ion netværket efter en forbindelse er etableret, men denne proces er ikke afsluttet endnu.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the MMR network after a connection is established, but this process has not completed yet.</source>
+        <translation>De viste oplysninger kan være forældet. Din tegnebog synkroniserer automatisk med MMR netværket efter en forbindelse er etableret, men denne proces er ikke afsluttet endnu.</translation>
     </message>
     <message>
         <source>Stake:</source>
@@ -1115,16 +1115,16 @@ Det betyder, at et gebyr på mindst %2 er påkrævet.</translation>
         <translation>Fejlsøgningslogfil</translation>
     </message>
     <message>
-        <source>Open the Ion debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Åbn Ion debug logfilen fra den nuværende data mappe. Dette kan tage et par sekunder for store logfiler.</translation>
+        <source>Open the MMR debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Åbn MMR debug logfilen fra den nuværende data mappe. Dette kan tage et par sekunder for store logfiler.</translation>
     </message>
     <message>
         <source>Clear console</source>
         <translation>Ryd konsol</translation>
     </message>
     <message>
-        <source>Welcome to the Ion RPC console.</source>
-        <translation>Velkommen til Ion RPC-konsol.</translation>
+        <source>Welcome to the MMR RPC console.</source>
+        <translation>Velkommen til MMR RPC-konsol.</translation>
     </message>
     <message>
         <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
@@ -1384,8 +1384,8 @@ Det betyder, at et gebyr på mindst %2 er påkrævet.</translation>
         <translation>Kopier den nuværende underskrift til systemets udklipsholder</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Ion address</source>
-        <translation>Underskriv brevet for at bevise du ejer denne Ion adresse</translation>
+        <source>Sign the message to prove you own this MMR address</source>
+        <translation>Underskriv brevet for at bevise du ejer denne MMR adresse</translation>
     </message>
     <message>
         <source>Reset all sign message fields</source>
@@ -1408,24 +1408,24 @@ Det betyder, at et gebyr på mindst %2 er påkrævet.</translation>
         <translation>Adressen meddelelse blev underskrevet med (f.eks B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Ion address</source>
-        <translation>Kontroller meddelelsen for at sikre, at den blev indgået med den angivne Ion adresse</translation>
+        <source>Verify the message to ensure it was signed with the specified MMR address</source>
+        <translation>Kontroller meddelelsen for at sikre, at den blev indgået med den angivne MMR adresse</translation>
     </message>
     <message>
         <source>Reset all verify message fields</source>
         <translation>Nulstil alle "verificér besked"-felter</translation>
     </message>
     <message>
-        <source>Enter a Ion address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation>Indtast en Ion-adresse (f.eks B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+        <source>Enter a MMR address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
+        <translation>Indtast en MMR-adresse (f.eks B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
     </message>
     <message>
         <source>Click "Sign Message" to generate signature</source>
         <translation>Klik "Underskriv besked" for at generere underskriften</translation>
     </message>
     <message>
-        <source>Enter Ion signature</source>
-        <translation>Indtast Ion underskrift</translation>
+        <source>Enter MMR signature</source>
+        <translation>Indtast MMR underskrift</translation>
     </message>
     <message>
         <source>The entered address is invalid.</source>
@@ -1841,16 +1841,16 @@ Det betyder, at et gebyr på mindst %2 er påkrævet.</translation>
 <context>
     <name>bitcoin-core</name>
     <message>
-        <source>Ion version</source>
-        <translation>Ion version</translation>
+        <source>MMR version</source>
+        <translation>MMR version</translation>
     </message>
     <message>
         <source>Usage:</source>
         <translation>Anvendelse:</translation>
     </message>
     <message>
-        <source>Send command to -server or xiond</source>
-        <translation>Send kommando til-server eller xiond</translation>
+        <source>Send command to -server or mmrd</source>
+        <translation>Send kommando til-server eller mmrd</translation>
     </message>
     <message>
         <source>List commands</source>
@@ -1869,8 +1869,8 @@ Det betyder, at et gebyr på mindst %2 er påkrævet.</translation>
         <translation>Angiv konfigurationsfil (default: ion.conf)</translation>
     </message>
     <message>
-        <source>Specify pid file (default: xiond.pid)</source>
-        <translation>Angiv pid fil (standard: xiond.pid)</translation>
+        <source>Specify pid file (default: mmrd.pid)</source>
+        <translation>Angiv pid fil (standard: mmrd.pid)</translation>
     </message>
     <message>
         <source>Specify wallet file (within data directory)</source>
@@ -2125,12 +2125,12 @@ Det betyder, at et gebyr på mindst %2 er påkrævet.</translation>
         <translation>Fejl ved indlæsning af wallet.dat: Tegnebog ødelagt</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of Ion</source>
-        <translation>Fejl ved indlæsning af wallet.dat: Wallet kræver en nyere version af Ion</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of MMR</source>
+        <translation>Fejl ved indlæsning af wallet.dat: Wallet kræver en nyere version af MMR</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart Ion to complete</source>
-        <translation>Det er nødvendig for wallet at blive omskrevet: Genstart Ion for fuldføre</translation>
+        <source>Wallet needed to be rewritten: restart MMR to complete</source>
+        <translation>Det er nødvendig for wallet at blive omskrevet: Genstart MMR for fuldføre</translation>
     </message>
     <message>
         <source>Error loading wallet.dat</source>

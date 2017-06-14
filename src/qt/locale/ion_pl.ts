@@ -2,12 +2,12 @@
 <context>
     <name>AboutDialog</name>
     <message>
-        <source>About Ion</source>
-        <translation>O Ion</translation>
+        <source>About MMR</source>
+        <translation>O MMR</translation>
     </message>
     <message>
-        <source>&lt;b&gt;Ion&lt;/b&gt; version</source>
-        <translation>&lt;b&gt;Ion&lt;/b&gt; wersja</translation>
+        <source>&lt;b&gt;MMR&lt;/b&gt; version</source>
+        <translation>&lt;b&gt;MMR&lt;/b&gt; wersja</translation>
     </message>
     </context>
 <context>
@@ -36,7 +36,7 @@
         <translation>Nowy Adres</translation>
     </message>
     <message>
-        <source>These are your Ion addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <source>These are your MMR addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
         <translation>Tutaj znajdują się twoje adresy do odbierania wpłat.
 Możesz dodać kolejny adres dla każdego wysyłającego aby określić od kogo pochodzi wpłata.</translation>
     </message>
@@ -49,8 +49,8 @@ Możesz dodać kolejny adres dla każdego wysyłającego aby określić od kogo 
         <translation>Pokaż &amp;Kod QR</translation>
     </message>
     <message>
-        <source>Sign a message to prove you own a Ion address</source>
-        <translation>Podpisz wiadomość by udowodnić, że jesteś właścicielem adresu Ion</translation>
+        <source>Sign a message to prove you own a MMR address</source>
+        <translation>Podpisz wiadomość by udowodnić, że jesteś właścicielem adresu MMR</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -61,8 +61,8 @@ Możesz dodać kolejny adres dla każdego wysyłającego aby określić od kogo 
         <translation>Usuń zaznaczony adres z listy</translation>
     </message>
     <message>
-        <source>Verify a message to ensure it was signed with a specified Ion address</source>
-        <translation>Zweryfikuj wiadomość, w celu zapewnienia, że została podpisana z określonego adresu Ion</translation>
+        <source>Verify a message to ensure it was signed with a specified MMR address</source>
+        <translation>Zweryfikuj wiadomość, w celu zapewnienia, że została podpisana z określonego adresu MMR</translation>
     </message>
     <message>
         <source>&amp;Verify Message</source>
@@ -252,8 +252,8 @@ Możesz dodać kolejny adres dla każdego wysyłającego aby określić od kogo 
         <translation>Zamknij program</translation>
     </message>
     <message>
-        <source>Show information about Ion</source>
-        <translation>Pokaż informacje dotyczące Ion</translation>
+        <source>Show information about MMR</source>
+        <translation>Pokaż informacje dotyczące MMR</translation>
     </message>
     <message>
         <source>About &amp;Qt</source>
@@ -284,8 +284,8 @@ Możesz dodać kolejny adres dla każdego wysyłającego aby określić od kogo 
         <translation>&amp;Exportuj</translation>
     </message>
     <message>
-        <source>Send coins to a Ion address</source>
-        <translation>Wyślij monety na adres Ion</translation>
+        <source>Send coins to a MMR address</source>
+        <translation>Wyślij monety na adres MMR</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -308,8 +308,8 @@ Możesz dodać kolejny adres dla każdego wysyłającego aby określić od kogo 
         <translation>&amp;Zweryfikuj wiadomość...</translation>
     </message>
     <message>
-        <source>Ion</source>
-        <translation>Ion</translation>
+        <source>MMR</source>
+        <translation>MMR</translation>
     </message>
     <message>
         <source>Wallet</source>

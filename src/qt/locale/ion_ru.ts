@@ -2,8 +2,8 @@
 <context>
     <name>AboutDialog</name>
     <message>
-        <source>About Ion</source>
-        <translation>О Ion</translation>
+        <source>About MMR</source>
+        <translation>О MMR</translation>
     </message>
     <message>
         <source>&lt;b&gt;Ion&lt;/b&gt; version</source>
@@ -36,7 +36,7 @@
         <translation>&amp;Новый адрес</translation>
     </message>
     <message>
-        <source>These are your Ion addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <source>These are your MMRaddresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
         <translation>Это Ваши адреса для получения платежей. Вы можете дать разные адреса отправителям, чтобы отслеживать, кто именно вам платит.</translation>
     </message>
     <message>
@@ -48,8 +48,8 @@
         <translation>Показать &amp;QR код</translation>
     </message>
     <message>
-        <source>Sign a message to prove you own a Ion address</source>
-        <translation>Подписать сообщение, чтобы доказать владение адресом Ion</translation>
+        <source>Sign a message to prove you own a MMRaddress</source>
+        <translation>Подписать сообщение, чтобы доказать владение адресом MMR</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -60,8 +60,8 @@
         <translation>Удалить выбранный адрес из списка</translation>
     </message>
     <message>
-        <source>Verify a message to ensure it was signed with a specified Ion address</source>
-        <translation>Проверить сообщение, чтобы убедиться, что оно было подписано указанным адресом Ion</translation>
+        <source>Verify a message to ensure it was signed with a specified MMRaddress</source>
+        <translation>Проверить сообщение, чтобы убедиться, что оно было подписано указанным адресом MMR</translation>
     </message>
     <message>
         <source>&amp;Verify Message</source>
@@ -190,7 +190,7 @@
         <translation>Бумажник зашифрован</translation>
     </message>
     <message>
-        <source>Ion will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
+        <source>MMRwill close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
         <translation>Сейчас программа закроется для завершения процесса шифрования. Помните, что шифрование вашего бумажника не может полностью защитить ваши монеты от кражи с помощью инфицирования вашего компьютера вредоносным ПО.</translation>
     </message>
     <message>
@@ -263,8 +263,8 @@
         <translation>Закрыть приложение</translation>
     </message>
     <message>
-        <source>Show information about Ion</source>
-        <translation>Показать информацию о Ion'е</translation>
+        <source>Show information about MMR</source>
+        <translation>Показать информацию о MMR'е</translation>
     </message>
     <message>
         <source>About &amp;Qt</source>
@@ -295,12 +295,12 @@
         <translation>&amp;Экспорт...</translation>
     </message>
     <message>
-        <source>Send coins to a Ion address</source>
-        <translation>Отправить монеты на указанный адрес Ion</translation>
+        <source>Send coins to a MMRaddress</source>
+        <translation>Отправить монеты на указанный адрес MMR</translation>
     </message>
     <message>
-        <source>Modify configuration options for Ion</source>
-        <translation>Изменить параметры конфигурации Ion</translation>
+        <source>Modify configuration options for MMR</source>
+        <translation>Изменить параметры конфигурации MMR</translation>
     </message>
     <message>
         <source>Export the data in the current tab to a file</source>
@@ -339,8 +339,8 @@
         <translation>Бумажник</translation>
     </message>
     <message>
-        <source>&amp;About Ion</source>
-        <translation>&amp;О Ion</translation>
+        <source>&amp;About MMR</source>
+        <translation>&amp;О MMR</translation>
     </message>
     <message>
         <source>&amp;Show / Hide</source>
@@ -379,8 +379,8 @@
         <translation>[тестовая сеть]</translation>
     </message>
     <message>
-        <source>Ion client</source>
-        <translation>Ion клиент</translation>
+        <source>MMRclient</source>
+        <translation>MMRклиент</translation>
     </message>
     <message>
         <source>Staking.&lt;br&gt;Your weight is %1&lt;br&gt;Network weight is %2&lt;br&gt;Expected time to earn reward is %3</source>
@@ -455,8 +455,8 @@ Address: %4
         <translation>Обработка URI</translation>
     </message>
     <message>
-        <source>URI can not be parsed! This can be caused by an invalid Ion address or malformed URI parameters.</source>
-        <translation>Не удалось обработать URI! Это может быть связано с неверным адресом Ion или неправильными параметрами URI.</translation>
+        <source>URI can not be parsed! This can be caused by an invalid MMRaddress or malformed URI parameters.</source>
+        <translation>Не удалось обработать URI! Это может быть связано с неверным адресом MMRили неправильными параметрами URI.</translation>
     </message>
     <message>
         <source>Wallet is &lt;b&gt;not encrypted&lt;/b&gt;</source>
@@ -519,8 +519,8 @@ Address: %4
         <translation>Не участвуем в доле</translation>
     </message>
     <message>
-        <source>A fatal error occurred. Ion can no longer continue safely and will quit.</source>
-        <translation>Произошла неисправимая ошибка. Ion не может безопасно продолжать работу и будет закрыт.</translation>
+        <source>A fatal error occurred. MMRcan no longer continue safely and will quit.</source>
+        <translation>Произошла неисправимая ошибка. MMRне может безопасно продолжать работу и будет закрыт.</translation>
     </message>
 </context>
 <context>
@@ -739,8 +739,8 @@ Address: %4
         <translation>Введённый адрес «%1» уже находится в адресной книге.</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Ion address.</source>
-        <translation>Введённый адрес "%1" не является правильным Ion-адресом.</translation>
+        <source>The entered address "%1" is not a valid MMRaddress.</source>
+        <translation>Введённый адрес "%1" не является правильным MMR-адресом.</translation>
     </message>
     <message>
         <source>Could not unlock wallet.</source>
@@ -825,20 +825,20 @@ Address: %4
         <translation>Зарезервировать</translation>
     </message>
     <message>
-        <source>Automatically start Ion after logging in to the system.</source>
-        <translation>Автоматически запускать Ion после входа в систему</translation>
+        <source>Automatically start MMRafter logging in to the system.</source>
+        <translation>Автоматически запускать MMRпосле входа в систему</translation>
     </message>
     <message>
-        <source>&amp;Start Ion on system login</source>
-        <translation>&amp;Запускать Ion при входе в систему</translation>
+        <source>&amp;Start MMRon system login</source>
+        <translation>&amp;Запускать MMRпри входе в систему</translation>
     </message>
     <message>
         <source>&amp;Network</source>
         <translation>&amp;Сеть</translation>
     </message>
     <message>
-        <source>Automatically open the Ion client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Автоматически открыть порт для Ion-клиента на роутере. Работает только если Ваш роутер поддерживает UPnP, и данная функция включена.</translation>
+        <source>Automatically open the MMRclient port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Автоматически открыть порт для MMR-клиента на роутере. Работает только если Ваш роутер поддерживает UPnP, и данная функция включена.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -889,8 +889,8 @@ Address: %4
         <translation>&amp;Язык интерфейса:</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting Ion.</source>
-        <translation>Здесь можно выбрать язык интерфейса. Настройки вступят в силу после перезапуска Ion.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting MMR.</source>
+        <translation>Здесь можно выбрать язык интерфейса. Настройки вступят в силу после перезапуска MMR.</translation>
     </message>
     <message>
         <source>&amp;Unit to show amounts in:</source>
@@ -929,8 +929,8 @@ Address: %4
         <translation>Внимание</translation>
     </message>
     <message>
-        <source>This setting will take effect after restarting Ion.</source>
-        <translation>Эта настройка вступит в силу после перезапуска Ion</translation>
+        <source>This setting will take effect after restarting MMR.</source>
+        <translation>Эта настройка вступит в силу после перезапуска MMR</translation>
     </message>
     <message>
         <source>The supplied proxy address is invalid.</source>
@@ -944,8 +944,8 @@ Address: %4
         <translation>Форма</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Ion network after a connection is established, but this process has not completed yet.</source>
-        <translation>Отображаемая информация может быть устаревшей. Ваш бумажник автоматически синхронизируется с сетью Ion после подключения, но этот процесс пока не завершён.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the MMR network after a connection is established, but this process has not completed yet.</source>
+        <translation>Отображаемая информация может быть устаревшей. Ваш бумажник автоматически синхронизируется с сетью MMRпосле подключения, но этот процесс пока не завершён.</translation>
     </message>
     <message>
         <source>Stake:</source>
@@ -1111,16 +1111,16 @@ Address: %4
         <translation>Отладочный лог-файл</translation>
     </message>
     <message>
-        <source>Open the Ion debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Открыть отладочный лог-файл Ion из текущего каталога данных. Это может занять несколько секунд для больших лог-файлов.</translation>
+        <source>Open the MMRdebug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Открыть отладочный лог-файл MMRиз текущего каталога данных. Это может занять несколько секунд для больших лог-файлов.</translation>
     </message>
     <message>
         <source>Clear console</source>
         <translation>Очистить консоль</translation>
     </message>
     <message>
-        <source>Welcome to the Ion RPC console.</source>
-        <translation>Добро пожаловать в RPC-консоль Ion.</translation>
+        <source>Welcome to the MMRRPC console.</source>
+        <translation>Добро пожаловать в RPC-консоль MMR.</translation>
     </message>
     <message>
         <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
@@ -1360,8 +1360,8 @@ Address: %4
         <translation>Скопировать текущую подпись в системный буфер обмена</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Ion address</source>
-        <translation>Подписать сообщение, чтобы доказать владение адресом Ion</translation>
+        <source>Sign the message to prove you own this MMRaddress</source>
+        <translation>Подписать сообщение, чтобы доказать владение адресом MMR</translation>
     </message>
     <message>
         <source>Reset all sign message fields</source>
@@ -1384,24 +1384,24 @@ Address: %4
         <translation>Адрес, которым было подписано сообщение (напр. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Ion address</source>
-        <translation>Проверить сообщение, чтобы убедиться, что оно было подписано указанным адресом Ion</translation>
+        <source>Verify the message to ensure it was signed with the specified MMRaddress</source>
+        <translation>Проверить сообщение, чтобы убедиться, что оно было подписано указанным адресом MMR</translation>
     </message>
     <message>
         <source>Reset all verify message fields</source>
         <translation>Сбросить все поля проверки сообщения</translation>
     </message>
     <message>
-        <source>Enter a Ion address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation>Введите адрес Ion (напр. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+        <source>Enter a MMRaddress (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
+        <translation>Введите адрес MMR (напр. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
     </message>
     <message>
         <source>Click "Sign Message" to generate signature</source>
         <translation>Нажмите "Подписать сообщение" для создания подписи</translation>
     </message>
     <message>
-        <source>Enter Ion signature</source>
-        <translation>Введите подпись Ion</translation>
+        <source>Enter MMRsignature</source>
+        <translation>Введите подпись MMR</translation>
     </message>
     <message>
         <source>The entered address is invalid.</source>
@@ -1813,7 +1813,7 @@ Address: %4
 <context>
     <name>bitcoin-core</name>
     <message>
-        <source>Ion version</source>
+        <source>MMRversion</source>
         <translation>Версия</translation>
     </message>
     <message>
@@ -1821,8 +1821,8 @@ Address: %4
         <translation>Использование:</translation>
     </message>
     <message>
-        <source>Send command to -server or xiond</source>
-        <translation>Отправить команду на -server или xiond</translation>
+        <source>Send command to -server or mmrd</source>
+        <translation>Отправить команду на -server или mmrd</translation>
     </message>
     <message>
         <source>List commands</source>
@@ -1842,8 +1842,8 @@ Address: %4
         <translation>Указать конфигурационный файл (по умолчанию: ion.conf)</translation>
     </message>
     <message>
-        <source>Specify pid file (default: xiond.pid)</source>
-        <translation>Указать pid-файл (по умолчанию: xiond.pid)</translation>
+        <source>Specify pid file (default: mmrd.pid)</source>
+        <translation>Указать pid-файл (по умолчанию: mmrd.pid)</translation>
     </message>
     <message>
         <source>Specify wallet file (within data directory)</source>
@@ -2115,12 +2115,12 @@ Address: %4
         <translation>Ошибка загрузки wallet.dat: Бумажник поврежден</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of Ion</source>
-        <translation>Ошибка загрузки wallet.dat: бумажник требует более новую версию Ion</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of MMR</source>
+        <translation>Ошибка загрузки wallet.dat: бумажник требует более новую версию MMR</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart Ion to complete</source>
-        <translation>Необходимо перезаписать бумажник, перезапустите Ion для завершения операции</translation>
+        <source>Wallet needed to be rewritten: restart MMRto complete</source>
+        <translation>Необходимо перезаписать бумажник, перезапустите MMRдля завершения операции</translation>
     </message>
     <message>
         <source>Error loading wallet.dat</source>
@@ -2167,8 +2167,8 @@ Address: %4
         <translation>Добавить узел для подключения и пытаться поддерживать соединение открытым</translation>
     </message>
     <message>
-        <source>Unable to bind to %s on this computer. Ion is probably already running.</source>
-        <translation>Невозможно привязаться к %s на этом компьютере.  Возможно, Ion уже работает.</translation>
+        <source>Unable to bind to %s on this computer. MMRis probably already running.</source>
+        <translation>Невозможно привязаться к %s на этом компьютере.  Возможно, MMRуже работает.</translation>
     </message>
     <message>
         <source>Fee per KB to add to transactions you send</source>
@@ -2179,7 +2179,7 @@ Address: %4
         <translation>Сколько блоков проверять при запуске (по умолчанию: 500, 0 = все)</translation>
     </message>
     <message>
-        <source>Cannot obtain a lock on data directory %s. Ion is probably already running.</source>
+        <source>Cannot obtain a lock on data directory %s. MMRis probably already running.</source>
         <translation>Невозможно установить блокировку на рабочую директорию %s.  Возможно, бумажник уже запущен.</translation>
     </message>
     <message>

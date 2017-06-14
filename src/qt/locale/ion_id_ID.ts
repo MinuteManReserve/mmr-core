@@ -2,12 +2,12 @@
 <context>
     <name>AboutDialog</name>
     <message>
-        <source>About Ion</source>
-        <translation>Tentang Ion</translation>
+        <source>About MMR</source>
+        <translation>Tentang MMR</translation>
     </message>
     <message>
-        <source>&lt;b&gt;Ion&lt;/b&gt; version</source>
-        <translation>&lt;b&gt;Ion&lt;/b&gt; versi</translation>
+        <source>&lt;b&gt;MMR&lt;/b&gt; version</source>
+        <translation>&lt;b&gt;MMR&lt;/b&gt; versi</translation>
     </message>
     </context>
 <context>
@@ -36,8 +36,8 @@
         <translation>&amp;Alamat Baru</translation>
     </message>
     <message>
-        <source>These are your Ion addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
-        <translation>Ini adalah alamat Ion Anda untuk menerima pembayaran. Anda dapat memberikan alamat yang berbeda untuk setiap pengirim, sehingga Anda dapat melacak siapa yang membayar Anda.</translation>
+        <source>These are your MMR addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <translation>Ini adalah alamat MMR Anda untuk menerima pembayaran. Anda dapat memberikan alamat yang berbeda untuk setiap pengirim, sehingga Anda dapat melacak siapa yang membayar Anda.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -48,8 +48,8 @@
         <translation>Unjukkan &amp;Kode QR</translation>
     </message>
     <message>
-        <source>Sign a message to prove you own a Ion address</source>
-        <translation>Masukan  pesan untuk membuktikan bahwa anda telah mempunyai adress Ion</translation>
+        <source>Sign a message to prove you own a MMR address</source>
+        <translation>Masukan  pesan untuk membuktikan bahwa anda telah mempunyai adress MMR</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -162,8 +162,8 @@
         <translation>Dompet terenkripsi</translation>
     </message>
     <message>
-        <source>Ion will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
-        <translation>Ion akan ditutup untuk menyelesaikan proses enkripsi. Ingat bahwa dompet Anda tidak bisa di lindungi dengan enkripsi sepenuhny dari pencurian melalui infeksi malware di komputer Anda.</translation>
+        <source>MMR will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
+        <translation>MMR akan ditutup untuk menyelesaikan proses enkripsi. Ingat bahwa dompet Anda tidak bisa di lindungi dengan enkripsi sepenuhny dari pencurian melalui infeksi malware di komputer Anda.</translation>
     </message>
     <message>
         <source>Wallet encryption failed</source>
@@ -235,8 +235,8 @@
         <translation>Keluar dari aplikasi</translation>
     </message>
     <message>
-        <source>Show information about Ion</source>
-        <translation>Tunjukkan informasi tentang Ion</translation>
+        <source>Show information about MMR</source>
+        <translation>Tunjukkan informasi tentang MMR</translation>
     </message>
     <message>
         <source>About &amp;Qt</source>
@@ -263,12 +263,12 @@
         <translation>&amp;Ekspor...</translation>
     </message>
     <message>
-        <source>Send coins to a Ion address</source>
-        <translation>Kirim koin ke alamat Ion</translation>
+        <source>Send coins to a MMR address</source>
+        <translation>Kirim koin ke alamat MMR</translation>
     </message>
     <message>
-        <source>Modify configuration options for Ion</source>
-        <translation>Memodifikasi opsi aturan untuk Ion</translation>
+        <source>Modify configuration options for MMR</source>
+        <translation>Memodifikasi opsi aturan untuk MMR</translation>
     </message>
     <message>
         <source>Export the data in the current tab to a file</source>
@@ -299,16 +299,16 @@
         <translation>&amp;Verifikasi pesan...</translation>
     </message>
     <message>
-        <source>Ion</source>
-        <translation>Ion (CoinHitam)</translation>
+        <source>MMR</source>
+        <translation>MMR (CoinHitam)</translation>
     </message>
     <message>
         <source>Wallet</source>
         <translation>Dompet</translation>
     </message>
     <message>
-        <source>&amp;About Ion</source>
-        <translation>&amp;Tentang Ion</translation>
+        <source>&amp;About MMR</source>
+        <translation>&amp;Tentang MMR</translation>
     </message>
     <message>
         <source>&amp;Show / Hide</source>
@@ -347,8 +347,8 @@
         <translation>[testnet]</translation>
     </message>
     <message>
-        <source>Ion client</source>
-        <translation>Klien Ion</translation>
+        <source>MMR client</source>
+        <translation>Klien MMR</translation>
     </message>
     <message>
         <source>&amp;Unlock Wallet...</source>

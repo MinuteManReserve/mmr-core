@@ -2,8 +2,8 @@
 <context>
     <name>AboutDialog</name>
     <message>
-        <source>About Ion</source>
-        <translation>Ion Hakkında</translation>
+        <source>About MMR</source>
+        <translation>MMRHakkında</translation>
     </message>
     <message>
         <source>&lt;b&gt;Ion&lt;/b&gt; version</source>
@@ -36,8 +36,8 @@
         <translation>&amp;Yeni Adres</translation>
     </message>
     <message>
-        <source>These are your Ion addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
-        <translation>Bunlar, ödeme almak için Ion adreslerinizdir. Her bir göndericiye farklı birini verebilir, böylece size kimin ödeme yaptığını takip edebilirsiniz.</translation>
+        <source>These are your MMRaddresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <translation>Bunlar, ödeme almak için MMRadreslerinizdir. Her bir göndericiye farklı birini verebilir, böylece size kimin ödeme yaptığını takip edebilirsiniz.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -48,8 +48,8 @@
         <translation>&amp;QR Kodunu Göster</translation>
     </message>
     <message>
-        <source>Sign a message to prove you own a Ion address</source>
-        <translation>Bir Ion adresine sahip olduğunu ispatlamak için bir mesaj imzala</translation>
+        <source>Sign a message to prove you own a MMRaddress</source>
+        <translation>Bir MMRadresine sahip olduğunu ispatlamak için bir mesaj imzala</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -60,8 +60,8 @@
         <translation>Seçili adresi listeden sil</translation>
     </message>
     <message>
-        <source>Verify a message to ensure it was signed with a specified Ion address</source>
-        <translation>Mesajın, belirli bir Ion adresiyle imzalandığından emin olmak için onu doğrula</translation>
+        <source>Verify a message to ensure it was signed with a specified MMRaddress</source>
+        <translation>Mesajın, belirli bir MMRadresiyle imzalandığından emin olmak için onu doğrula</translation>
     </message>
     <message>
         <source>&amp;Verify Message</source>
@@ -194,7 +194,7 @@
         <translation>Cüzdanınız için yeni parolayı giriniz.&lt;br/&gt;Lütfen &lt;b&gt;on veya daha fazla rastgele karakter&lt;/b&gt; ya da &lt;b&gt;sekiz veya daha fazla kelime&lt;/b&gt; içeren bir parola seçiniz.</translation>
     </message>
     <message>
-        <source>Ion will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
+        <source>MMRwill close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
         <translation>Ion, şifreleme işlemini tamamlamak için şimdi kapatılacak. Cüzdanınızı şifrelemenin; coinlerinizin, bilgisayarınızı etkileyen zararlı yazılımlar tarafından çalınmasını bütünüyle engelleyemeyebileceğini unutmayınız.</translation>
     </message>
     <message>
@@ -267,8 +267,8 @@
         <translation>Uygulamadan çık</translation>
     </message>
     <message>
-        <source>Show information about Ion</source>
-        <translation>Ion hakkındaki bilgiyi göster</translation>
+        <source>Show information about MMR</source>
+        <translation>MMRhakkındaki bilgiyi göster</translation>
     </message>
     <message>
         <source>About &amp;Qt</source>
@@ -299,12 +299,12 @@
         <translation>&amp;Dışarı aktar...</translation>
     </message>
     <message>
-        <source>Send coins to a Ion address</source>
-        <translation>Bir Ion adresine coin gönder</translation>
+        <source>Send coins to a MMRaddress</source>
+        <translation>Bir MMRadresine coin gönder</translation>
     </message>
     <message>
-        <source>Modify configuration options for Ion</source>
-        <translation>Ion yapılandırma seçeneklerini değiştir</translation>
+        <source>Modify configuration options for MMR</source>
+        <translation>MMRyapılandırma seçeneklerini değiştir</translation>
     </message>
     <message>
         <source>Export the data in the current tab to a file</source>
@@ -343,7 +343,7 @@
         <translation>Cüzdan</translation>
     </message>
     <message>
-        <source>&amp;About Ion</source>
+        <source>&amp;About MMR</source>
         <translation>Ion &amp;Hakkında</translation>
     </message>
     <message>
@@ -383,12 +383,12 @@
         <translation>[testnet]</translation>
     </message>
     <message>
-        <source>Ion client</source>
-        <translation>Ion istemcisi</translation>
+        <source>MMRclient</source>
+        <translation>MMRistemcisi</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Ion network</source>
-        <translation><numerusform>Ion ağına %n etkin bağlantı</numerusform><numerusform>Ion ağına %n etkin bağlantı</numerusform></translation>
+        <source>%n active connection(s) to MMR network</source>
+        <translation><numerusform>MMRağına %n etkin bağlantı</numerusform><numerusform>MMRağına %n etkin bağlantı</numerusform></translation>
     </message>
     <message>
         <source>Staking.&lt;br&gt;Your weight is %1&lt;br&gt;Network weight is %2&lt;br&gt;Expected time to earn reward is %3</source>
@@ -451,8 +451,8 @@ Adres: %4
         <translation>URI işleme</translation>
     </message>
     <message>
-        <source>URI can not be parsed! This can be caused by an invalid Ion address or malformed URI parameters.</source>
-        <translation>URI ayrıştırılamadı! Bu, geçersiz bir Ion adresi veya hatalı URI parametreleri nedeniyle olabilir.</translation>
+        <source>URI can not be parsed! This can be caused by an invalid MMRaddress or malformed URI parameters.</source>
+        <translation>URI ayrıştırılamadı! Bu, geçersiz bir MMRadresi veya hatalı URI parametreleri nedeniyle olabilir.</translation>
     </message>
     <message>
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt;</source>
@@ -499,8 +499,8 @@ Adres: %4
         <translation>Pay alınmıyor</translation>
     </message>
     <message>
-        <source>A fatal error occurred. Ion can no longer continue safely and will quit.</source>
-        <translation>Önemli bir hata oluştu. Ion artık güvenli bir şekilde devam edemez ve şimdi kapatılacak.</translation>
+        <source>A fatal error occurred. MMRcan no longer continue safely and will quit.</source>
+        <translation>Önemli bir hata oluştu. MMRartık güvenli bir şekilde devam edemez ve şimdi kapatılacak.</translation>
     </message>
 </context>
 <context>
@@ -763,8 +763,8 @@ This label turns red, if the priority is smaller than "medium".
         <translation>Girilen "%1" adresi hâlihazırda adres defterinde mevcuttur.</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Ion address.</source>
-        <translation>Girilen %1 adresi, geçerli bir Ion adresi değildir.</translation>
+        <source>The entered address "%1" is not a valid MMRaddress.</source>
+        <translation>Girilen %1 adresi, geçerli bir MMRadresi değildir.</translation>
     </message>
     <message>
         <source>Could not unlock wallet.</source>
@@ -849,20 +849,20 @@ This label turns red, if the priority is smaller than "medium".
         <translation>Ayrılan</translation>
     </message>
     <message>
-        <source>Automatically start Ion after logging in to the system.</source>
-        <translation>Sisteme giriş yaptıktan sonra Ion'i otomatik olarak başlat</translation>
+        <source>Automatically start MMRafter logging in to the system.</source>
+        <translation>Sisteme giriş yaptıktan sonra MMR'i otomatik olarak başlat</translation>
     </message>
     <message>
-        <source>&amp;Start Ion on system login</source>
-        <translation>Sisteme girişte Ion'i &amp;başlat</translation>
+        <source>&amp;Start MMRon system login</source>
+        <translation>Sisteme girişte MMR'i &amp;başlat</translation>
     </message>
     <message>
         <source>&amp;Network</source>
         <translation>&amp;Şebeke</translation>
     </message>
     <message>
-        <source>Automatically open the Ion client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Yönelticide Ion istemci portunu otomatik olarak aç. Bu, sadece yönelticiniz UPnP'i desteklediğinde ve etkin olduğunda çalışır.</translation>
+        <source>Automatically open the MMRclient port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Yönelticide MMRistemci portunu otomatik olarak aç. Bu, sadece yönelticiniz UPnP'i desteklediğinde ve etkin olduğunda çalışır.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -913,8 +913,8 @@ This label turns red, if the priority is smaller than "medium".
         <translation>Kullanıcı arayüzü &amp;lisanı:</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting Ion.</source>
-        <translation>Kullanıcı arabirimi dili buradan ayarlanabilir. Ayar, Ion yeniden başlatıldığında etkin olacaktır.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting MMR.</source>
+        <translation>Kullanıcı arabirimi dili buradan ayarlanabilir. Ayar, MMRyeniden başlatıldığında etkin olacaktır.</translation>
     </message>
     <message>
         <source>&amp;Unit to show amounts in:</source>
@@ -953,7 +953,7 @@ This label turns red, if the priority is smaller than "medium".
         <translation>Uyarı</translation>
     </message>
     <message>
-        <source>This setting will take effect after restarting Ion.</source>
+        <source>This setting will take effect after restarting MMR.</source>
         <translation>Bu ayar, Ion'i yeniden başlattıktan sonra etkin olacaktır.</translation>
     </message>
     <message>
@@ -968,8 +968,8 @@ This label turns red, if the priority is smaller than "medium".
         <translation>Form</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Ion network after a connection is established, but this process has not completed yet.</source>
-        <translation>Görüntülenen bilginin tarihi geçmiş olabilir. Cüzdanınız, bağlantı kurulduktan sonra otomatik olarak Ion ağı ile senkronize olur ancak bu süreç, henüz tamamlanmamıştır.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the MMR network after a connection is established, but this process has not completed yet.</source>
+        <translation>Görüntülenen bilginin tarihi geçmiş olabilir. Cüzdanınız, bağlantı kurulduktan sonra otomatik olarak MMRağı ile senkronize olur ancak bu süreç, henüz tamamlanmamıştır.</translation>
     </message>
     <message>
         <source>Stake:</source>
@@ -1127,16 +1127,16 @@ This label turns red, if the priority is smaller than "medium".
         <translation>Hata ayıklama kütük dosyası</translation>
     </message>
     <message>
-        <source>Open the Ion debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Ion hata ayıklama günlük kütüğü dosyasını, mevcut veri klasöründen aç. Bu işlem, büyük günlük kütüğü dosyaları için birkaç saniye sürebilir.</translation>
+        <source>Open the MMRdebug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>MMRhata ayıklama günlük kütüğü dosyasını, mevcut veri klasöründen aç. Bu işlem, büyük günlük kütüğü dosyaları için birkaç saniye sürebilir.</translation>
     </message>
     <message>
         <source>Clear console</source>
         <translation>Konsolu temizle</translation>
     </message>
     <message>
-        <source>Welcome to the Ion RPC console.</source>
-        <translation>Ion RPC konsoluna hoş geldiniz.</translation>
+        <source>Welcome to the MMRRPC console.</source>
+        <translation>MMRRPC konsoluna hoş geldiniz.</translation>
     </message>
     <message>
         <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
@@ -1396,8 +1396,8 @@ This label turns red, if the priority is smaller than "medium".
         <translation>Güncel imzayı sistem panosuna kopyala</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Ion address</source>
-        <translation>Bu Ion adresine sahip olduğunuzu ispatlamak için mesajı imzala</translation>
+        <source>Sign the message to prove you own this MMRaddress</source>
+        <translation>Bu MMRadresine sahip olduğunuzu ispatlamak için mesajı imzala</translation>
     </message>
     <message>
         <source>Reset all sign message fields</source>
@@ -1420,24 +1420,24 @@ This label turns red, if the priority is smaller than "medium".
         <translation>Mesajın imzalandığı adres (örn: B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Ion address</source>
-        <translation>Mesajın, belirtilen Ion adresiyle imzalandığından emin olmak için onu doğrula</translation>
+        <source>Verify the message to ensure it was signed with the specified MMRaddress</source>
+        <translation>Mesajın, belirtilen MMRadresiyle imzalandığından emin olmak için onu doğrula</translation>
     </message>
     <message>
         <source>Reset all verify message fields</source>
         <translation>Tüm mesaj kontrolü alanlarını sıfırla</translation>
     </message>
     <message>
-        <source>Enter a Ion address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation>Bir Ion adresi girin (örn: B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+        <source>Enter a MMRaddress (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
+        <translation>Bir MMRadresi girin (örn: B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
     </message>
     <message>
         <source>Click "Sign Message" to generate signature</source>
         <translation>İmzayı oluşturmak için "Mesaj İmzala" unsurunu tıklayın</translation>
     </message>
     <message>
-        <source>Enter Ion signature</source>
-        <translation>Ion imzası gir</translation>
+        <source>Enter MMRsignature</source>
+        <translation>MMRimzası gir</translation>
     </message>
     <message>
         <source>The entered address is invalid.</source>
@@ -1865,16 +1865,16 @@ This label turns red, if the priority is smaller than "medium".
 <context>
     <name>bitcoin-core</name>
     <message>
-        <source>Ion version</source>
-        <translation>Ion versiyonu</translation>
+        <source>MMRversion</source>
+        <translation>MMRversiyonu</translation>
     </message>
     <message>
         <source>Usage:</source>
         <translation>Kullanım:</translation>
     </message>
     <message>
-        <source>Send command to -server or xiond</source>
-        <translation>-sunucu veya xiond'ye komut gönder</translation>
+        <source>Send command to -server or mmrd</source>
+        <translation>-sunucu veya mmrd'ye komut gönder</translation>
     </message>
     <message>
         <source>List commands</source>
@@ -1893,7 +1893,7 @@ This label turns red, if the priority is smaller than "medium".
         <translation>Konfigürasyon dosyasını belirt (varsayılan: ion.conf)</translation>
     </message>
     <message>
-        <source>Specify pid file (default: xiond.pid)</source>
+        <source>Specify pid file (default: mmrd.pid)</source>
         <translation>pid dosyasını belirt (varsayılan: ion.pid)</translation>
     </message>
     <message>
@@ -2133,8 +2133,8 @@ This label turns red, if the priority is smaller than "medium".
         <translation>Sunucu özel anahtarı (varsayılan: server.pem)</translation>
     </message>
     <message>
-        <source>Initialization sanity check failed. Ion is shutting down.</source>
-        <translation>Başlangıç uygunluk kontrolü başarısız oldu. Ion kapatılıyor.</translation>
+        <source>Initialization sanity check failed. MMRis shutting down.</source>
+        <translation>Başlangıç uygunluk kontrolü başarısız oldu. MMRkapatılıyor.</translation>
     </message>
     <message>
         <source>Error: Wallet unlocked for staking only, unable to create transaction.</source>
@@ -2165,12 +2165,12 @@ This label turns red, if the priority is smaller than "medium".
         <translation>wallet.dat dosyasının yüklenmesinde hata oluştu: bozuk cüzdan</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of Ion</source>
-        <translation>wallet.dat yüklenirken hata: Cüzdan, daha yeni bir Ion versiyonuna ihtiyaç duyuyor.</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of MMR</source>
+        <translation>wallet.dat yüklenirken hata: Cüzdan, daha yeni bir MMRversiyonuna ihtiyaç duyuyor.</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart Ion to complete</source>
-        <translation>Cüzdanın yeniden yazılması gerekmektedir: Tamamlamak için Ion'i yeniden başlatın</translation>
+        <source>Wallet needed to be rewritten: restart MMRto complete</source>
+        <translation>Cüzdanın yeniden yazılması gerekmektedir: Tamamlamak için MMR'i yeniden başlatın</translation>
     </message>
     <message>
         <source>Error loading wallet.dat</source>
@@ -2217,8 +2217,8 @@ This label turns red, if the priority is smaller than "medium".
         <translation>Bağlanılacak düğüm ekle ve bağlantıyı zinde tutmaya çalış</translation>
     </message>
     <message>
-        <source>Unable to bind to %s on this computer. Ion is probably already running.</source>
-        <translation>Bu bilgisayarda %s bağlanamadı. Ion muhtemelen halen çalışmaktadır.</translation>
+        <source>Unable to bind to %s on this computer. MMRis probably already running.</source>
+        <translation>Bu bilgisayarda %s bağlanamadı. MMRmuhtemelen halen çalışmaktadır.</translation>
     </message>
     <message>
         <source>Fee per KB to add to transactions you send</source>

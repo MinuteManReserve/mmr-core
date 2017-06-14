@@ -189,7 +189,7 @@ std::string HelpMessage()
     string strUsage = _("Options:") + "\n";
     strUsage += "  -?                     " + _("This help message") + "\n";
     strUsage += "  -conf=<file>           " + _("Specify configuration file (default: ion.conf)") + "\n";
-    strUsage += "  -pid=<file>            " + _("Specify pid file (default: xiond.pid)") + "\n";
+    strUsage += "  -pid=<file>            " + _("Specify pid file (default: mmrd.pid)") + "\n";
     strUsage += "  -datadir=<dir>         " + _("Specify data directory") + "\n";
     strUsage += "  -wallet=<dir>          " + _("Specify wallet file (within data directory)") + "\n";
     strUsage += "  -dbcache=<n>           " + _("Set database cache size in megabytes (default: 100)") + "\n";
@@ -293,7 +293,7 @@ strUsage += "\n" + _("Masternode options:") + "\n";
     strUsage += "\n" + _("Darksend options:") + "\n";
     strUsage += "  -enabledarksend=<n>          " + _("Enable use of automated darksend for funds stored in this wallet (0-1, default: 0)") + "\n";
     strUsage += "  -darksendrounds=<n>          " + _("Use N separate masternodes to anonymize funds  (2-8, default: 2)") + "\n";
-    strUsage += "  -anonymizeionamount=<n> " + _("Keep N Ion anonymized (default: 0)") + "\n";
+    strUsage += "  -anonymizeionamount=<n> " + _("Keep N MMR anonymized (default: 0)") + "\n";
     strUsage += "  -liquidityprovider=<n>       " + _("Provide liquidity to Darksend by infrequently mixing coins on a continual basis (0-100, default: 0, 1=very frequent, high fees, 100=very infrequent, low fees)") + "\n";
 
     strUsage += "\n" + _("InstantX options:") + "\n";
@@ -501,7 +501,7 @@ bool AppInit2(boost::thread_group& threadGroup)
 
     // Sanity check
     if (!InitSanityCheck())
-        return InitError(_("Initialization sanity check failed. Ion is shutting down."));
+        return InitError(_("Initialization sanity check failed. MMR is shutting down."));
 
     std::string strDataDir = GetDataDir().string();
 #ifdef ENABLE_WALLET
@@ -517,12 +517,12 @@ bool AppInit2(boost::thread_group& threadGroup)
     if (file) fclose(file);
     static boost::interprocess::file_lock lock(pathLockFile.string().c_str());
     if (!lock.try_lock())
-        return InitError(strprintf(_("Cannot obtain a lock on data directory %s. Ion is probably already running."), strDataDir));
+        return InitError(strprintf(_("Cannot obtain a lock on data directory %s. MMR is probably already running."), strDataDir));
 
     if (GetBoolArg("-shrinkdebugfile", !fDebug))
         ShrinkDebugFile();
     LogPrintf("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
-    LogPrintf("Ion version %s (%s)\n", FormatFullVersion(), CLIENT_DATE);
+    LogPrintf("MMR version %s (%s)\n", FormatFullVersion(), CLIENT_DATE);
     LogPrintf("Using OpenSSL version %s\n", SSLeay_version(SSLEAY_VERSION));
     if (!fLogTimestamps)
         LogPrintf("Startup time: %s\n", DateTimeStrFormat("%x %H:%M:%S", GetTime()));
@@ -542,7 +542,7 @@ bool AppInit2(boost::thread_group& threadGroup)
     nMasternodeMinProtocol = GetArg("-masternodeminprotocol", MIN_POOL_PEER_PROTO_VERSION);
 
     if (fDaemon)
-        fprintf(stdout, "Ion server starting\n"); 
+        fprintf(stdout, "MMR server starting\n"); 
 
 	if (TestNet()){
 		LogPrintf("Starting testnet\n");
@@ -869,10 +869,10 @@ bool AppInit2(boost::thread_group& threadGroup)
                 InitWarning(msg);
             }
             else if (nLoadWalletRet == DB_TOO_NEW)
-                strErrors << _("Error loading wallet.dat: Wallet requires newer version of Ion") << "\n";
+                strErrors << _("Error loading wallet.dat: Wallet requires newer version of MMR") << "\n";
             else if (nLoadWalletRet == DB_NEED_REWRITE)
             {
-                strErrors << _("Wallet needed to be rewritten: restart Ion to complete") << "\n";
+                strErrors << _("Wallet needed to be rewritten: restart MMR to complete") << "\n";
                 LogPrintf("%s", strErrors.str());
                 return InitError(strErrors.str());
             }
@@ -1067,7 +1067,7 @@ bool AppInit2(boost::thread_group& threadGroup)
     LogPrintf("fLiteMode %d\n", fLiteMode);
     LogPrintf("nInstantXDepth %d\n", nInstantXDepth);
     LogPrintf("Darksend rounds %d\n", nDarksendRounds);
-    LogPrintf("Anonymize Ion Amount %d\n", nAnonymizeIonAmount);
+    LogPrintf("Anonymize MMR Amount %d\n", nAnonymizeIonAmount);
 
     /* Denominations
        A note about convertability. Within Darksend pools, each denomination

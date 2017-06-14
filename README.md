@@ -1,54 +1,47 @@
 <p align="center">
-  <img src="https://github.com/Ion-Network/Ion-Core/blob/master/src/qt/res/images/splash.png" alt="Ion_Icon"/>
+  <img src="https://github.com/MinuteManReserve/mmr-core/blob/master/src/qt/res/images/splash.png" alt="MMR_Icon"/>
 </p>
-# **Ion-Core (ION) v1.0**
+# **MMR-Core (MMR) v1.0**
 
-[![Build Status](https://travis-ci.org/ionomy/ion.svg?branch=master)](https://travis-ci.org/ionomy/ion)
+[![Build Status](https://travis-ci.org/minutemanreserve/mmr.svg?branch=master)](https://travis-ci.org/minutemanreserve/mmr)
 
-Ion Integration/Staging Tree
+MMR Integration/Staging Tree
 ================================
 
-**Copyright (c) 2016-2017 ionomy**
+**Copyright (c) 2016-2017 MMR**
 
-#### What is Ion?
+#### What is MMR?
 ----------------
-* Coin Suffix: ION
+* Coin Suffix: MMR
 * PoW Algorithm: SHA256d
-* PoW Period: 2,000 Network Initiation Blocks
-* PoW Median Target Spacing: 64 Seconds
-* PoW Difficulty Retarget: 2 Blocks
-* Full Confirmation: 60 Blocks
-* PoS Algorithm: SHA256d
-* PoS Target Spacing: 64 Seconds
-* PoS Difficulty Retarget: 2 Blocks
-* PoS Reward: Varied
-* PoS Min: 1 Day
+* Median Block Time: 64 seconds
+* PoS Reward: 1.5% annually
+* PoS Min: 30 Days
 * PoS Max: Unlimited
-* Total Coins: 55,000,000 ION
+* Total Coins: 100,000,000 MMR
 * Block Size: 2 Mega-bytes (MB)
 
 
-Ion is a digital currency that enables instant payments to anyone, anywhere in the world. Ion uses peer-to-peer technology over ClearNet to operate with no central authority (centralisation): managing transactions and issuing currency (ION) are carried out collectively by the Ion network. Ion is the name of open source software which enables the use of the currency ION.
-
+MMR is a digital currency that enables instant payments to anyone, anywhere in the world. MMR uses peer-to-peer technology over ClearNet to operate with no central authority (centralisation): managing transactions and issuing currency (MMR) are carried out collectively by the MMR network. MMR is the name of open source software which enables the use of the currency MMR.
 
 
 **MainNet Parameters**
-P2P Port = 12700
-RPC Port = 12705
+P2P Port = 17760
+RPC Port = 17780
 
 
 **TestNet Parameters**
-P2P Port = 27170
-RPC Port = 27175
+P2P Port = 17076
+RPC Port = 17078
 
 
 UNIX BUILD NOTES
 ====================
-Some notes on how to build Ion in Unix.
+Some notes on how to build MMR in Unix.
 
 Note
 ---------------------
-Always use absolute paths to configure and compile Ion and the dependencies,
+Always use absolute paths to configure and compile MMR and the dependencies,
 for example, when specifying the the path of the dependency:
 
     ../dist/configure --enable-cxx --disable-shared --with-pic --prefix=$BDB_PREFIX
@@ -65,7 +58,7 @@ make
 make install # optional
 ```
 
-This will build ionx-Qt as well if the dependencies are met.
+This will build mmr-Qt as well if the dependencies are met.
 
 Dependencies
 ---------------------
@@ -93,7 +86,7 @@ System requirements
 --------------------
 
 C++ compilers are memory-hungry. It is recommended to have at least 1 GB of
-memory available when compiling Ion Core. With 512MB of memory or less
+memory available when compiling MMR Core. With 512MB of memory or less
 compilation will take much longer due to swap thrashing.
 
 Dependency Build Instructions: Ubuntu & Debian
@@ -137,7 +130,7 @@ Optional:
 Dependencies for the GUI: Ubuntu & Debian
 -----------------------------------------
 
-If you want to build ionx-Qt, make sure that the required packages for Qt development
+If you want to build mmr-Qt, make sure that the required packages for Qt development
 are installed. Qt 5 is necessary to build the GUI.
 If both Qt 4 and Qt 5 are installed, Qt 5 will be used. Pass `--with-gui=qt5` to configure to choose Qt5.
 To build without GUI pass `--without-gui`.
@@ -150,12 +143,12 @@ libqrencode (optional) can be installed with:
 
     sudo apt-get install libqrencode-dev
 
-Once these are installed, they will be found by configure and a ionx-Qt executable will be
+Once these are installed, they will be found by configure and a mmr-Qt executable will be
 built by default.
 
 Notes
 -----
-The release is built with GCC and then "strip xiond" to strip the debug
+The release is built with GCC and then "strip mmrd" to strip the debug
 symbols, which reduces the executable size by about 90%.
 
 
@@ -218,7 +211,7 @@ If you need to build Boost yourself:
 
 Security
 --------
-To help make your Ion installation more secure by making certain attacks impossible to
+To help make your MMR installation more secure by making certain attacks impossible to
 exploit even if a vulnerability is found, binaries are hardened by default.
 
 
@@ -236,7 +229,7 @@ Hardening enables the following features:
 
     To test that you have built PIE executable, install scanelf, part of paxutils, and use:
 
-        scanelf -e ./xiond
+        scanelf -e ./mmrd
 
     The output should contain:
      TYPE
@@ -250,7 +243,7 @@ Hardening enables the following features:
     executable without the non-executable stack protection.
 
     To verify that the stack is non-executable after compiling use:
-    `scanelf -e ./xiond`
+    `scanelf -e ./mmrd`
 
     the output should contain:
     STK/REL/PTL

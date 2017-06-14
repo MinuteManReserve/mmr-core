@@ -21,7 +21,7 @@ packages:
 - "genisoimage"
 reference_datetime: "2013-06-01 00:00:00"
 remotes:
-- "url": "https://github.com/Ion-Network/Ion-Core.git"
+- "url": "https://github.com/MMR-Network/MMR-Core.git"
   "dir": "ion"
 files:
 - "qt-osx-5.5.0-gitian.tar.xz"
@@ -84,5 +84,5 @@ script: |
   ln -sf /Applications Applications
   cd ..
   genisoimage -no-cache-inodes -l -probe -V "ionx-Qt" -no-pad -r -apple -o Shadow.tmp.dmg dist
-  dmg dmg ionx-Qt.tmp.dmg $OUTDIR/Ion.dmg
+  dmg dmg ionx-Qt.tmp.dmg $OUTDIR/MMR.dmg
   #

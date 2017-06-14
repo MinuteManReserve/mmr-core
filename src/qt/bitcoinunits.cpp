@@ -41,7 +41,7 @@ QString BitcoinUnits::name(int unit)
 {
     switch(unit)
     {
-    case BTC: return QString("ION");
+    case BTC: return QString("MMR");
     case mBTC: return QString("mION");
     case uBTC: return QString::fromUtf8("μION");
     default: return QString("???");

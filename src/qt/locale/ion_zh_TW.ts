@@ -2,7 +2,7 @@
 <context>
     <name>AboutDialog</name>
     <message>
-        <source>About Ion</source>
+        <source>About MMR</source>
         <translation>關于黑幣</translation>
     </message>
     <message>
@@ -36,7 +36,7 @@
         <translation>新建地址(&amp;N)</translation>
     </message>
     <message>
-        <source>These are your Ion addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <source>These are your MMRaddresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
         <translation>這是您用來接收支付的黑幣地址列表。爲不同的支付方建立不同的地址以便于了解支付來源。</translation>
     </message>
     <message>
@@ -48,7 +48,7 @@
         <translation>顯示二維碼(&amp;Q)</translation>
     </message>
     <message>
-        <source>Sign a message to prove you own a Ion address</source>
+        <source>Sign a message to prove you own a MMRaddress</source>
         <translation>對信息進行簽名以證明您對該黑幣地址的所有權</translation>
     </message>
     <message>
@@ -60,7 +60,7 @@
         <translation>把目前選擇的位址從列表中刪掉</translation>
     </message>
     <message>
-        <source>Verify a message to ensure it was signed with a specified Ion address</source>
+        <source>Verify a message to ensure it was signed with a specified MMRaddress</source>
         <translation>驗證信息以保證其經過指定黑幣地址的簽名</translation>
     </message>
     <message>
@@ -190,7 +190,7 @@
         <translation>錢包已加密</translation>
     </message>
     <message>
-        <source>Ion will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
+        <source>MMRwill close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
         <translation>黑幣客戶端即將關閉以完成加密過程。請記住，加密錢包並不能完全防止您的電子貨幣被入侵您計算機的木馬軟件盜竊。</translation>
     </message>
     <message>
@@ -263,7 +263,7 @@
         <translation>結束應用程式</translation>
     </message>
     <message>
-        <source>Show information about Ion</source>
+        <source>Show information about MMR</source>
         <translation>關于黑幣 </translation>
     </message>
     <message>
@@ -295,7 +295,7 @@
         <translation>導出(&amp;E)</translation>
     </message>
     <message>
-        <source>Send coins to a Ion address</source>
+        <source>Send coins to a MMRaddress</source>
         <translation>向指定的地址發送黑幣</translation>
     </message>
     <message>
@@ -347,11 +347,11 @@
         <translation>[測試網絡]</translation>
     </message>
     <message>
-        <source>Ion client</source>
+        <source>MMRclient</source>
         <translation>黑幣客戶端</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Ion network</source>
+        <source>%n active connection(s) to MMR network</source>
         <translation><numerusform>與黑幣網絡建立了 %n 個連接</numerusform></translation>
     </message>
     <message>

@@ -1,5 +1,5 @@
 // Copyright (c) 2009-2012 The Darkcoin developers
-// Copyright (c) 2017 Empinel / The ION Developers
+// Copyright (c) 2017 Empinel / The MMR Developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -10,7 +10,7 @@
 #include "clientversion.h"
 
 //
-// Bootup the masternode, look for a 20000 ION input and register on the network
+// Bootup the masternode, look for a 20000 MMR input and register on the network
 //
 void CActiveMasternode::ManageStatus()
 {

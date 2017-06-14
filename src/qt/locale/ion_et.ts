@@ -2,12 +2,12 @@
 <context>
     <name>AboutDialog</name>
     <message>
-        <source>About Ion</source>
-        <translation>Info Ion'i kohta</translation>
+        <source>About MMR</source>
+        <translation>Info MMR'i kohta</translation>
     </message>
     <message>
-        <source>&lt;b&gt;Ion&lt;/b&gt; version</source>
-        <translation>&lt;b&gt;Ion&lt;/b&gt;'i versioon</translation>
+        <source>&lt;b&gt;MMR&lt;/b&gt; version</source>
+        <translation>&lt;b&gt;MMR&lt;/b&gt;'i versioon</translation>
     </message>
     </context>
 <context>
@@ -32,8 +32,8 @@
         <translation>Kopeeri valitud aadress vahemällu</translation>
     </message>
     <message>
-        <source>These are your Ion addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
-        <translation>Need on Sinu Ion'i aadressid maksete vastuvõtmiseks. Soovi korral saad anda igale saatjale eraldi aadressi, et hõlpsamini omada ülevaadet, et kellelt mündid laekuvad.</translation>
+        <source>These are your MMR addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <translation>Need on Sinu MMR'i aadressid maksete vastuvõtmiseks. Soovi korral saad anda igale saatjale eraldi aadressi, et hõlpsamini omada ülevaadet, et kellelt mündid laekuvad.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -44,8 +44,8 @@
         <translation>Näita &amp;QR koodi.</translation>
     </message>
     <message>
-        <source>Sign a message to prove you own a Ion address</source>
-        <translation>Allkirjasta sõnum Ion'i aadressi omamise tõestamiseks.</translation>
+        <source>Sign a message to prove you own a MMR address</source>
+        <translation>Allkirjasta sõnum MMR'i aadressi omamise tõestamiseks.</translation>
     </message>
     <message>
         <source>Delete the currently selected address from the list</source>
@@ -1376,12 +1376,12 @@ Aadress: %4⏎</translation>
         <translation>Viga wallet.dat käivitamisel. Vigane rahakkott</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of Ion</source>
-        <translation>Viga faili wallet.dat laadimisel: rahakott vajab Ion'i uuemat versiooni.</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of MMR</source>
+        <translation>Viga faili wallet.dat laadimisel: rahakott vajab MMR'i uuemat versiooni.</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart Ion to complete</source>
-        <translation>Rahakott on vaja üle kirjutada: käivita Ion uuesti toimingu lõpetamiseks</translation>
+        <source>Wallet needed to be rewritten: restart MMR to complete</source>
+        <translation>Rahakott on vaja üle kirjutada: käivita MMR uuesti toimingu lõpetamiseks</translation>
     </message>
     <message>
         <source>Error loading wallet.dat</source>

@@ -2,12 +2,12 @@
 <context>
     <name>AboutDialog</name>
     <message>
-        <source>About Ion</source>
+        <source>About MMR</source>
         <translation>Tietoa Ionista</translation>
     </message>
     <message>
-        <source>&lt;b&gt;Ion&lt;/b&gt; version</source>
-        <translation>&lt;b&gt;Ion&lt;/b&gt;-asiakasohjelman versio</translation>
+        <source>&lt;b&gt;MMR&lt;/b&gt; version</source>
+        <translation>&lt;b&gt;MMR&lt;/b&gt;-asiakasohjelman versio</translation>
     </message>
     </context>
 <context>
@@ -36,8 +36,8 @@
         <translation>&amp;Uusi osoite</translation>
     </message>
     <message>
-        <source>These are your Ion addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
-        <translation>Nämä ovat Ion-osoitteesi rahansiirtojen vastaanottoa varten. Jos haluat, voit antaa jokaiselle lähettäjälle oman osoitteen jotta voit pitää kirjaa sinulle rahaa siirtäneistä henkilöistä.</translation>
+        <source>These are your MMR addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <translation>Nämä ovat MMR-osoitteesi rahansiirtojen vastaanottoa varten. Jos haluat, voit antaa jokaiselle lähettäjälle oman osoitteen jotta voit pitää kirjaa sinulle rahaa siirtäneistä henkilöistä.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -48,8 +48,8 @@
         <translation>Näytä &amp;QR-koodi</translation>
     </message>
     <message>
-        <source>Sign a message to prove you own a Ion address</source>
-        <translation>Allekirjoita viesti osoittaaksesi Ion-osoitteesi omistajuus</translation>
+        <source>Sign a message to prove you own a MMR address</source>
+        <translation>Allekirjoita viesti osoittaaksesi MMR-osoitteesi omistajuus</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -60,8 +60,8 @@
         <translation>Poista valittu osoite listalta</translation>
     </message>
     <message>
-        <source>Verify a message to ensure it was signed with a specified Ion address</source>
-        <translation>Vahvista viesti varmistaaksesi että kyseinen Ion-osoitteesi on allekirjoittanut sen</translation>
+        <source>Verify a message to ensure it was signed with a specified MMR address</source>
+        <translation>Vahvista viesti varmistaaksesi että kyseinen MMR-osoitteesi on allekirjoittanut sen</translation>
     </message>
     <message>
         <source>&amp;Verify Message</source>
@@ -194,8 +194,8 @@
         <translation>Syötä uusi salasana lompakolle.&lt;br/&gt;Käytäthän salasanaa, joka sisältää &lt;b&gt;vähintään kymmenen täysin arvottua merkkiä&lt;/b&gt;, tai &lt;b&gt;vähintään kahdeksan sanaa&lt;/b&gt;.</translation>
     </message>
     <message>
-        <source>Ion will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
-        <translation>Ion-ohjelma sulkee itsensä päättääkseen salauksen luonnin. Muista, että lompakon salaaminen ei täysin turvaa kolikoitasi haittaohjelmien aiheuttamien varkauksien uhalta.</translation>
+        <source>MMR will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
+        <translation>MMR-ohjelma sulkee itsensä päättääkseen salauksen luonnin. Muista, että lompakon salaaminen ei täysin turvaa kolikoitasi haittaohjelmien aiheuttamien varkauksien uhalta.</translation>
     </message>
     <message>
         <source>Wallet encryption failed</source>
@@ -267,7 +267,7 @@
         <translation>Sulje asiakasohjelma</translation>
     </message>
     <message>
-        <source>Show information about Ion</source>
+        <source>Show information about MMR</source>
         <translation>Näytä tietoja Ionista</translation>
     </message>
     <message>
@@ -299,11 +299,11 @@
         <translation>&amp;Vie...</translation>
     </message>
     <message>
-        <source>Send coins to a Ion address</source>
-        <translation>Lähetä varoja Ion-osoitteeseen</translation>
+        <source>Send coins to a MMR address</source>
+        <translation>Lähetä varoja MMR-osoitteeseen</translation>
     </message>
     <message>
-        <source>Modify configuration options for Ion</source>
+        <source>Modify configuration options for MMR</source>
         <translation>Mukauta asiakasohjelman asetuksia</translation>
     </message>
     <message>
@@ -335,15 +335,15 @@
         <translation>&amp;Vahvista viesti...</translation>
     </message>
     <message>
-        <source>Ion</source>
-        <translation>Ion</translation>
+        <source>MMR</source>
+        <translation>MMR</translation>
     </message>
     <message>
         <source>Wallet</source>
         <translation>Lompakko</translation>
     </message>
     <message>
-        <source>&amp;About Ion</source>
+        <source>&amp;About MMR</source>
         <translation>&amp;Tietoa Ionista</translation>
     </message>
     <message>
@@ -383,12 +383,12 @@
         <translation>[testnet]</translation>
     </message>
     <message>
-        <source>Ion client</source>
-        <translation>Ion-asiakasohjelma</translation>
+        <source>MMR client</source>
+        <translation>MMR-asiakasohjelma</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Ion network</source>
-        <translation><numerusform>%n aktiivinen yhteys Ion-verkkoon</numerusform><numerusform>%n aktiivista yhteyttä Ion-verkkoon</numerusform></translation>
+        <source>%n active connection(s) to MMR network</source>
+        <translation><numerusform>%n aktiivinen yhteys MMR-verkkoon</numerusform><numerusform>%n aktiivista yhteyttä MMR-verkkoon</numerusform></translation>
     </message>
     <message>
         <source>Staking.&lt;br&gt;Your weight is %1&lt;br&gt;Network weight is %2&lt;br&gt;Expected time to earn reward is %3</source>
@@ -462,8 +462,8 @@ Osoite: %4</translation>
         <translation>URI-merkkijonojen käsittely</translation>
     </message>
     <message>
-        <source>URI can not be parsed! This can be caused by an invalid Ion address or malformed URI parameters.</source>
-        <translation>URI-merkkijonoa ei voida jäsentää! Tämä voi johtua väärästä Ion-osoitteesta tai väärässä muodossa olevista URI-parametreistä.</translation>
+        <source>URI can not be parsed! This can be caused by an invalid MMR address or malformed URI parameters.</source>
+        <translation>URI-merkkijonoa ei voida jäsentää! Tämä voi johtua väärästä MMR-osoitteesta tai väärässä muodossa olevista URI-parametreistä.</translation>
     </message>
     <message>
         <source>Wallet is &lt;b&gt;not encrypted&lt;/b&gt;</source>
@@ -542,8 +542,8 @@ Osoite: %4</translation>
         <translation>Ei osakkaana</translation>
     </message>
     <message>
-        <source>A fatal error occurred. Ion can no longer continue safely and will quit.</source>
-        <translation>Virhe kohdattu. Ion-asiakasohjelma ei voi enää jatkaa turvallisesti ja se suljetaan.</translation>
+        <source>A fatal error occurred. MMR can no longer continue safely and will quit.</source>
+        <translation>Virhe kohdattu. MMR-asiakasohjelma ei voi enää jatkaa turvallisesti ja se suljetaan.</translation>
     </message>
 </context>
 <context>
@@ -806,8 +806,8 @@ Tämä tarkoittaa, että ainakin %2 rahansiirtopalkkio tarvitaan.</translation>
         <translation>Osoite "%1" on jo osoitekirjassa.</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Ion address.</source>
-        <translation>Syöttämäsi osoite "%1" ei ole hyväksytty Ion-osoite.</translation>
+        <source>The entered address "%1" is not a valid MMR address.</source>
+        <translation>Syöttämäsi osoite "%1" ei ole hyväksytty MMR-osoite.</translation>
     </message>
     <message>
         <source>Could not unlock wallet.</source>
@@ -892,16 +892,16 @@ Tämä tarkoittaa, että ainakin %2 rahansiirtopalkkio tarvitaan.</translation>
         <translation>Varattuna</translation>
     </message>
     <message>
-        <source>Automatically start Ion after logging in to the system.</source>
-        <translation>Käynnistä Ion-asiakasohjelma automaattisesti kun olet kirjautunut järjestelmään.</translation>
+        <source>Automatically start MMR after logging in to the system.</source>
+        <translation>Käynnistä MMR-asiakasohjelma automaattisesti kun olet kirjautunut järjestelmään.</translation>
     </message>
     <message>
         <source>&amp;Network</source>
         <translation>&amp;Verkko</translation>
     </message>
     <message>
-        <source>Automatically open the Ion client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Avaa Ion-asiakkaalle automaattisesti portti reitittimestä. Tämä toimii vain, kun reitittimesi tukee UPnP:tä ja se on aktivoituna.</translation>
+        <source>Automatically open the MMR client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Avaa MMR-asiakkaalle automaattisesti portti reitittimestä. Tämä toimii vain, kun reitittimesi tukee UPnP:tä ja se on aktivoituna.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -952,8 +952,8 @@ Tämä tarkoittaa, että ainakin %2 rahansiirtopalkkio tarvitaan.</translation>
         <translation>Käyttöliittymän &amp;kieli:</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting Ion.</source>
-        <translation>Käyttöliittymän kieli voidaan valita tästä. Tämä asetus tulee voimaan vasta Ion-asiakasohjelman uudelleenkäynnistyksen jälkeen.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting MMR.</source>
+        <translation>Käyttöliittymän kieli voidaan valita tästä. Tämä asetus tulee voimaan vasta MMR-asiakasohjelman uudelleenkäynnistyksen jälkeen.</translation>
     </message>
     <message>
         <source>&amp;Unit to show amounts in:</source>
@@ -988,8 +988,8 @@ Tämä tarkoittaa, että ainakin %2 rahansiirtopalkkio tarvitaan.</translation>
         <translation>Varoitus</translation>
     </message>
     <message>
-        <source>This setting will take effect after restarting Ion.</source>
-        <translation>Tämä asetus tulee voimaan vasta Ion-asiakasohjelman uudelleenkäynnistyksen jälkeen.</translation>
+        <source>This setting will take effect after restarting MMR.</source>
+        <translation>Tämä asetus tulee voimaan vasta MMR-asiakasohjelman uudelleenkäynnistyksen jälkeen.</translation>
     </message>
     <message>
         <source>The supplied proxy address is invalid.</source>
@@ -1003,8 +1003,8 @@ Tämä tarkoittaa, että ainakin %2 rahansiirtopalkkio tarvitaan.</translation>
         <translation>Lomake</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Ion network after a connection is established, but this process has not completed yet.</source>
-        <translation>Näytettävät tiedot voivat olla vanhentuneet. Lompakkosi synkronoituu automaattisesti Ion-verkon kanssa kun yhteys on muodostettu, mutta tätä prosessia ei ole viety vielä päätökseen.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the MMR network after a connection is established, but this process has not completed yet.</source>
+        <translation>Näytettävät tiedot voivat olla vanhentuneet. Lompakkosi synkronoituu automaattisesti MMR-verkon kanssa kun yhteys on muodostettu, mutta tätä prosessia ei ole viety vielä päätökseen.</translation>
     </message>
     <message>
         <source>Stake:</source>
@@ -1178,15 +1178,15 @@ Tämä tarkoittaa, että ainakin %2 rahansiirtopalkkio tarvitaan.</translation>
         <translation>Debug-lokitiedosto</translation>
     </message>
     <message>
-        <source>Open the Ion debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Avaa Ion-asiakasohjelman debug-lokitiedosto nykyisestä hakemistostaan. Tämä voi kestää muutaman sekunnin avattaessa suuria lokitiedostoja.</translation>
+        <source>Open the MMR debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Avaa MMR-asiakasohjelman debug-lokitiedosto nykyisestä hakemistostaan. Tämä voi kestää muutaman sekunnin avattaessa suuria lokitiedostoja.</translation>
     </message>
     <message>
         <source>Clear console</source>
         <translation>Tyhjennä konsoli</translation>
     </message>
     <message>
-        <source>Welcome to the Ion RPC console.</source>
+        <source>Welcome to the MMR RPC console.</source>
         <translation>Tervetuloa Ionin RPC-konsoliin.</translation>
     </message>
     <message>
@@ -1463,8 +1463,8 @@ Tämä tarkoittaa, että ainakin %2 rahansiirtopalkkio tarvitaan.</translation>
         <translation>Kopioi tämänhetkinen allekirjoitus järjestelmän leikepöydälle</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Ion address</source>
-        <translation>Allekirjoita viesti vahvistaaksesi, että omistat tämän Ion-osoitteen</translation>
+        <source>Sign the message to prove you own this MMR address</source>
+        <translation>Allekirjoita viesti vahvistaaksesi, että omistat tämän MMR-osoitteen</translation>
     </message>
     <message>
         <source>Reset all sign message fields</source>
@@ -1487,24 +1487,24 @@ Tämä tarkoittaa, että ainakin %2 rahansiirtopalkkio tarvitaan.</translation>
         <translation>Osoite, jolla viesti on allekirjoitettu (esim. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i) </translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Ion address</source>
-        <translation>Vahvista viesti varmistaaksesi että se on allekirjoitettu kyseisellä Ion-osoitteella</translation>
+        <source>Verify the message to ensure it was signed with the specified MMR address</source>
+        <translation>Vahvista viesti varmistaaksesi että se on allekirjoitettu kyseisellä MMR-osoitteella</translation>
     </message>
     <message>
         <source>Reset all verify message fields</source>
         <translation>Tyhjennä kaikki varmista-viesti-kentät</translation>
     </message>
     <message>
-        <source>Enter a Ion address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation>Syötä Ion-osoite (esim. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+        <source>Enter a MMR address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
+        <translation>Syötä MMR-osoite (esim. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
     </message>
     <message>
         <source>Click "Sign Message" to generate signature</source>
         <translation>Klikkaa "Allekirjoita Viesti luodaksesi allekirjoituksen </translation>
     </message>
     <message>
-        <source>Enter Ion signature</source>
-        <translation>Syötä Ion-allekirjoitus</translation>
+        <source>Enter MMR signature</source>
+        <translation>Syötä MMR-allekirjoitus</translation>
     </message>
     <message>
         <source>The entered address is invalid.</source>
@@ -1936,7 +1936,7 @@ Tämä tarkoittaa, että ainakin %2 rahansiirtopalkkio tarvitaan.</translation>
 <context>
     <name>bitcoin-core</name>
     <message>
-        <source>Ion version</source>
+        <source>MMR version</source>
         <translation>Ionin versio</translation>
     </message>
     <message>
@@ -1944,8 +1944,8 @@ Tämä tarkoittaa, että ainakin %2 rahansiirtopalkkio tarvitaan.</translation>
         <translation>Käyttö:</translation>
     </message>
     <message>
-        <source>Send command to -server or xiond</source>
-        <translation>Syötä komento kohteeseen -server tai xiond</translation>
+        <source>Send command to -server or mmrd</source>
+        <translation>Syötä komento kohteeseen -server tai mmrd</translation>
     </message>
     <message>
         <source>List commands</source>
@@ -1964,7 +1964,7 @@ Tämä tarkoittaa, että ainakin %2 rahansiirtopalkkio tarvitaan.</translation>
         <translation>Määritä asetustiedosto (oletus: ion.conf)</translation>
     </message>
     <message>
-        <source>Specify pid file (default: xiond.pid)</source>
+        <source>Specify pid file (default: mmrd.pid)</source>
         <translation>Määritä prosessitiedosto (oletus: ion.pid)</translation>
     </message>
     <message>
@@ -2212,8 +2212,8 @@ Tämä tarkoittaa, että ainakin %2 rahansiirtopalkkio tarvitaan.</translation>
         <translation>Palvelimen yksityisavain (oletus: server.pem)</translation>
     </message>
     <message>
-        <source>Initialization sanity check failed. Ion is shutting down.</source>
-        <translation>Käyttöönottotarkistus epäonnistui. Ion-asiakasohjelma suljetaan.</translation>
+        <source>Initialization sanity check failed. MMR is shutting down.</source>
+        <translation>Käyttöönottotarkistus epäonnistui. MMR-asiakasohjelma suljetaan.</translation>
     </message>
     <message>
         <source>Error: Wallet unlocked for staking only, unable to create transaction.</source>
@@ -2248,12 +2248,12 @@ Tämä tarkoittaa, että ainakin %2 rahansiirtopalkkio tarvitaan.</translation>
         <translation>Virhe ladattaessa wallet.dat-tiedostoa: Lompakko vioittunut</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of Ion</source>
-        <translation>Virhe ladattaessa wallet.dat-tiedostoa: Lompakko tarvitsee uudemman version Ion-asiakasohjelmasta</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of MMR</source>
+        <translation>Virhe ladattaessa wallet.dat-tiedostoa: Lompakko tarvitsee uudemman version MMR-asiakasohjelmasta</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart Ion to complete</source>
-        <translation>Lompakko on kirjoitettava uudelleen: käynnistä Ion-asiakasohjelma uudelleen päättääksesi toiminnon</translation>
+        <source>Wallet needed to be rewritten: restart MMR to complete</source>
+        <translation>Lompakko on kirjoitettava uudelleen: käynnistä MMR-asiakasohjelma uudelleen päättääksesi toiminnon</translation>
     </message>
     <message>
         <source>Error loading wallet.dat</source>
@@ -2300,8 +2300,8 @@ Tämä tarkoittaa, että ainakin %2 rahansiirtopalkkio tarvitaan.</translation>
         <translation>Linää solmu mihin liittyä pitääksesi yhteyden auki</translation>
     </message>
     <message>
-        <source>Unable to bind to %s on this computer. Ion is probably already running.</source>
-        <translation>Ei voitu liittää %s tällä tietokoneella. Ion-asiakasohjelma on jo ehkä päällä.</translation>
+        <source>Unable to bind to %s on this computer. MMR is probably already running.</source>
+        <translation>Ei voitu liittää %s tällä tietokoneella. MMR-asiakasohjelma on jo ehkä päällä.</translation>
     </message>
     <message>
         <source>Fee per KB to add to transactions you send</source>

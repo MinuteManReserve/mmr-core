@@ -129,10 +129,10 @@ void MultisigInputEntry::on_transactionId_textChanged(const QString &transaction
         {
             CIonAddress address(addr);
             QString addressStr(address.ToString().c_str());
-            ui->transactionOutput->addItem(idStr + QString(" - ") + addressStr + QString(" - ") + amountStr + QString(" ION"));
+            ui->transactionOutput->addItem(idStr + QString(" - ") + addressStr + QString(" - ") + amountStr + QString(" MMR"));
         }
         else
-            ui->transactionOutput->addItem(idStr + QString(" - ") + amountStr + QString(" ION"));
+            ui->transactionOutput->addItem(idStr + QString(" - ") + amountStr + QString(" MMR"));
     }
 }
 

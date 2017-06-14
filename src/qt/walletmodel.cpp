@@ -781,7 +781,7 @@ WalletModel::UnlockContext::~UnlockContext()
 
 void WalletModel::UnlockContext::CopyFrom(const UnlockContext& rhs)
 {
-    // Ion context; old object no longer relocks wallet
+    // MMR context; old object no longer relocks wallet
     *this = rhs;
     rhs.relock = false;
 }

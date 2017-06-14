@@ -2,12 +2,12 @@
 <context>
     <name>AboutDialog</name>
     <message>
-        <source>About Ion</source>
-        <translation>Über Ion</translation>
+        <source>About MMR</source>
+        <translation>Über MMR</translation>
     </message>
     <message>
-        <source>&lt;b&gt;Ion&lt;/b&gt; version</source>
-        <translation>&lt;b&gt;Ion&lt;/b&gt; Version</translation>
+        <source>&lt;b&gt;MMR&lt;/b&gt; version</source>
+        <translation>&lt;b&gt;MMR&lt;/b&gt; Version</translation>
     </message>
     </context>
 <context>
@@ -36,8 +36,8 @@
         <translation>&amp;Neue Adresse</translation>
     </message>
     <message>
-        <source>These are your Ion addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
-        <translation>Das sind Ihre Ion Adressen um Zahlungen zu erhalten. Sie werden vielleicht verschiedene an jeden Sender vergeben, damit Sie im Auge behalten können wer Sie bezahlt.</translation>
+        <source>These are your MMR addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <translation>Das sind Ihre MMR Adressen um Zahlungen zu erhalten. Sie werden vielleicht verschiedene an jeden Sender vergeben, damit Sie im Auge behalten können wer Sie bezahlt.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -48,8 +48,8 @@
         <translation>&amp;QR Code anzeigen</translation>
     </message>
     <message>
-        <source>Sign a message to prove you own a Ion address</source>
-        <translation>Signieren Sie eine Nachricht um zu beweisen, dass Sie eine Ion Adresse besitzen</translation>
+        <source>Sign a message to prove you own a MMR address</source>
+        <translation>Signieren Sie eine Nachricht um zu beweisen, dass Sie eine MMR Adresse besitzen</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -60,8 +60,8 @@
         <translation>Ausgewählte Adresse aus der Liste entfernen</translation>
     </message>
     <message>
-        <source>Verify a message to ensure it was signed with a specified Ion address</source>
-        <translation>Verifizieren Sie ob eine Nachricht einer bestimmten Ion Adresse signiert wurde</translation>
+        <source>Verify a message to ensure it was signed with a specified MMR address</source>
+        <translation>Verifizieren Sie ob eine Nachricht einer bestimmten MMR Adresse signiert wurde</translation>
     </message>
     <message>
         <source>&amp;Verify Message</source>
@@ -186,8 +186,8 @@
         <translation>Wallet verschlüsselt</translation>
     </message>
     <message>
-        <source>Ion will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
-        <translation>Ion wird sich schließen um den Verschlüsselungsvorgang abzuschließen. Beachten Sie, dass die Verschlüsselung Ihrer Wallet keinen vollständigen Schutz vor Diebstahl Ihrer Coins duch auf Ihrem Computer installierte Malware gewährleistet</translation>
+        <source>MMR will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
+        <translation>MMR wird sich schließen um den Verschlüsselungsvorgang abzuschließen. Beachten Sie, dass die Verschlüsselung Ihrer Wallet keinen vollständigen Schutz vor Diebstahl Ihrer Coins duch auf Ihrem Computer installierte Malware gewährleistet</translation>
     </message>
     <message>
         <source>Wallet encryption failed</source>
@@ -259,8 +259,8 @@
         <translation>Anwendung beenden</translation>
     </message>
     <message>
-        <source>Show information about Ion</source>
-        <translation>Informationen über Ion anzeigen</translation>
+        <source>Show information about MMR</source>
+        <translation>Informationen über MMR anzeigen</translation>
     </message>
     <message>
         <source>About &amp;Qt</source>
@@ -291,12 +291,12 @@
         <translation>&amp;Exportieren...</translation>
     </message>
     <message>
-        <source>Send coins to a Ion address</source>
-        <translation>Senden Sie Coins an eine Ion Adresse</translation>
+        <source>Send coins to a MMR address</source>
+        <translation>Senden Sie Coins an eine MMR Adresse</translation>
     </message>
     <message>
-        <source>Modify configuration options for Ion</source>
-        <translation>Konfigurationsoptionen für Ion ändern</translation>
+        <source>Modify configuration options for MMR</source>
+        <translation>Konfigurationsoptionen für MMR ändern</translation>
     </message>
     <message>
         <source>Export the data in the current tab to a file</source>
@@ -327,16 +327,16 @@
         <translation>Nachricht &amp;verifizieren...</translation>
     </message>
     <message>
-        <source>Ion</source>
-        <translation>Ion</translation>
+        <source>MMR</source>
+        <translation>MMR</translation>
     </message>
     <message>
         <source>Wallet</source>
         <translation>Wallet</translation>
     </message>
     <message>
-        <source>&amp;About Ion</source>
-        <translation>&amp;Über Ion</translation>
+        <source>&amp;About MMR</source>
+        <translation>&amp;Über MMR</translation>
     </message>
     <message>
         <source>&amp;Show / Hide</source>
@@ -375,8 +375,8 @@
         <translation>[Testnetz]</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Ion network</source>
-        <translation><numerusform>%n aktive Verbindung zum Ion Netzwerk</numerusform><numerusform>%n aktive Verbindungen zum Ion Netzwerk</numerusform></translation>
+        <source>%n active connection(s) to MMR network</source>
+        <translation><numerusform>%n aktive Verbindung zum MMR Netzwerk</numerusform><numerusform>%n aktive Verbindungen zum MMR Netzwerk</numerusform></translation>
     </message>
     <message>
         <source>Staking.&lt;br&gt;Your weight is %1&lt;br&gt;Network weight is %2&lt;br&gt;Expected time to earn reward is %3</source>
@@ -434,8 +434,8 @@ Typ: %3
 Adresse: %4</translation>
     </message>
     <message>
-        <source>URI can not be parsed! This can be caused by an invalid Ion address or malformed URI parameters.</source>
-        <translation>Die URI kann nicht erkannt werden! Die Ursache hierfür kann eine ungültige Ion Adresse oder eine fehlerhafte Angabe der URI Parameter sein.</translation>
+        <source>URI can not be parsed! This can be caused by an invalid MMR address or malformed URI parameters.</source>
+        <translation>Die URI kann nicht erkannt werden! Die Ursache hierfür kann eine ungültige MMR Adresse oder eine fehlerhafte Angabe der URI Parameter sein.</translation>
     </message>
     <message>
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt;</source>
@@ -478,8 +478,8 @@ Adresse: %4</translation>
         <translation>Nachfolgende Transaktionen werden noch nicht sichtbar sein</translation>
     </message>
     <message>
-        <source>A fatal error occurred. Ion can no longer continue safely and will quit.</source>
-        <translation>Ein fataler Fehler ist aufgetreten. Ion kann nicht fortgesetzt werden und wird beendet.</translation>
+        <source>A fatal error occurred. MMR can no longer continue safely and will quit.</source>
+        <translation>Ein fataler Fehler ist aufgetreten. MMR kann nicht fortgesetzt werden und wird beendet.</translation>
     </message>
 </context>
 <context>
@@ -706,8 +706,8 @@ Adresse: %4</translation>
         <translation>Die eingegebene Adresse "%1" befindet sich bereits im Adressbuch.</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Ion address.</source>
-        <translation>Die eingegebene Adresse "%1" ist keine gültige Ion Adresse.</translation>
+        <source>The entered address "%1" is not a valid MMR address.</source>
+        <translation>Die eingegebene Adresse "%1" ist keine gültige MMR Adresse.</translation>
     </message>
     <message>
         <source>Could not unlock wallet.</source>
@@ -776,20 +776,20 @@ Adresse: %4</translation>
         <translation>Reserviert</translation>
     </message>
     <message>
-        <source>Automatically start Ion after logging in to the system.</source>
-        <translation>Automatisch Ion starten beim Einloggen in das System.</translation>
+        <source>Automatically start MMR after logging in to the system.</source>
+        <translation>Automatisch MMR starten beim Einloggen in das System.</translation>
     </message>
     <message>
-        <source>&amp;Start Ion on system login</source>
-        <translation>&amp;Starte Ion bei Systemstart</translation>
+        <source>&amp;Start MMR on system login</source>
+        <translation>&amp;Starte MMR bei Systemstart</translation>
     </message>
     <message>
         <source>&amp;Network</source>
         <translation>&amp;Netzwerk</translation>
     </message>
     <message>
-        <source>Automatically open the Ion client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Automatisch den Ion client port auf dem Router öffnen. Das funktioniert nur wenn der Router UPnP unterstützt und UPnP aktiviert ist.</translation>
+        <source>Automatically open the MMR client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Automatisch den MMR client port auf dem Router öffnen. Das funktioniert nur wenn der Router UPnP unterstützt und UPnP aktiviert ist.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -840,7 +840,7 @@ Adresse: %4</translation>
         <translation>&amp;Sprache der Benutzeroberfläche:</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting Ion.</source>
+        <source>The user interface language can be set here. This setting will take effect after restarting MMR.</source>
         <translation>Die Sprache der GUI kann hier verändert werden. Die Einstellung wird nach einem Neustart übernommen.</translation>
     </message>
     <message>
@@ -880,7 +880,7 @@ Adresse: %4</translation>
         <translation>Warnung</translation>
     </message>
     <message>
-        <source>This setting will take effect after restarting Ion.</source>
+        <source>This setting will take effect after restarting MMR.</source>
         <translation>Diese Einstellung wird nach einem Neustart übernommen.</translation>
     </message>
     <message>
@@ -895,8 +895,8 @@ Adresse: %4</translation>
         <translation>Formular</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Ion network after a connection is established, but this process has not completed yet.</source>
-        <translation>Die angezeigte Information kann falsch sein. Die Brieftasche synchronisiert automatisch mit dem Ion Netzwerk nachdem eine Verbindung zustande gekommen ist, aber dieser Prozess ist nicht abgeschlossen.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the MMR network after a connection is established, but this process has not completed yet.</source>
+        <translation>Die angezeigte Information kann falsch sein. Die Brieftasche synchronisiert automatisch mit dem MMR Netzwerk nachdem eine Verbindung zustande gekommen ist, aber dieser Prozess ist nicht abgeschlossen.</translation>
     </message>
     <message>
         <source>Spendable:</source>
@@ -1267,8 +1267,8 @@ Adresse: %4</translation>
         <translation>Aktuelle Signatur in die Zwischenablage kopieren</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Ion address</source>
-        <translation>Signiere die Nachricht um zu beweisen das du Besitzer dieser Ion Adresse bist.</translation>
+        <source>Sign the message to prove you own this MMR address</source>
+        <translation>Signiere die Nachricht um zu beweisen das du Besitzer dieser MMR Adresse bist.</translation>
     </message>
     <message>
         <source>Reset all sign message fields</source>
@@ -1295,8 +1295,8 @@ Adresse: %4</translation>
         <translation>Auf "Nachricht signieren" klicken, um die Signatur zu erzeugen</translation>
     </message>
     <message>
-        <source>Enter Ion signature</source>
-        <translation>Ion Signatur eingeben</translation>
+        <source>Enter MMR signature</source>
+        <translation>MMR Signatur eingeben</translation>
     </message>
     <message>
         <source>The entered address is invalid.</source>
@@ -1720,8 +1720,8 @@ Adresse: %4</translation>
         <translation>Benutzung:</translation>
     </message>
     <message>
-        <source>Send command to -server or xiond</source>
-        <translation>Kommando versenden an -server oder xiond </translation>
+        <source>Send command to -server or mmrd</source>
+        <translation>Kommando versenden an -server oder mmrd </translation>
     </message>
     <message>
         <source>List commands</source>
@@ -1740,7 +1740,7 @@ Adresse: %4</translation>
         <translation>Konfigurationsdatei angeben (Standard: ion.conf)</translation>
     </message>
     <message>
-        <source>Specify pid file (default: xiond.pid)</source>
+        <source>Specify pid file (default: mmrd.pid)</source>
         <translation>PID Datei angeben (Standard: ion.pid)</translation>
     </message>
     <message>
@@ -1996,12 +1996,12 @@ Adresse: %4</translation>
         <translation>Fehler beim Laden von wallet.dat: Wallet beschädigt</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of Ion</source>
-        <translation>Fehler beim Laden wallet.dat. Brieftasche benötigt neuere Version der Ion Brieftasche.</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of MMR</source>
+        <translation>Fehler beim Laden wallet.dat. Brieftasche benötigt neuere Version der MMR Brieftasche.</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart Ion to complete</source>
-        <translation>Brieftasche muss neu geschrieben werden. Starte die Ion Brieftasche neu zum komplettieren.</translation>
+        <source>Wallet needed to be rewritten: restart MMR to complete</source>
+        <translation>Brieftasche muss neu geschrieben werden. Starte die MMR Brieftasche neu zum komplettieren.</translation>
     </message>
     <message>
         <source>Error loading wallet.dat</source>
@@ -2048,7 +2048,7 @@ Adresse: %4</translation>
         <translation>Mit dem Knoten verbinden und versuchen die Verbindung aufrecht zu halten</translation>
     </message>
     <message>
-        <source>Unable to bind to %s on this computer. Ion is probably already running.</source>
+        <source>Unable to bind to %s on this computer. MMR is probably already running.</source>
         <translation>Fehler beim anbinden %s auf diesem Computer. BlaclCoin Client läuft wahrscheinlich bereits.</translation>
     </message>
     <message>

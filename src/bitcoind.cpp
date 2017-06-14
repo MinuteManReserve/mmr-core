@@ -52,12 +52,12 @@ bool AppInit(int argc, char* argv[])
         if (mapArgs.count("-?") || mapArgs.count("--help"))
         {
             // First part of help message is specific to bitcoind / RPC client
-            std::string strUsage = _("Ion version") + " " + FormatFullVersion() + "\n\n" +
+            std::string strUsage = _("MMR version") + " " + FormatFullVersion() + "\n\n" +
                 _("Usage:") + "\n" +
-                  "  xiond [options]                     " + "\n" +
-                  "  xiond [options] <command> [params]  " + _("Send command to -server or xiond") + "\n" +
-                  "  xiond [options] help                " + _("List commands") + "\n" +
-                  "  xiond [options] help <command>      " + _("Get help for a command") + "\n";
+                  "  mmrd [options]                     " + "\n" +
+                  "  mmrd [options] <command> [params]  " + _("Send command to -server or mmrd") + "\n" +
+                  "  mmrd [options] help                " + _("List commands") + "\n" +
+                  "  mmrd [options] help <command>      " + _("Get help for a command") + "\n";
 
             strUsage += "\n" + HelpMessage();
 

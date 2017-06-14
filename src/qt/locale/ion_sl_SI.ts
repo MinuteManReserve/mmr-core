@@ -2,8 +2,8 @@
 <context>
     <name>AboutDialog</name>
     <message>
-        <source>About Ion</source>
-        <translation>O Ion</translation>
+        <source>About MMR</source>
+        <translation>O MMR</translation>
     </message>
     <message>
         <source>&lt;b&gt;Ion&lt;/b&gt; version</source>
@@ -36,8 +36,8 @@
         <translation>&amp;Nov naslov</translation>
     </message>
     <message>
-        <source>These are your Ion addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
-        <translation>To so vaši Ion naslovi za prejemanje plačil. Priporočeno je da vsakemu pošiljatelju namenite drugega in tako dobite večji pregled nad svojimi nakazili.</translation>
+        <source>These are your MMRaddresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <translation>To so vaši MMRnaslovi za prejemanje plačil. Priporočeno je da vsakemu pošiljatelju namenite drugega in tako dobite večji pregled nad svojimi nakazili.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -48,8 +48,8 @@
         <translation>Prikaži &amp;QR kodo</translation>
     </message>
     <message>
-        <source>Sign a message to prove you own a Ion address</source>
-        <translation>Podpišite sporočilo, kot dokazilo lastništva Ion naslova</translation>
+        <source>Sign a message to prove you own a MMRaddress</source>
+        <translation>Podpišite sporočilo, kot dokazilo lastništva MMRnaslova</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -60,8 +60,8 @@
         <translation>Izbriši izbran naslov iz seznama</translation>
     </message>
     <message>
-        <source>Verify a message to ensure it was signed with a specified Ion address</source>
-        <translation>Potrdi sporočilo, da zagotovite, da je bilo podpisano z izbranim Ion naslovom</translation>
+        <source>Verify a message to ensure it was signed with a specified MMRaddress</source>
+        <translation>Potrdi sporočilo, da zagotovite, da je bilo podpisano z izbranim MMRnaslovom</translation>
     </message>
     <message>
         <source>&amp;Delete</source>
@@ -186,8 +186,8 @@
         <translation>Denarnica šifrirana</translation>
     </message>
     <message>
-        <source>Ion will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
-        <translation>Ion se bo sedaj zaprl, da dokonča proces šifriranje. Pomnite, da tudi šifriranje vaše denarnice ne more v celoti zaščititi vaših kovancev pred krajo z zlonamernimi programi in računalniškimi virusi, če ti okužijo vaš računalnik.</translation>
+        <source>MMRwill close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
+        <translation>MMRse bo sedaj zaprl, da dokonča proces šifriranje. Pomnite, da tudi šifriranje vaše denarnice ne more v celoti zaščititi vaših kovancev pred krajo z zlonamernimi programi in računalniškimi virusi, če ti okužijo vaš računalnik.</translation>
     </message>
     <message>
         <source>Wallet encryption failed</source>
@@ -259,8 +259,8 @@
         <translation>Izhod iz aplikacije</translation>
     </message>
     <message>
-        <source>Show information about Ion</source>
-        <translation>Pokaži informacije o Ion</translation>
+        <source>Show information about MMR</source>
+        <translation>Pokaži informacije o MMR</translation>
     </message>
     <message>
         <source>About &amp;Qt</source>
@@ -291,12 +291,12 @@
         <translation>&amp;Izvozi...</translation>
     </message>
     <message>
-        <source>Send coins to a Ion address</source>
-        <translation>Pošlji kovance na Ion naslov</translation>
+        <source>Send coins to a MMRaddress</source>
+        <translation>Pošlji kovance na MMRnaslov</translation>
     </message>
     <message>
-        <source>Modify configuration options for Ion</source>
-        <translation>Spremeni nastavitve za Ion</translation>
+        <source>Modify configuration options for MMR</source>
+        <translation>Spremeni nastavitve za MMR</translation>
     </message>
     <message>
         <source>Export the data in the current tab to a file</source>
@@ -331,8 +331,8 @@
         <translation>Denarnica</translation>
     </message>
     <message>
-        <source>&amp;About Ion</source>
-        <translation>&amp;O Ion</translation>
+        <source>&amp;About MMR</source>
+        <translation>&amp;O MMR</translation>
     </message>
     <message>
         <source>&amp;Show / Hide</source>
@@ -371,12 +371,12 @@
         <translation>[testnet]</translation>
     </message>
     <message>
-        <source>Ion client</source>
-        <translation>Ion program</translation>
+        <source>MMRclient</source>
+        <translation>MMRprogram</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Ion network</source>
-        <translation><numerusform>%n aktivne povezave na Ion omrežje</numerusform><numerusform>%n aktivnih povezav na Ion omrežje</numerusform><numerusform>%n aktivnih povezav na Ion omrežje</numerusform><numerusform>%n aktivnih povezav na Ion omrežje</numerusform></translation>
+        <source>%n active connection(s) to MMR network</source>
+        <translation><numerusform>%n aktivne povezave na MMRomrežje</numerusform><numerusform>%n aktivnih povezav na MMRomrežje</numerusform><numerusform>%n aktivnih povezav na MMRomrežje</numerusform><numerusform>%n aktivnih povezav na MMRomrežje</numerusform></translation>
     </message>
     <message>
         <source>Staking.&lt;br&gt;Your weight is %1&lt;br&gt;Network weight is %2&lt;br&gt;Expected time to earn reward is %3</source>
@@ -439,8 +439,8 @@ Naslov: %4
         <translation>Rokovanje z URI</translation>
     </message>
     <message>
-        <source>URI can not be parsed! This can be caused by an invalid Ion address or malformed URI parameters.</source>
-        <translation>URI ne more biti razčlenjen! To se lahko zgodi zaradi neveljavnega Ion naslova ali slabih parametrov URI.</translation>
+        <source>URI can not be parsed! This can be caused by an invalid MMRaddress or malformed URI parameters.</source>
+        <translation>URI ne more biti razčlenjen! To se lahko zgodi zaradi neveljavnega MMRnaslova ali slabih parametrov URI.</translation>
     </message>
     <message>
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt;</source>
@@ -487,8 +487,8 @@ Naslov: %4
         <translation>Ne deležite</translation>
     </message>
     <message>
-        <source>A fatal error occurred. Ion can no longer continue safely and will quit.</source>
-        <translation>Prišlo je do usodne napake. Program Ion se ne more več varno nadaljevati in se bo zato zaprl. </translation>
+        <source>A fatal error occurred. MMRcan no longer continue safely and will quit.</source>
+        <translation>Prišlo je do usodne napake. Program MMRse ne more več varno nadaljevati in se bo zato zaprl. </translation>
     </message>
 </context>
 <context>
@@ -747,8 +747,8 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot "srednja".
         <translation>Uredi naslov za odlive</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Ion address.</source>
-        <translation>Vneseni naslov "%1" ni veljaven Ion naslov.</translation>
+        <source>The entered address "%1" is not a valid MMRaddress.</source>
+        <translation>Vneseni naslov "%1" ni veljaven MMRnaslov.</translation>
     </message>
     <message>
         <source>Could not unlock wallet.</source>
@@ -833,20 +833,20 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot "srednja".
         <translation>Rezerva</translation>
     </message>
     <message>
-        <source>Automatically start Ion after logging in to the system.</source>
-        <translation>Avtomatično zaženi Ion ob zagonu sistema.</translation>
+        <source>Automatically start MMRafter logging in to the system.</source>
+        <translation>Avtomatično zaženi MMRob zagonu sistema.</translation>
     </message>
     <message>
-        <source>&amp;Start Ion on system login</source>
-        <translation>&amp;Zaženi Ion ob prijavi v sistem</translation>
+        <source>&amp;Start MMRon system login</source>
+        <translation>&amp;Zaženi MMRob prijavi v sistem</translation>
     </message>
     <message>
         <source>&amp;Network</source>
         <translation>&amp;Omrežje</translation>
     </message>
     <message>
-        <source>Automatically open the Ion client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Avtomatično odpri vrata na routerju za Ion program. To deluje le če vaš router podpira UPnP in je ta omogočen. </translation>
+        <source>Automatically open the MMRclient port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Avtomatično odpri vrata na routerju za MMRprogram. To deluje le če vaš router podpira UPnP in je ta omogočen. </translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -897,8 +897,8 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot "srednja".
         <translation>Uporabniški vmesnik &amp;jezik:</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting Ion.</source>
-        <translation>Tu lahko nastavite jezik uporabniškega vmesnika. Nastavitve bodo pričele delovati ob ponovnem zagonu Ion aplikacije. </translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting MMR.</source>
+        <translation>Tu lahko nastavite jezik uporabniškega vmesnika. Nastavitve bodo pričele delovati ob ponovnem zagonu MMRaplikacije. </translation>
     </message>
     <message>
         <source>&amp;Unit to show amounts in:</source>
@@ -937,8 +937,8 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot "srednja".
         <translation>Opozorilo</translation>
     </message>
     <message>
-        <source>This setting will take effect after restarting Ion.</source>
-        <translation>Ta nastavitev bo pričela delovati ob ponovnem zagonu Ion aplikacije</translation>
+        <source>This setting will take effect after restarting MMR.</source>
+        <translation>Ta nastavitev bo pričela delovati ob ponovnem zagonu MMRaplikacije</translation>
     </message>
     <message>
         <source>The supplied proxy address is invalid.</source>
@@ -952,8 +952,8 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot "srednja".
         <translation>Oblika</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Ion network after a connection is established, but this process has not completed yet.</source>
-        <translation>Prikazane informacije so morda zastarele. Vaša denarnica se avtomatično sinhronizira z Ion omrežjem, ko je vzpostavljena povezava, toda ta proces še ni bil zaključen.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the MMR network after a connection is established, but this process has not completed yet.</source>
+        <translation>Prikazane informacije so morda zastarele. Vaša denarnica se avtomatično sinhronizira z MMRomrežjem, ko je vzpostavljena povezava, toda ta proces še ni bil zaključen.</translation>
     </message>
     <message>
         <source>Stake:</source>
@@ -1111,16 +1111,16 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot "srednja".
         <translation>Razhroščevalna dnevniška datoteka</translation>
     </message>
     <message>
-        <source>Open the Ion debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Odpri Ion datoteko zapisov odpravljanja napak iz trenutnega direktorija podatkov. Če so datoteke zapisov velike, to lahko traja nekaj sekund.</translation>
+        <source>Open the MMRdebug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Odpri MMRdatoteko zapisov odpravljanja napak iz trenutnega direktorija podatkov. Če so datoteke zapisov velike, to lahko traja nekaj sekund.</translation>
     </message>
     <message>
         <source>Clear console</source>
         <translation>Počisti konzolo</translation>
     </message>
     <message>
-        <source>Welcome to the Ion RPC console.</source>
-        <translation>Dobrodošli v Ion RPC konzoli.</translation>
+        <source>Welcome to the MMRRPC console.</source>
+        <translation>Dobrodošli v MMRRPC konzoli.</translation>
     </message>
     <message>
         <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
@@ -1380,8 +1380,8 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot "srednja".
         <translation>Kopiraj trenutno izbrani naslov v odložišče</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Ion address</source>
-        <translation>Podpišite sporočilo, kot dokazilo lastništva Ion naslova</translation>
+        <source>Sign the message to prove you own this MMRaddress</source>
+        <translation>Podpišite sporočilo, kot dokazilo lastništva MMRnaslova</translation>
     </message>
     <message>
         <source>Reset all sign message fields</source>
@@ -1400,24 +1400,24 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot "srednja".
         <translation>Naslov s katerim je bilo podpisano sporočilo (npr. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Ion address</source>
-        <translation>Potrdite sporočilo, da zagotovite, da je bilo podpisano z izbranim Ion naslovom</translation>
+        <source>Verify the message to ensure it was signed with the specified MMRaddress</source>
+        <translation>Potrdite sporočilo, da zagotovite, da je bilo podpisano z izbranim MMRnaslovom</translation>
     </message>
     <message>
         <source>Reset all verify message fields</source>
         <translation>Ponastavite vse polja sporočila potrditve</translation>
     </message>
     <message>
-        <source>Enter a Ion address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation>Vnesite Ion naslov (npr. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+        <source>Enter a MMRaddress (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
+        <translation>Vnesite MMRnaslov (npr. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
     </message>
     <message>
         <source>Click "Sign Message" to generate signature</source>
         <translation>Kliknite "Podpiši sporočilo" za ustvaritev podpisa</translation>
     </message>
     <message>
-        <source>Enter Ion signature</source>
-        <translation>Vnesite Ion podpis</translation>
+        <source>Enter MMRsignature</source>
+        <translation>Vnesite MMRpodpis</translation>
     </message>
     <message>
         <source>The entered address is invalid.</source>
@@ -1841,15 +1841,15 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot "srednja".
 <context>
     <name>bitcoin-core</name>
     <message>
-        <source>Ion version</source>
-        <translation>Ion različica</translation>
+        <source>MMRversion</source>
+        <translation>MMRrazličica</translation>
     </message>
     <message>
         <source>Usage:</source>
         <translation>Uporaba:</translation>
     </message>
     <message>
-        <source>Send command to -server or xiond</source>
+        <source>Send command to -server or mmrd</source>
         <translation>Pošlji ukaz na -server ali blackoind</translation>
     </message>
     <message>
@@ -1869,7 +1869,7 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot "srednja".
         <translation>Določi konfiguracijsko datoteko (privzeto: ion.conf)</translation>
     </message>
     <message>
-        <source>Specify pid file (default: xiond.pid)</source>
+        <source>Specify pid file (default: mmrd.pid)</source>
         <translation>Določi pid datoteko (privzeto: ion.pid)</translation>
     </message>
     <message>
@@ -2133,12 +2133,12 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot "srednja".
         <translation>Napaka pri nalaganju wallet.dat: denarnica pokvarjena</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of Ion</source>
-        <translation>Napaka pri nalaganju wallet.dat: denarnica zahteva novejšo verzijo Ion</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of MMR</source>
+        <translation>Napaka pri nalaganju wallet.dat: denarnica zahteva novejšo verzijo MMR</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart Ion to complete</source>
-        <translation>Denarnica mora biti prepisana: ponovno odprite Ion za dokončanje</translation>
+        <source>Wallet needed to be rewritten: restart MMRto complete</source>
+        <translation>Denarnica mora biti prepisana: ponovno odprite MMRza dokončanje</translation>
     </message>
     <message>
         <source>Error loading wallet.dat</source>
@@ -2185,8 +2185,8 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot "srednja".
         <translation>Dodaj vozlišče za povezavo nanj in skušaj le to obdržati odprto</translation>
     </message>
     <message>
-        <source>Unable to bind to %s on this computer. Ion is probably already running.</source>
-        <translation>Navezava v %s  na tem računalniku ni mogoča Ion aplikacija je verjetno že zagnana.</translation>
+        <source>Unable to bind to %s on this computer. MMRis probably already running.</source>
+        <translation>Navezava v %s  na tem računalniku ni mogoča MMRaplikacija je verjetno že zagnana.</translation>
     </message>
     <message>
         <source>Fee per KB to add to transactions you send</source>

@@ -2,12 +2,12 @@
 <context>
     <name>AboutDialog</name>
     <message>
-        <source>About Ion</source>
-        <translation>Acerca de Ion</translation>
+        <source>About MMR</source>
+        <translation>Acerca de MMR</translation>
     </message>
     <message>
-        <source>&lt;b&gt;Ion&lt;/b&gt; version</source>
-        <translation>Versión &lt;b&gt;Ion&lt;/b&gt; .</translation>
+        <source>&lt;b&gt;MMR&lt;/b&gt; version</source>
+        <translation>Versión &lt;b&gt;MMR&lt;/b&gt; .</translation>
     </message>
     </context>
 <context>
@@ -36,8 +36,8 @@
         <translation>&amp;Nova dirección.</translation>
     </message>
     <message>
-        <source>These are your Ion addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
-        <translation>Estas son as túas dIreccións de Ion para recibir os pagos. Pode que quieras asignarlle unha a cada remitente e así reconocer quen te está a pagar.</translation>
+        <source>These are your MMR addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <translation>Estas son as túas dIreccións de MMR para recibir os pagos. Pode que quieras asignarlle unha a cada remitente e así reconocer quen te está a pagar.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -48,8 +48,8 @@
         <translation>Amosar &amp;QR Code</translation>
     </message>
     <message>
-        <source>Sign a message to prove you own a Ion address</source>
-        <translation>Firma a mensaxe para probar que tes unha dirección Ion</translation>
+        <source>Sign a message to prove you own a MMR address</source>
+        <translation>Firma a mensaxe para probar que tes unha dirección MMR</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -60,8 +60,8 @@
         <translation>Borrar a dirección actualmente seleccionada da listaxe</translation>
     </message>
     <message>
-        <source>Verify a message to ensure it was signed with a specified Ion address</source>
-        <translation>Verifica a mensaxe para asegurar que foi asinada por unha concreta dirección de Ion</translation>
+        <source>Verify a message to ensure it was signed with a specified MMR address</source>
+        <translation>Verifica a mensaxe para asegurar que foi asinada por unha concreta dirección de MMR</translation>
     </message>
     <message>
         <source>&amp;Verify Message</source>
@@ -186,8 +186,8 @@
         <translation>Moedeiro encriptado</translation>
     </message>
     <message>
-        <source>Ion will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
-        <translation>Ion pecharase agora para rematar o proceso de encriptación. Recorda que encriptar a túa carteira non te protexe na totalidade do roubo das tuas moedas por infeccións de malware no teu ordenador.</translation>
+        <source>MMR will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
+        <translation>MMR pecharase agora para rematar o proceso de encriptación. Recorda que encriptar a túa carteira non te protexe na totalidade do roubo das tuas moedas por infeccións de malware no teu ordenador.</translation>
     </message>
     <message>
         <source>Wallet encryption failed</source>
@@ -259,8 +259,8 @@
         <translation>Saír da aplicación</translation>
     </message>
     <message>
-        <source>Show information about Ion</source>
-        <translation>Amosa información sobre Ion</translation>
+        <source>Show information about MMR</source>
+        <translation>Amosa información sobre MMR</translation>
     </message>
     <message>
         <source>About &amp;Qt</source>
@@ -291,12 +291,12 @@
         <translation>&amp;Exportar...</translation>
     </message>
     <message>
-        <source>Send coins to a Ion address</source>
-        <translation>Enviar moedas a unha dirección Ion</translation>
+        <source>Send coins to a MMR address</source>
+        <translation>Enviar moedas a unha dirección MMR</translation>
     </message>
     <message>
-        <source>Modify configuration options for Ion</source>
-        <translation>Modificar opcións de configuración para Ion</translation>
+        <source>Modify configuration options for MMR</source>
+        <translation>Modificar opcións de configuración para MMR</translation>
     </message>
     <message>
         <source>Export the data in the current tab to a file</source>
@@ -327,16 +327,16 @@
         <translation>&amp;Verificar mensaxe...</translation>
     </message>
     <message>
-        <source>Ion</source>
-        <translation>Ion</translation>
+        <source>MMR</source>
+        <translation>MMR</translation>
     </message>
     <message>
         <source>Wallet</source>
         <translation>Moedeiro</translation>
     </message>
     <message>
-        <source>&amp;About Ion</source>
-        <translation>&amp;Sobre Ion</translation>
+        <source>&amp;About MMR</source>
+        <translation>&amp;Sobre MMR</translation>
     </message>
     <message>
         <source>&amp;Show / Hide</source>
@@ -375,12 +375,12 @@
         <translation>[testnet]</translation>
     </message>
     <message>
-        <source>Ion client</source>
-        <translation>Cliente Ion</translation>
+        <source>MMR client</source>
+        <translation>Cliente MMR</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Ion network</source>
-        <translation><numerusform>%n conexión activa á red de Ion</numerusform><numerusform>%n conexións activas á red de Ion</numerusform></translation>
+        <source>%n active connection(s) to MMR network</source>
+        <translation><numerusform>%n conexión activa á red de MMR</numerusform><numerusform>%n conexións activas á red de MMR</numerusform></translation>
     </message>
     <message>
         <source>Staking.&lt;br&gt;Your weight is %1&lt;br&gt;Network weight is %2&lt;br&gt;Expected time to earn reward is %3</source>

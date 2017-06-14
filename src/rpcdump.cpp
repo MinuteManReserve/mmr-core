@@ -187,7 +187,7 @@ Value importaddress(const Array& params, bool fHelp)
         std::vector<unsigned char> data(ParseHex(params[0].get_str()));
         script = CScript(data.begin(), data.end());
     } else {
-        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid Ion address or script");
+        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid MMR address or script");
     }
 
     string strLabel = "";
@@ -327,7 +327,7 @@ Value dumpprivkey(const Array& params, bool fHelp)
     string strAddress = params[0].get_str();
     CIonAddress address;
     if (!address.SetString(strAddress))
-        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid Ion address");
+        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid MMR address");
     if (fWalletUnlockStakingOnly)
         throw JSONRPCError(RPC_WALLET_UNLOCK_NEEDED, "Wallet is unlocked for staking only.");
     CKeyID keyID;
@@ -370,7 +370,7 @@ Value dumpwallet(const Array& params, bool fHelp)
     std::sort(vKeyBirth.begin(), vKeyBirth.end());
 
     // produce output
-    file << strprintf("# Wallet dump created by Ion %s (%s)\n", CLIENT_BUILD, CLIENT_DATE);
+    file << strprintf("# Wallet dump created by MMR %s (%s)\n", CLIENT_BUILD, CLIENT_DATE);
     file << strprintf("# * Created on %s\n", EncodeDumpTime(GetTime()));
     file << strprintf("# * Best block at time of backup was %i (%s),\n", nBestHeight, hashBestChain.ToString());
     file << strprintf("#   mined on %s\n", EncodeDumpTime(pindexBest->nTime));

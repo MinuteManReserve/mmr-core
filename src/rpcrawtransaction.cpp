@@ -1,6 +1,6 @@
 // Copyright (c) 2010 Satoshi Nakamoto
 // Copyright (c) 2009-2017 The Bitcoin developers
-// Copyright (c) 2017 Empinel/The Ion Developers
+// Copyright (c) 2017 Empinel/The MMR Developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -171,7 +171,7 @@ Value listunspent(const Array& params, bool fHelp)
         {
             CIonAddress address(input.get_str());
             if (!address.IsValid())
-                throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, string("Invalid Ion address: ")+input.get_str());
+                throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, string("Invalid MMR address: ")+input.get_str());
             if (setAddress.count(address))
                 throw JSONRPCError(RPC_INVALID_PARAMETER, string("Invalid parameter, duplicated address: ")+input.get_str());
            setAddress.insert(address);
@@ -277,7 +277,7 @@ Value createrawtransaction(const Array& params, bool fHelp)
     {
         CIonAddress address(s.name_);
         if (!address.IsValid())
-            throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, string("Invalid Ion address: ")+s.name_);
+            throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, string("Invalid MMR address: ")+s.name_);
 
         if (setAddress.count(address))
             throw JSONRPCError(RPC_INVALID_PARAMETER, string("Invalid parameter, duplicated address: ")+s.name_);

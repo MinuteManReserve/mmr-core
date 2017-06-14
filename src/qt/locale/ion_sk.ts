@@ -2,7 +2,7 @@
 <context>
     <name>AboutDialog</name>
     <message>
-        <source>About Ion</source>
+        <source>About MMR</source>
         <translation>O Ione</translation>
     </message>
     <message>
@@ -36,8 +36,8 @@
         <translation>&amp;Nová adresa</translation>
     </message>
     <message>
-        <source>These are your Ion addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
-        <translation>Toto sú vaše Ion adresy pre príjem platieb. Možno budete chcieť dať inú každému odosielateľovi, aby ste mohli sledovať, kto Vám platí.</translation>
+        <source>These are your MMRaddresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <translation>Toto sú vaše MMRadresy pre príjem platieb. Možno budete chcieť dať inú každému odosielateľovi, aby ste mohli sledovať, kto Vám platí.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -48,8 +48,8 @@
         <translation>Ukáž &amp;QR kód</translation>
     </message>
     <message>
-        <source>Sign a message to prove you own a Ion address</source>
-        <translation>Podpísať správu ako dôkaz, že vlastníte túto Ion adresu</translation>
+        <source>Sign a message to prove you own a MMRaddress</source>
+        <translation>Podpísať správu ako dôkaz, že vlastníte túto MMRadresu</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -60,8 +60,8 @@
         <translation>Vymazať aktuálne vybranú adresu zo zoznamu</translation>
     </message>
     <message>
-        <source>Verify a message to ensure it was signed with a specified Ion address</source>
-        <translation>Overte správu, aby ste zabezpečili, že bola podpísaná s určitou Ion adresou</translation>
+        <source>Verify a message to ensure it was signed with a specified MMRaddress</source>
+        <translation>Overte správu, aby ste zabezpečili, že bola podpísaná s určitou MMRadresou</translation>
     </message>
     <message>
         <source>&amp;Verify Message</source>
@@ -194,8 +194,8 @@
         <translation>Zadajte nové heslo k peňaženke.&lt;br/&gt;Prosím použite heslo s dĺžkou &lt;b&gt;desať alebo viac náhodných znakov&lt;/b&gt;, prípadne &lt;b&gt;osem alebo viac slov&lt;/b&gt;.</translation>
     </message>
     <message>
-        <source>Ion will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
-        <translation>Ion sa teraz zavrie aby dokončil proces zašifrovania. Nezabudnite, že zašifrovanie vašej peňaženky nemôže plne chrániť vaše mince pred krádežou malwarom, ktorý napadol váš počítač.</translation>
+        <source>MMRwill close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
+        <translation>MMRsa teraz zavrie aby dokončil proces zašifrovania. Nezabudnite, že zašifrovanie vašej peňaženky nemôže plne chrániť vaše mince pred krádežou malwarom, ktorý napadol váš počítač.</translation>
     </message>
     <message>
         <source>Wallet encryption failed</source>
@@ -267,8 +267,8 @@
         <translation>Ukončiť program</translation>
     </message>
     <message>
-        <source>Show information about Ion</source>
-        <translation>Zobraziť informácie o Ion</translation>
+        <source>Show information about MMR</source>
+        <translation>Zobraziť informácie o MMR</translation>
     </message>
     <message>
         <source>About &amp;Qt</source>
@@ -299,12 +299,12 @@
         <translation>&amp;Export...</translation>
     </message>
     <message>
-        <source>Send coins to a Ion address</source>
-        <translation>Poslať mince na Ion adresu</translation>
+        <source>Send coins to a MMRaddress</source>
+        <translation>Poslať mince na MMRadresu</translation>
     </message>
     <message>
-        <source>Modify configuration options for Ion</source>
-        <translation>Upraviť možnosti konfigurácie pre Ion</translation>
+        <source>Modify configuration options for MMR</source>
+        <translation>Upraviť možnosti konfigurácie pre MMR</translation>
     </message>
     <message>
         <source>Export the data in the current tab to a file</source>
@@ -343,8 +343,8 @@
         <translation>Peňaženka</translation>
     </message>
     <message>
-        <source>&amp;About Ion</source>
-        <translation>&amp;O Ion</translation>
+        <source>&amp;About MMR</source>
+        <translation>&amp;O MMR</translation>
     </message>
     <message>
         <source>&amp;Show / Hide</source>
@@ -383,12 +383,12 @@
         <translation>[testovacia sieť]</translation>
     </message>
     <message>
-        <source>Ion client</source>
-        <translation>Ion klient</translation>
+        <source>MMRclient</source>
+        <translation>MMRklient</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Ion network</source>
-        <translation><numerusform>%n aktívne spojenie s Ion sieťov</numerusform><numerusform>%n aktívnych spojení s Ion sieťov</numerusform><numerusform>%n aktívnych spojení s Ion sieťou</numerusform></translation>
+        <source>%n active connection(s) to MMR network</source>
+        <translation><numerusform>%n aktívne spojenie s MMRsieťov</numerusform><numerusform>%n aktívnych spojení s MMRsieťov</numerusform><numerusform>%n aktívnych spojení s MMRsieťou</numerusform></translation>
     </message>
     <message>
         <source>Staking.&lt;br&gt;Your weight is %1&lt;br&gt;Network weight is %2&lt;br&gt;Expected time to earn reward is %3</source>
@@ -462,8 +462,8 @@ Adresa: %4</translation>
         <translation>URI manipulácia</translation>
     </message>
     <message>
-        <source>URI can not be parsed! This can be caused by an invalid Ion address or malformed URI parameters.</source>
-        <translation>URI nemožno analyzovať! Toto môže byť spôsobené neplatnou Ion adresu alebo chybnými URI parametrami.</translation>
+        <source>URI can not be parsed! This can be caused by an invalid MMRaddress or malformed URI parameters.</source>
+        <translation>URI nemožno analyzovať! Toto môže byť spôsobené neplatnou MMRadresu alebo chybnými URI parametrami.</translation>
     </message>
     <message>
         <source>Wallet is &lt;b&gt;not encrypted&lt;/b&gt;</source>
@@ -558,8 +558,8 @@ Adresa: %4</translation>
         <translation>Nestávkuje sa</translation>
     </message>
     <message>
-        <source>A fatal error occurred. Ion can no longer continue safely and will quit.</source>
-        <translation>Došlo k závažnej chybe. Ion už nemôže pokračovať bezpečne a bude ukončený.</translation>
+        <source>A fatal error occurred. MMRcan no longer continue safely and will quit.</source>
+        <translation>Došlo k závažnej chybe. MMRuž nemôže pokračovať bezpečne a bude ukončený.</translation>
     </message>
 </context>
 <context>
@@ -822,8 +822,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
         <translation>Zadaná adresa "%1" sa už nachádza v adresári.</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Ion address.</source>
-        <translation>Zadaná adresa "%1" nie je platnou Ion adresou.</translation>
+        <source>The entered address "%1" is not a valid MMRaddress.</source>
+        <translation>Zadaná adresa "%1" nie je platnou MMRadresou.</translation>
     </message>
     <message>
         <source>Could not unlock wallet.</source>
@@ -908,20 +908,20 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
         <translation>Rezerva</translation>
     </message>
     <message>
-        <source>Automatically start Ion after logging in to the system.</source>
-        <translation>Automaticky spustiť Ion po prihlásení sa do systému.</translation>
+        <source>Automatically start MMRafter logging in to the system.</source>
+        <translation>Automaticky spustiť MMRpo prihlásení sa do systému.</translation>
     </message>
     <message>
-        <source>&amp;Start Ion on system login</source>
-        <translation>&amp;Spustiť Ion pri prihlásení do systému</translation>
+        <source>&amp;Start MMRon system login</source>
+        <translation>&amp;Spustiť MMRpri prihlásení do systému</translation>
     </message>
     <message>
         <source>&amp;Network</source>
         <translation>Sieť</translation>
     </message>
     <message>
-        <source>Automatically open the Ion client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Automaticky otvoriť port klienta Ion na routeri. To funguje iba vtedy, ak váš router podporuje UPnP a je povolené.</translation>
+        <source>Automatically open the MMRclient port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Automaticky otvoriť port klienta MMRna routeri. To funguje iba vtedy, ak váš router podporuje UPnP a je povolené.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -972,8 +972,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
         <translation>Jazyk používateľského rozhrania:</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting Ion.</source>
-        <translation>Tu môžete nastaviť jazyk používateľského rozhrania. Toto nastavenie sa prejaví až po reštartovaní Ion.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting MMR.</source>
+        <translation>Tu môžete nastaviť jazyk používateľského rozhrania. Toto nastavenie sa prejaví až po reštartovaní MMR.</translation>
     </message>
     <message>
         <source>&amp;Unit to show amounts in:</source>
@@ -1012,8 +1012,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
         <translation>Upozornenie</translation>
     </message>
     <message>
-        <source>This setting will take effect after restarting Ion.</source>
-        <translation>Toto nastavenie sa prejaví až po reštartovaní Ion.</translation>
+        <source>This setting will take effect after restarting MMR.</source>
+        <translation>Toto nastavenie sa prejaví až po reštartovaní MMR.</translation>
     </message>
     <message>
         <source>The supplied proxy address is invalid.</source>
@@ -1027,8 +1027,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
         <translation>Forma</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Ion network after a connection is established, but this process has not completed yet.</source>
-        <translation>Zobrazené informácie môžu byť zastaralé. Vaša peňaženka sa automaticky synchronizuje so sieťou Ion po nadviazaní spojenia, ale tento proces nie je ešte dokončený.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the MMR network after a connection is established, but this process has not completed yet.</source>
+        <translation>Zobrazené informácie môžu byť zastaralé. Vaša peňaženka sa automaticky synchronizuje so sieťou MMRpo nadviazaní spojenia, ale tento proces nie je ešte dokončený.</translation>
     </message>
     <message>
         <source>Stake:</source>
@@ -1071,7 +1071,7 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     <name>PaymentServer</name>
     <message>
         <source>Cannot start ion: click-to-pay handler</source>
-        <translation>Ion sa nedá spustiť: click-to-pay handler</translation>
+        <translation>MMRsa nedá spustiť: click-to-pay handler</translation>
     </message>
 </context>
 <context>
@@ -1210,16 +1210,16 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
         <translation>Súbor denníka ladenia</translation>
     </message>
     <message>
-        <source>Open the Ion debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Otvorte Ion súbor denníku ladenia z aktuálneho adresára dát. To môže trvať niekoľko sekúnd pre veľké súbory denníka.</translation>
+        <source>Open the MMRdebug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Otvorte MMRsúbor denníku ladenia z aktuálneho adresára dát. To môže trvať niekoľko sekúnd pre veľké súbory denníka.</translation>
     </message>
     <message>
         <source>Clear console</source>
         <translation>Vymazať konzolu</translation>
     </message>
     <message>
-        <source>Welcome to the Ion RPC console.</source>
-        <translation>Vitajte v konzole Ion RPC.</translation>
+        <source>Welcome to the MMRRPC console.</source>
+        <translation>Vitajte v konzole MMRRPC.</translation>
     </message>
     <message>
         <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
@@ -1499,8 +1499,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
         <translation>Skopírujte aktuálny podpis do schránky</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Ion address</source>
-        <translation>Podpísať správu ako dôkaz, že vlastníte túto Ion adresu</translation>
+        <source>Sign the message to prove you own this MMRaddress</source>
+        <translation>Podpísať správu ako dôkaz, že vlastníte túto MMRadresu</translation>
     </message>
     <message>
         <source>Reset all sign message fields</source>
@@ -1523,24 +1523,24 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
         <translation>Adresa správy bola podpísaná (napr. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Ion address</source>
-        <translation>Overte správu, aby ste sa ubezpečili, že bola podpísaná s danou Ion adresou</translation>
+        <source>Verify the message to ensure it was signed with the specified MMRaddress</source>
+        <translation>Overte správu, aby ste sa ubezpečili, že bola podpísaná s danou MMRadresou</translation>
     </message>
     <message>
         <source>Reset all verify message fields</source>
         <translation>Obnoviť všetky polia pre overenie správy</translation>
     </message>
     <message>
-        <source>Enter a Ion address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation>Zadajte Ion adresu (napr. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+        <source>Enter a MMRaddress (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
+        <translation>Zadajte MMRadresu (napr. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
     </message>
     <message>
         <source>Click "Sign Message" to generate signature</source>
         <translation>Kliknite "Podpísať správu" pre získanie podpisu</translation>
     </message>
     <message>
-        <source>Enter Ion signature</source>
-        <translation>Zadajte Ion podpis</translation>
+        <source>Enter MMRsignature</source>
+        <translation>Zadajte MMRpodpis</translation>
     </message>
     <message>
         <source>The entered address is invalid.</source>
@@ -1972,16 +1972,16 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
 <context>
     <name>bitcoin-core</name>
     <message>
-        <source>Ion version</source>
-        <translation>Ion verzia</translation>
+        <source>MMRversion</source>
+        <translation>MMRverzia</translation>
     </message>
     <message>
         <source>Usage:</source>
         <translation>Použitie:</translation>
     </message>
     <message>
-        <source>Send command to -server or xiond</source>
-        <translation>Pošli príkaz na -server alebo xiond</translation>
+        <source>Send command to -server or mmrd</source>
+        <translation>Pošli príkaz na -server alebo mmrd</translation>
     </message>
     <message>
         <source>List commands</source>
@@ -2000,8 +2000,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
         <translation>Zadajte konfiguračný súbor (predvolené: ion.conf)</translation>
     </message>
     <message>
-        <source>Specify pid file (default: xiond.pid)</source>
-        <translation>Zadajte pid súbor (predvolené: xiond.pid)</translation>
+        <source>Specify pid file (default: mmrd.pid)</source>
+        <translation>Zadajte pid súbor (predvolené: mmrd.pid)</translation>
     </message>
     <message>
         <source>Specify wallet file (within data directory)</source>
@@ -2021,7 +2021,7 @@ rpcpassword=%s
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s "Ion Alert" admin@foo.com
+for example: alertnotify=echo %%s | mail -s "MMRAlert" admin@foo.com
 </source>
         <translation>%s, musíte nastaviť rpcpassword v konfiguračnom súbore:
 %s
@@ -2032,7 +2032,7 @@ rpcpassword=%s
 Užívateľské meno a heslo NESMIE byť rovnaké.
 Ak súbor neexistuje, vytvorte ho s právami "môže čítať iba vlastník".
 Odporúča sa tiež nastaviť "alertnotify", takže budete upozornení na problémy,
-napríklad: alertnotify=echo %%s | mail -s "Ion upozornenie" admin@foo.com
+napríklad: alertnotify=echo %%s | mail -s "MMRupozornenie" admin@foo.com
 </translation>
     </message>
     <message>
@@ -2316,8 +2316,8 @@ napríklad: alertnotify=echo %%s | mail -s "Ion upozornenie" admin@foo.com
         <translation>Súkromný kľúč servra (predvolené: server.pem)</translation>
     </message>
     <message>
-        <source>Initialization sanity check failed. Ion is shutting down.</source>
-        <translation>Úvodné kontrolné testy zlyhali. Ion sa teraz zatvori.</translation>
+        <source>Initialization sanity check failed. MMRis shutting down.</source>
+        <translation>Úvodné kontrolné testy zlyhali. MMRsa teraz zatvori.</translation>
     </message>
     <message>
         <source>Error: Wallet unlocked for staking only, unable to create transaction.</source>
@@ -2356,12 +2356,12 @@ napríklad: alertnotify=echo %%s | mail -s "Ion upozornenie" admin@foo.com
         <translation>Chyba načítania wallet.dat: Peňaženka je poškodená</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of Ion</source>
-        <translation>Chyba pri načítaní wallet.dat: Peňaženka vyžaduje novšiu verziu Ion</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of MMR</source>
+        <translation>Chyba pri načítaní wallet.dat: Peňaženka vyžaduje novšiu verziu MMR</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart Ion to complete</source>
-        <translation>Peňaženka potrebuje byť prepísaná: reštartujte Ion k dokončeniu</translation>
+        <source>Wallet needed to be rewritten: restart MMRto complete</source>
+        <translation>Peňaženka potrebuje byť prepísaná: reštartujte MMRk dokončeniu</translation>
     </message>
     <message>
         <source>Error loading wallet.dat</source>
@@ -2408,8 +2408,8 @@ napríklad: alertnotify=echo %%s | mail -s "Ion upozornenie" admin@foo.com
         <translation>Pridať nód na pripojenie a pokus o udržanie pripojenia otvoreného</translation>
     </message>
     <message>
-        <source>Unable to bind to %s on this computer. Ion is probably already running.</source>
-        <translation>Nemôžem sa pripojiť na %s na tomto počítači. Ion je pravdepodobne už beží.</translation>
+        <source>Unable to bind to %s on this computer. MMRis probably already running.</source>
+        <translation>Nemôžem sa pripojiť na %s na tomto počítači. MMRje pravdepodobne už beží.</translation>
     </message>
     <message>
         <source>Fee per KB to add to transactions you send</source>
@@ -2432,8 +2432,8 @@ napríklad: alertnotify=echo %%s | mail -s "Ion upozornenie" admin@foo.com
         <translation>Neplatná suma pre -mininput=&lt;amount&gt;: '%s'</translation>
     </message>
     <message>
-        <source>Cannot obtain a lock on data directory %s. Ion is probably already running.</source>
-        <translation>Nedá sa zamknúť dátová zložka %s. Ion je pravdepodobne už spustený</translation>
+        <source>Cannot obtain a lock on data directory %s. MMRis probably already running.</source>
+        <translation>Nedá sa zamknúť dátová zložka %s. MMRje pravdepodobne už spustený</translation>
     </message>
     <message>
         <source>Error initializing wallet database environment %s!</source>

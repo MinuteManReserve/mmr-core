@@ -2,12 +2,12 @@
 <context>
     <name>AboutDialog</name>
     <message>
-        <source>About Ion</source>
-        <translation>A Ion-ról</translation>
+        <source>About MMR</source>
+        <translation>A MMR-ról</translation>
     </message>
     <message>
-        <source>&lt;b&gt;Ion&lt;/b&gt; version</source>
-        <translation>&lt;b&gt;Ion&lt;/b&gt; verzió</translation>
+        <source>&lt;b&gt;MMR&lt;/b&gt; version</source>
+        <translation>&lt;b&gt;MMR&lt;/b&gt; verzió</translation>
     </message>
     </context>
 <context>
@@ -36,8 +36,8 @@
         <translation>&amp;Új Cím</translation>
     </message>
     <message>
-        <source>These are your Ion addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
-        <translation>Ezek a Ion-címeid a fizetések fogadásához. Érdemes minden küldőnek egy külön címet létrehozni, hogy könnyebben követhesd személyenként a tranzakciókat.</translation>
+        <source>These are your MMR addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <translation>Ezek a MMR-címeid a fizetések fogadásához. Érdemes minden küldőnek egy külön címet létrehozni, hogy könnyebben követhesd személyenként a tranzakciókat.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -48,8 +48,8 @@
         <translation>&amp;QR Kód Mutatása</translation>
     </message>
     <message>
-        <source>Sign a message to prove you own a Ion address</source>
-        <translation>Írj alá egy üzenetet, hogy bizonyíthasd egy Ion-cím birtoklását</translation>
+        <source>Sign a message to prove you own a MMR address</source>
+        <translation>Írj alá egy üzenetet, hogy bizonyíthasd egy MMR-cím birtoklását</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -60,8 +60,8 @@
         <translation>A kiválasztott cím törlése a listáról</translation>
     </message>
     <message>
-        <source>Verify a message to ensure it was signed with a specified Ion address</source>
-        <translation>Hitelesíts egy üzenetet ahhoz, hogy bebizonyosodjon Ion-cím alapján a feladó kiléte</translation>
+        <source>Verify a message to ensure it was signed with a specified MMR address</source>
+        <translation>Hitelesíts egy üzenetet ahhoz, hogy bebizonyosodjon MMR-cím alapján a feladó kiléte</translation>
     </message>
     <message>
         <source>&amp;Verify Message</source>

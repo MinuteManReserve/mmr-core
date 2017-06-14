@@ -1,6 +1,6 @@
 Enabling SSL on original client daemon
 ======================================
-By default, Ion allows JSON-RPC commands to be sent to http://localhost:12705
+By default, MMR allows JSON-RPC commands to be sent to http://localhost:12705
 and accepts connections only from the localhost.
 
 JSON-RPC Over SSL Setup
@@ -14,12 +14,12 @@ for this to work properly.
     * openssl req -new -x509 -nodes -sha1 -days 3650 -key server.pem > server.cert
     (NOTE: you should NOT enter a passphrase)
 
-2. Configure Ion to use SSL
-    * Stop your current xiond or ionx-Qt
+2. Configure MMR to use SSL
+    * Stop your current mmrd or ionx-Qt
     * Edit the ion.conf and add
       rpcssl=1
 
-3. Restart Ion to make these changes take effect.
+3. Restart MMR to make these changes take effect.
 
 4. Optionally you can test SSL functionality using the openssl s_client command
     * openssl s_client -connect localhost:15004

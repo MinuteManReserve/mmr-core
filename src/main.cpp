@@ -74,7 +74,7 @@ map<uint256, set<uint256> > mapOrphanTransactionsByPrev;
 // Constant stuff for coinbase transactions we create:
 CScript COINBASE_FLAGS;
 
-const string strMessageMagic = "Ion Signed Message:\n";
+const string strMessageMagic = "MMR Signed Message:\n";
 
 std::set<uint256> setValidatedTx;
 
@@ -2515,9 +2515,9 @@ bool CBlock::CheckBlock(bool fCheckPOW, bool fCheckMerkleRoot, bool fCheckSig) c
 
     // ----------- masternode payments -----------
 
-    bool MasternodePayments = true;
+    bool MasternodePayments = false;
     bool fIsInitialDownload = IsInitialBlockDownload();
-
+    if(nTime > START_MASTERNODE_PAYMENTS) MasternodePayments = true;
     if (!fIsInitialDownload)
     {
         if(MasternodePayments)

@@ -16,7 +16,7 @@
 #include <math.h>
 #include <stdint.h> 
 
-unsigned int nStakeMinAge       = 1 * 60 * 60;
+unsigned int nStakeMinAge       = 1 * 60 * 60 * 24 * 30; // 30 days
 unsigned int nModifierInterval  = 2 * 60 * 60;
 
 uint256 CBlock::GetHash() const {
@@ -41,7 +41,7 @@ int64_t GetCoinbaseValue(int nHeight, CAmount nFees)
     CAmount nSubsidy = 0;
 
 	if(nHeight == 1) {
-		nSubsidy = 16400000 * COIN;
+		nSubsidy = 100000000 * COIN;
 	}
 
     return nSubsidy;
@@ -50,21 +50,7 @@ int64_t GetCoinbaseValue(int nHeight, CAmount nFees)
 // miner's coin stake reward based on coin age spent (coin-days)
 int64_t GetCoinstakeValue(int64_t nCoinAge, CAmount nFees, int nHeight)
 {
-	CAmount nSubsidy = 0.2 * COIN;
-
-	if(nHeight <= 125146) {
-		nSubsidy = 23 * COIN;
-	} else if(nHeight <= 568622) {
-		nSubsidy = 17 * COIN;
-	} else if(nHeight <= 1012098) {
-		nSubsidy = 11.5 * COIN;
-	} else if(nHeight <= 1455574) {
-		nSubsidy = 5.75 * COIN;
-	} else if(nHeight <= 3675950) {
-		nSubsidy = 1.85 * COIN;
-	} else {
-		nSubsidy = 0.2 * COIN;
-	}
+	CAmount nSubsidy = 0.15 * COIN;
 
     return nSubsidy + nFees;
 }

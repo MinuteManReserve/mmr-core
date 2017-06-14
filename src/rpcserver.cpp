@@ -1,6 +1,6 @@
 // Copyright (c) 2010 Satoshi Nakamoto
 // Copyright (c) 2009-2017 The Bitcoin developers
-// Copyright (c) 2017 Empinel/The Ion Developers
+// Copyright (c) 2017 Empinel/The MMR Developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -205,10 +205,10 @@ Value stop(const Array& params, bool fHelp)
     if (fHelp || params.size() > 1)
         throw runtime_error(
             "stop\n"
-            "Stop Ion server.");
+            "Stop MMR server.");
     // Shutdown will take long enough that the response should get back
     StartShutdown();
-    return "Ion server stopping";
+    return "MMR server stopping";
 }
 
 
@@ -512,7 +512,7 @@ void StartRPCThreads()
     {
         unsigned char rand_pwd[32];
         GetRandBytes(rand_pwd, 32);
-        string strWhatAmI = "To use xiond";
+        string strWhatAmI = "To use mmrd";
         if (mapArgs.count("-server"))
             strWhatAmI = strprintf(_("To use the %s option"), "\"-server\"");
         else if (mapArgs.count("-daemon"))
@@ -527,7 +527,7 @@ void StartRPCThreads()
               "The username and password MUST NOT be the same.\n"
               "If the file does not exist, create it with owner-readable-only file permissions.\n"
               "It is also recommended to set alertnotify so you are notified of problems;\n"
-              "for example: alertnotify=echo %%s | mail -s \"Ion Alert\" admin@foo.com\n"),
+              "for example: alertnotify=echo %%s | mail -s \"MMR Alert\" admin@foo.com\n"),
                 strWhatAmI,
                 GetConfigFile().string(),
                 EncodeBase58(&rand_pwd[0],&rand_pwd[0]+32)),
@@ -860,7 +860,7 @@ json_spirit::Value CRPCTable::execute(const std::string &strMethod, const json_s
 }
 
 std::string HelpExampleCli(string methodname, string args){
-    return "> xiond " + methodname + " " + args + "\n";
+    return "> mmrd " + methodname + " " + args + "\n";
 }
 
 std::string HelpExampleRpc(string methodname, string args){

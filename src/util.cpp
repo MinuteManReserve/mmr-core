@@ -1085,7 +1085,7 @@ boost::filesystem::path GetDefaultDataDir()
     // Unix: ~/.ionomy
 #ifdef WIN32
     // Windows
-    return GetSpecialFolderPath(CSIDL_APPDATA) / "ionomy";
+    return GetSpecialFolderPath(CSIDL_APPDATA) / "mmr";
 #else
     fs::path pathRet;
     char* pszHome = getenv("HOME");
@@ -1097,10 +1097,10 @@ boost::filesystem::path GetDefaultDataDir()
     // Mac
     pathRet /= "Library/Application Support";
     fs::create_directory(pathRet);
-    return pathRet / "ionomy";
+    return pathRet / "mmr";
 #else
     // Unix
-    return pathRet / ".ionomy";
+    return pathRet / ".mmr";
 #endif
 #endif
 }
@@ -1194,7 +1194,7 @@ void ReadConfigFile(map<string, string>& mapSettingsRet,
 
 boost::filesystem::path GetPidFile()
 {
-    boost::filesystem::path pathPidFile(GetArg("-pid", "xiond.pid"));
+    boost::filesystem::path pathPidFile(GetArg("-pid", "mmrd.pid"));
     if (!pathPidFile.is_complete()) pathPidFile = GetDataDir() / pathPidFile;
     return pathPidFile;
 }

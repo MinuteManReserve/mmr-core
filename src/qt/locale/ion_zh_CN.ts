@@ -2,7 +2,7 @@
 <context>
     <name>AboutDialog</name>
     <message>
-        <source>About Ion</source>
+        <source>About MMR</source>
         <translation>关于黑币</translation>
     </message>
     <message>
@@ -36,7 +36,7 @@
         <translation>新建地址(&amp;N)</translation>
     </message>
     <message>
-        <source>These are your Ion addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <source>These are your MMRaddresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
         <translation>这是您用来接收支付的黑币地址列表。为不同的支付方建立不同的地址以便于了解支付来源。</translation>
     </message>
     <message>
@@ -48,7 +48,7 @@
         <translation>显示二维码(&amp;Q)</translation>
     </message>
     <message>
-        <source>Sign a message to prove you own a Ion address</source>
+        <source>Sign a message to prove you own a MMRaddress</source>
         <translation>对信息进行签名以证明您对该黑币地址的所有权</translation>
     </message>
     <message>
@@ -60,7 +60,7 @@
         <translation>从列表中删除选中的地址</translation>
     </message>
     <message>
-        <source>Verify a message to ensure it was signed with a specified Ion address</source>
+        <source>Verify a message to ensure it was signed with a specified MMRaddress</source>
         <translation>验证信息以保证其经过指定黑币地址的签名</translation>
     </message>
     <message>
@@ -194,7 +194,7 @@
         <translation>输入钱包的新密码。&lt;br/&gt;使用的密码请至少包含&lt;b&gt;10个以上随机字符&lt;/&gt;，或者是&lt;b&gt;8个以上的单词&lt;/b&gt;。</translation>
     </message>
     <message>
-        <source>Ion will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
+        <source>MMRwill close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
         <translation>黑币客户端即将关闭以完成加密过程。请记住，加密钱包并不能完全防止您的电子货币被入侵您计算机的木马软件盗窃。</translation>
     </message>
     <message>
@@ -267,7 +267,7 @@
         <translation>退出程序</translation>
     </message>
     <message>
-        <source>Show information about Ion</source>
+        <source>Show information about MMR</source>
         <translation>显示关于黑币的信息</translation>
     </message>
     <message>
@@ -299,11 +299,11 @@
         <translation>导出(&amp;E)</translation>
     </message>
     <message>
-        <source>Send coins to a Ion address</source>
+        <source>Send coins to a MMRaddress</source>
         <translation>向指定的地址发送黑币</translation>
     </message>
     <message>
-        <source>Modify configuration options for Ion</source>
+        <source>Modify configuration options for MMR</source>
         <translation>更改设置选项</translation>
     </message>
     <message>
@@ -343,7 +343,7 @@
         <translation>钱包</translation>
     </message>
     <message>
-        <source>&amp;About Ion</source>
+        <source>&amp;About MMR</source>
         <translation>关于黑币(&amp;A)</translation>
     </message>
     <message>
@@ -383,11 +383,11 @@
         <translation>[测试网络]</translation>
     </message>
     <message>
-        <source>Ion client</source>
+        <source>MMRclient</source>
         <translation>黑币客户端</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Ion network</source>
+        <source>%n active connection(s) to MMR network</source>
         <translation><numerusform>与黑币网络建立了 %n 个连接</numerusform></translation>
     </message>
     <message>
@@ -463,7 +463,7 @@ Address: %4
         <translation>URI处理</translation>
     </message>
     <message>
-        <source>URI can not be parsed! This can be caused by an invalid Ion address or malformed URI parameters.</source>
+        <source>URI can not be parsed! This can be caused by an invalid MMRaddress or malformed URI parameters.</source>
         <translation>无法解析URI：无效的黑币地址或错误的URI参数。</translation>
     </message>
     <message>
@@ -559,7 +559,7 @@ Address: %4
         <translation>未进行权益增值</translation>
     </message>
     <message>
-        <source>A fatal error occurred. Ion can no longer continue safely and will quit.</source>
+        <source>A fatal error occurred. MMRcan no longer continue safely and will quit.</source>
         <translation>发生严重错误，黑币客户端即将关闭。</translation>
     </message>
 </context>
@@ -818,7 +818,7 @@ This label turns red, if the priority is smaller than "medium".
         <translation>输入的地址“%1”已经存在于地址簿中。</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Ion address.</source>
+        <source>The entered address "%1" is not a valid MMRaddress.</source>
         <translation>“%1” 不是有效的黑币地址。</translation>
     </message>
     <message>
@@ -904,11 +904,11 @@ This label turns red, if the priority is smaller than "medium".
         <translation>保留</translation>
     </message>
     <message>
-        <source>Automatically start Ion after logging in to the system.</source>
+        <source>Automatically start MMRafter logging in to the system.</source>
         <translation>开机自动启动黑币客户端</translation>
     </message>
     <message>
-        <source>&amp;Start Ion on system login</source>
+        <source>&amp;Start MMRon system login</source>
         <translation>开机时自动启动黑币客户端(&amp;S)</translation>
     </message>
     <message>
@@ -916,7 +916,7 @@ This label turns red, if the priority is smaller than "medium".
         <translation>网络(&amp;N)</translation>
     </message>
     <message>
-        <source>Automatically open the Ion client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <source>Automatically open the MMRclient port on the router. This only works when your router supports UPnP and it is enabled.</source>
         <translation>路由器自动打开黑币客户端端口。该功能仅在路由器开启UPnP支持时有效。</translation>
     </message>
     <message>
@@ -968,7 +968,7 @@ This label turns red, if the priority is smaller than "medium".
         <translation>用户界面语言(&amp;L)：</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting Ion.</source>
+        <source>The user interface language can be set here. This setting will take effect after restarting MMR.</source>
         <translation>在此设置用户界面语言。重启黑币客户端后设置生效。</translation>
     </message>
     <message>
@@ -1008,7 +1008,7 @@ This label turns red, if the priority is smaller than "medium".
         <translation>警告</translation>
     </message>
     <message>
-        <source>This setting will take effect after restarting Ion.</source>
+        <source>This setting will take effect after restarting MMR.</source>
         <translation>重启客户端后设置生效</translation>
     </message>
     <message>
@@ -1023,7 +1023,7 @@ This label turns red, if the priority is smaller than "medium".
         <translation>表单</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Ion network after a connection is established, but this process has not completed yet.</source>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the MMR network after a connection is established, but this process has not completed yet.</source>
         <translation>所显示的信息尚未更新，建立连接后钱包客户端会自动和网络进行同步，但目前该过程尚未完成。</translation>
     </message>
     <message>
@@ -1202,7 +1202,7 @@ This label turns red, if the priority is smaller than "medium".
         <translation>调试日志文件</translation>
     </message>
     <message>
-        <source>Open the Ion debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <source>Open the MMRdebug log file from the current data directory. This can take a few seconds for large log files.</source>
         <translation>打开调试日志文件，对于较大的文件，这可能持续几秒钟。</translation>
     </message>
     <message>
@@ -1210,7 +1210,7 @@ This label turns red, if the priority is smaller than "medium".
         <translation>清空控制台</translation>
     </message>
     <message>
-        <source>Welcome to the Ion RPC console.</source>
+        <source>Welcome to the MMRRPC console.</source>
         <translation>欢迎使用黑币RPC控制台。</translation>
     </message>
     <message>
@@ -1491,7 +1491,7 @@ This label turns red, if the priority is smaller than "medium".
         <translation>复制当前签名至剪切板</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Ion address</source>
+        <source>Sign the message to prove you own this MMRaddress</source>
         <translation>对该消息进行签名以证明您对该黑币地址的所有权</translation>
     </message>
     <message>
@@ -1515,7 +1515,7 @@ This label turns red, if the priority is smaller than "medium".
         <translation>用来签名该消息的黑币地址(例： B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Ion address</source>
+        <source>Verify the message to ensure it was signed with the specified MMRaddress</source>
         <translation>确认该消息以保证它经由指定的黑币地址签名</translation>
     </message>
     <message>
@@ -1523,7 +1523,7 @@ This label turns red, if the priority is smaller than "medium".
         <translation>清空所有验证消息栏</translation>
     </message>
     <message>
-        <source>Enter a Ion address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
+        <source>Enter a MMRaddress (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
         <translation>输入黑币地址(例： B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
     </message>
     <message>
@@ -1531,7 +1531,7 @@ This label turns red, if the priority is smaller than "medium".
         <translation>单击“签名消息“产生签名。</translation>
     </message>
     <message>
-        <source>Enter Ion signature</source>
+        <source>Enter MMRsignature</source>
         <translation>输入黑币签名</translation>
     </message>
     <message>
@@ -1964,7 +1964,7 @@ This label turns red, if the priority is smaller than "medium".
 <context>
     <name>bitcoin-core</name>
     <message>
-        <source>Ion version</source>
+        <source>MMRversion</source>
         <translation>黑币客户端 版本</translation>
     </message>
     <message>
@@ -1972,7 +1972,7 @@ This label turns red, if the priority is smaller than "medium".
         <translation>使用：</translation>
     </message>
     <message>
-        <source>Send command to -server or xiond</source>
+        <source>Send command to -server or mmrd</source>
         <translation>向-server服务器或xiond发送命令</translation>
     </message>
     <message>
@@ -1995,8 +1995,8 @@ This label turns red, if the priority is smaller than "medium".
         <translation>指定配置文件(默认: ion.conf)</translation>
     </message>
     <message>
-        <source>Specify pid file (default: xiond.pid)</source>
-        <translation>指定pid文件(默认: xiond.pid)</translation>
+        <source>Specify pid file (default: mmrd.pid)</source>
+        <translation>指定pid文件(默认: mmrd.pid)</translation>
     </message>
     <message>
         <source>Specify wallet file (within data directory)</source>
@@ -2017,7 +2017,7 @@ rpcpassword=%s
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s "Ion Alert" admin@foo.com
+for example: alertnotify=echo %%s | mail -s "MMRAlert" admin@foo.com
 </source>
         <translation>%s, 必须在配置文件里设置rpc密码:
  %s
@@ -2028,7 +2028,7 @@ rpcpassword=%s
 用户名和密码不能重复。
 如果该文件不存在，请自行创建并设为用户本身只读权限。
 建议创建提示以监测可能的问题，如：
-alertnotify=echo %%s | mail -s "Ion Alert" admin@foo.com
+alertnotify=echo %%s | mail -s "MMRAlert" admin@foo.com
 </translation>
     </message>
     <message>
@@ -2311,7 +2311,7 @@ alertnotify=echo %%s | mail -s "Ion Alert" admin@foo.com
 </translation>
     </message>
     <message>
-        <source>Initialization sanity check failed. Ion is shutting down.</source>
+        <source>Initialization sanity check failed. MMRis shutting down.</source>
         <translation>初始化完整性检查失败。 黑币客户端即将关闭。</translation>
     </message>
     <message>
@@ -2352,11 +2352,11 @@ alertnotify=echo %%s | mail -s "Ion Alert" admin@foo.com
         <translation>wallet.dat 钱包文件加载出错：钱包损坏</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of Ion</source>
+        <source>Error loading wallet.dat: Wallet requires newer version of MMR</source>
         <translation>wallet.dat 钱包文件加载出错：需要新版本的客户端</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart Ion to complete</source>
+        <source>Wallet needed to be rewritten: restart MMRto complete</source>
         <translation>需要重写钱包，重启客户端以完成该操作。</translation>
     </message>
     <message>
@@ -2404,7 +2404,7 @@ alertnotify=echo %%s | mail -s "Ion Alert" admin@foo.com
         <translation>添加节点并与其保持连接</translation>
     </message>
     <message>
-        <source>Unable to bind to %s on this computer. Ion is probably already running.</source>
+        <source>Unable to bind to %s on this computer. MMRis probably already running.</source>
         <translation>无法绑定到该计算机上的 %s. 黑币客户端可能已在运行中。</translation>
     </message>
     <message>
@@ -2420,7 +2420,7 @@ alertnotify=echo %%s | mail -s "Ion Alert" admin@foo.com
         <translation>无效的数量。 -mininput=&lt;amount&gt;: '%s'</translation>
     </message>
     <message>
-        <source>Cannot obtain a lock on data directory %s. Ion is probably already running.</source>
+        <source>Cannot obtain a lock on data directory %s. MMRis probably already running.</source>
         <translation>无法从数据目录 %s 获得锁定.  黑币客户端可能已在运行中.</translation>
     </message>
     <message>

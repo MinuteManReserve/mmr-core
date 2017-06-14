@@ -2,11 +2,11 @@
 <context>
     <name>AboutDialog</name>
     <message>
-        <source>About Ion</source>
+        <source>About MMR</source>
         <translation>عن البلاك كوين</translation>
     </message>
     <message>
-        <source>&lt;b&gt;Ion&lt;/b&gt; version</source>
+        <source>&lt;b&gt;MMR&lt;/b&gt; version</source>
         <translation>جزء البلاك كوين</translation>
     </message>
     </context>
@@ -36,7 +36,7 @@
         <translation>&amp;عنوان جديد</translation>
     </message>
     <message>
-        <source>These are your Ion addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <source>These are your MMR addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
         <translation>هذه هي عناوين البلاك كوين لاستقبال الدفعات. يمكن أن تعطي عنوان مختلف لكل مرسل من اجل أن تتابع من يرسل لك.</translation>
     </message>
     <message>
@@ -48,7 +48,7 @@
         <translation>اظهار &amp;رمز الاستجابة السريعة</translation>
     </message>
     <message>
-        <source>Sign a message to prove you own a Ion address</source>
+        <source>Sign a message to prove you own a MMR address</source>
         <translation>التوقيع علي رسالة لاثبات بانك تملك عنوان البلاك كوين</translation>
     </message>
     <message>
@@ -60,7 +60,7 @@
         <translation>خذف العنوان الحالي التي تم اختياره من القائمة</translation>
     </message>
     <message>
-        <source>Verify a message to ensure it was signed with a specified Ion address</source>
+        <source>Verify a message to ensure it was signed with a specified MMR address</source>
         <translation>تحقق من الرسالة لتثبت بانه تم توقيعه بعنوان بلاك كوين محدد</translation>
     </message>
     <message>
@@ -170,7 +170,7 @@
         <translation>محفظة مشفرة</translation>
     </message>
     <message>
-        <source>Ion will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
+        <source>MMR will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
         <translation>بلاك كوين</translation>
     </message>
     <message>
@@ -245,7 +245,7 @@
         <translation>الخروج من التطبيق</translation>
     </message>
     <message>
-        <source>Show information about Ion</source>
+        <source>Show information about MMR</source>
         <translation>اظهار المعلومات عن البلاك كوين</translation>
     </message>
     <message>
@@ -277,11 +277,11 @@
         <translation>&amp;تصدير...</translation>
     </message>
     <message>
-        <source>Send coins to a Ion address</source>
+        <source>Send coins to a MMR address</source>
         <translation>ارسال البلاك كوين الي عنوان اخر</translation>
     </message>
     <message>
-        <source>Modify configuration options for Ion</source>
+        <source>Modify configuration options for MMR</source>
         <translation>تعديل خيارات التكوين للبلاك كوين</translation>
     </message>
     <message>
@@ -305,7 +305,7 @@
         <translation>تأكيد الرسالة</translation>
     </message>
     <message>
-        <source>Ion</source>
+        <source>MMR</source>
         <translation>البلاك كوين</translation>
     </message>
     <message>
@@ -313,7 +313,7 @@
         <translation>محفظة</translation>
     </message>
     <message>
-        <source>&amp;About Ion</source>
+        <source>&amp;About MMR</source>
         <translation>عن البلاك كوين</translation>
     </message>
     <message>
@@ -353,7 +353,7 @@
         <translation>[testnet]</translation>
     </message>
     <message>
-        <source>Ion client</source>
+        <source>MMR client</source>
         <translation>برنامج البلاك كوين</translation>
     </message>
     <message>
@@ -401,7 +401,7 @@
         <translation>خطا في محاولة حفظ بيانات الحفظة في مكان جديد</translation>
     </message>
     <message>
-        <source>A fatal error occurred. Ion can no longer continue safely and will quit.</source>
+        <source>A fatal error occurred. MMR can no longer continue safely and will quit.</source>
         <translation>خطا فادح! بلاك كوين لا يمكن أن يستمر جاري الاغلاق</translation>
     </message>
 </context>
@@ -560,7 +560,7 @@
         <translation>حجز</translation>
     </message>
     <message>
-        <source>Automatically start Ion after logging in to the system.</source>
+        <source>Automatically start MMR after logging in to the system.</source>
         <translation>بد البلاك كوين تلقائي عند الدخول الي الجهاز</translation>
     </message>
     <message>
@@ -1080,7 +1080,7 @@
 <context>
     <name>bitcoin-core</name>
     <message>
-        <source>Ion version</source>
+        <source>MMR version</source>
         <translation>جزع البلاك كوين</translation>
     </message>
     <message>
@@ -1176,7 +1176,7 @@
         <translation>خطأ عند تنزيل wallet.dat: المحفظة تالفة</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart Ion to complete</source>
+        <source>Wallet needed to be rewritten: restart MMR to complete</source>
         <translation>المحفظة يجب أن يعاد كتابته : أعد البلاك كوين لتكتمل</translation>
     </message>
     <message>

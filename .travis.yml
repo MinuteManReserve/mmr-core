@@ -6,8 +6,8 @@ compiler:
   - gcc
 cache:
   directories:
-  - $HOME/ionomy/ion/src/leveldb
-  - $HOME/ionomy/ion/src/secp256k1
+  - $HOME/minutemanreserve/mmr-core/src/leveldb
+  - $HOME/minutemanreserve/mmr-core/src/secp256k1
 addons:
   apt:
     sources:
@@ -18,8 +18,8 @@ addons:
       - build-essential
       - libboost-all-dev
       - libcrypto++-dev
-      - libdb4.8++-dev
-      - libdb4.8-dev
+      - libdb-dev
+      - libdb++-dev
       - libevent-dev
       - libgmp-dev
       - libminiupnpc-dev

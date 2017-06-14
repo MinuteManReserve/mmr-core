@@ -21,6 +21,7 @@ static const int64_t DARKSEND_POOL_MAX = (9999.99*COIN);
 
 #define INSTANTX_SIGNATURES_REQUIRED           20
 #define INSTANTX_SIGNATURES_TOTAL              30
+#define START_MASTERNODE_PAYMENTS 4070908800
 
 
 class CBlock;
@@ -65,7 +66,7 @@ inline int64_t FutureDrift(int64_t nTime) { return nTime + 16200; }
 /** "reject" message codes **/
 static const unsigned char REJECT_INVALID = 0x10;
 
-inline int64_t GetMNCollateral(int nHeight) { return 20000; } // *COIN is added with usage implements
+inline int64_t GetMNCollateral(int nHeight) { return 200000; } // *COIN is added with usage implements
 
 extern CScript COINBASE_FLAGS;
 extern CCriticalSection cs_main;

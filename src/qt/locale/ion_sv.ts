@@ -2,8 +2,8 @@
 <context>
     <name>AboutDialog</name>
     <message>
-        <source>About Ion</source>
-        <translation>Vad du behöver veta om Ion</translation>
+        <source>About MMR</source>
+        <translation>Vad du behöver veta om MMR</translation>
     </message>
     <message>
         <source>&lt;b&gt;Ion&lt;/b&gt; version</source>
@@ -36,8 +36,8 @@
         <translation>Ny adress</translation>
     </message>
     <message>
-        <source>These are your Ion addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
-        <translation>Dessa är dina Ion adesser för att mottaga betalningsförsändelser. Du kan även använda olika adresser för varje avsändare för att enkelt hålla koll på vem som har skickat en betalning.</translation>
+        <source>These are your MMRaddresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <translation>Dessa är dina MMRadesser för att mottaga betalningsförsändelser. Du kan även använda olika adresser för varje avsändare för att enkelt hålla koll på vem som har skickat en betalning.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -48,8 +48,8 @@
         <translation>Visa &amp;QR kod</translation>
     </message>
     <message>
-        <source>Sign a message to prove you own a Ion address</source>
-        <translation>Signera ett meddelande för att bevisa att du äger Ion adressen</translation>
+        <source>Sign a message to prove you own a MMRaddress</source>
+        <translation>Signera ett meddelande för att bevisa att du äger MMRadressen</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -60,8 +60,8 @@
         <translation>Ta bort den valda adressen från listan</translation>
     </message>
     <message>
-        <source>Verify a message to ensure it was signed with a specified Ion address</source>
-        <translation>Verifiera ett meddelande för att försäkra dig över att det var signerat av en specifik Ion adress</translation>
+        <source>Verify a message to ensure it was signed with a specified MMRaddress</source>
+        <translation>Verifiera ett meddelande för att försäkra dig över att det var signerat av en specifik MMRadress</translation>
     </message>
     <message>
         <source>&amp;Verify Message</source>
@@ -190,8 +190,8 @@
         <translation>Plånboken är krypterad</translation>
     </message>
     <message>
-        <source>Ion will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
-        <translation>Ion plånboken kommer nu att stängas för att slutföra krypteringen: Kom ihåg att även en krypterad plånboks säkerhet kan äventyras genom keyloggers eller dylika malwares.</translation>
+        <source>MMRwill close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
+        <translation>MMRplånboken kommer nu att stängas för att slutföra krypteringen: Kom ihåg att även en krypterad plånboks säkerhet kan äventyras genom keyloggers eller dylika malwares.</translation>
     </message>
     <message>
         <source>Wallet encryption failed</source>
@@ -263,8 +263,8 @@
         <translation>Avsluta programmet</translation>
     </message>
     <message>
-        <source>Show information about Ion</source>
-        <translation>Visa information om Ion</translation>
+        <source>Show information about MMR</source>
+        <translation>Visa information om MMR</translation>
     </message>
     <message>
         <source>About &amp;Qt</source>
@@ -295,12 +295,12 @@
         <translation>&amp;Exportera...</translation>
     </message>
     <message>
-        <source>Send coins to a Ion address</source>
-        <translation>Skicka coins till en Ion adress</translation>
+        <source>Send coins to a MMRaddress</source>
+        <translation>Skicka coins till en MMRadress</translation>
     </message>
     <message>
-        <source>Modify configuration options for Ion</source>
-        <translation>Modifiera konfigurations-alternativ för Ion</translation>
+        <source>Modify configuration options for MMR</source>
+        <translation>Modifiera konfigurations-alternativ för MMR</translation>
     </message>
     <message>
         <source>Export the data in the current tab to a file</source>
@@ -339,8 +339,8 @@
         <translation>Plånbok</translation>
     </message>
     <message>
-        <source>&amp;About Ion</source>
-        <translation>&amp;Om Ion</translation>
+        <source>&amp;About MMR</source>
+        <translation>&amp;Om MMR</translation>
     </message>
     <message>
         <source>&amp;Show / Hide</source>
@@ -379,12 +379,12 @@
         <translation>[testnet]</translation>
     </message>
     <message>
-        <source>Ion client</source>
-        <translation>Ion klient</translation>
+        <source>MMRclient</source>
+        <translation>MMRklient</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Ion network</source>
-        <translation><numerusform>%n aktiv anslutning till Ion nätverket</numerusform><numerusform>%n aktiva anslutning till Ion nätverket</numerusform></translation>
+        <source>%n active connection(s) to MMR network</source>
+        <translation><numerusform>%n aktiv anslutning till MMRnätverket</numerusform><numerusform>%n aktiva anslutning till MMRnätverket</numerusform></translation>
     </message>
     <message>
         <source>Staking.&lt;br&gt;Your weight is %1&lt;br&gt;Network weight is %2&lt;br&gt;Expected time to earn reward is %3</source>
@@ -447,8 +447,8 @@ Adress: %4
         <translation>URI hantering</translation>
     </message>
     <message>
-        <source>URI can not be parsed! This can be caused by an invalid Ion address or malformed URI parameters.</source>
-        <translation>URI:n kan inte tolkas! Detta kan bero på en ogiltig Ion adress eller felaktiga URI parametrar.</translation>
+        <source>URI can not be parsed! This can be caused by an invalid MMRaddress or malformed URI parameters.</source>
+        <translation>URI:n kan inte tolkas! Detta kan bero på en ogiltig MMRadress eller felaktiga URI parametrar.</translation>
     </message>
     <message>
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt;</source>
@@ -495,8 +495,8 @@ Adress: %4
         <translation>Ingen staking</translation>
     </message>
     <message>
-        <source>A fatal error occurred. Ion can no longer continue safely and will quit.</source>
-        <translation>Ett fatalt fel uppstod. Ion kan inte fortsätta och stänger programmet.</translation>
+        <source>A fatal error occurred. MMRcan no longer continue safely and will quit.</source>
+        <translation>Ett fatalt fel uppstod. MMRkan inte fortsätta och stänger programmet.</translation>
     </message>
 </context>
 <context>
@@ -728,7 +728,7 @@ Detta betyder att en avgift på minst %2 krävs.</translation>
     </message>
     <message>
         <source>The label associated with this address book entry</source>
-        <translation>Namnet som kopplats till denna Ion-adress</translation>
+        <translation>Namnet som kopplats till denna MMR-adress</translation>
     </message>
     <message>
         <source>&amp;Address</source>
@@ -759,8 +759,8 @@ Detta betyder att en avgift på minst %2 krävs.</translation>
         <translation>Den angivna adressen "%1" finns redan i adressboken.</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Ion address.</source>
-        <translation>Den inslagna adressen "%1" är inte en giltig Ion adress.</translation>
+        <source>The entered address "%1" is not a valid MMRaddress.</source>
+        <translation>Den inslagna adressen "%1" är inte en giltig MMRadress.</translation>
     </message>
     <message>
         <source>Could not unlock wallet.</source>
@@ -845,20 +845,20 @@ Detta betyder att en avgift på minst %2 krävs.</translation>
         <translation>Reservera</translation>
     </message>
     <message>
-        <source>Automatically start Ion after logging in to the system.</source>
-        <translation>Starta Ion automatiskt vid inloggning.</translation>
+        <source>Automatically start MMRafter logging in to the system.</source>
+        <translation>Starta MMRautomatiskt vid inloggning.</translation>
     </message>
     <message>
-        <source>&amp;Start Ion on system login</source>
-        <translation>&amp;Starta Ion vid inloggning</translation>
+        <source>&amp;Start MMRon system login</source>
+        <translation>&amp;Starta MMRvid inloggning</translation>
     </message>
     <message>
         <source>&amp;Network</source>
         <translation>&amp;Nätverk</translation>
     </message>
     <message>
-        <source>Automatically open the Ion client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Öppna automatiskt Ion klientens port på routern. Detta fungerar endast om din router stödjer UPnP och det är aktiverat.</translation>
+        <source>Automatically open the MMRclient port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Öppna automatiskt MMRklientens port på routern. Detta fungerar endast om din router stödjer UPnP och det är aktiverat.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -909,8 +909,8 @@ Detta betyder att en avgift på minst %2 krävs.</translation>
         <translation>Användargränssnittets &amp;språk: </translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting Ion.</source>
-        <translation>Användargränssnittets språk kan ställas in här. Inställningen börjar gälla efter omstart av Ion.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting MMR.</source>
+        <translation>Användargränssnittets språk kan ställas in här. Inställningen börjar gälla efter omstart av MMR.</translation>
     </message>
     <message>
         <source>&amp;Unit to show amounts in:</source>
@@ -949,8 +949,8 @@ Detta betyder att en avgift på minst %2 krävs.</translation>
         <translation>Varning</translation>
     </message>
     <message>
-        <source>This setting will take effect after restarting Ion.</source>
-        <translation>Inställningen börjar gälla efter omstart av Ion.</translation>
+        <source>This setting will take effect after restarting MMR.</source>
+        <translation>Inställningen börjar gälla efter omstart av MMR.</translation>
     </message>
     <message>
         <source>The supplied proxy address is invalid.</source>
@@ -964,8 +964,8 @@ Detta betyder att en avgift på minst %2 krävs.</translation>
         <translation>Formulär</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Ion network after a connection is established, but this process has not completed yet.</source>
-        <translation>Den visade informationen kan vara gammal. Din plånbok synkroniseras automatiskt med Ion nätverket efter att en anslutning skapats, men denna process är inte klar än.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the MMR network after a connection is established, but this process has not completed yet.</source>
+        <translation>Den visade informationen kan vara gammal. Din plånbok synkroniseras automatiskt med MMRnätverket efter att en anslutning skapats, men denna process är inte klar än.</translation>
     </message>
     <message>
         <source>Stake:</source>
@@ -1123,16 +1123,16 @@ Detta betyder att en avgift på minst %2 krävs.</translation>
         <translation>Debugloggfil</translation>
     </message>
     <message>
-        <source>Open the Ion debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Öppna Ion felsöknings-loggfilen från nuvarande data mapp. Detta kan kan ta ett par minuter för stora log filer.</translation>
+        <source>Open the MMRdebug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Öppna MMRfelsöknings-loggfilen från nuvarande data mapp. Detta kan kan ta ett par minuter för stora log filer.</translation>
     </message>
     <message>
         <source>Clear console</source>
         <translation>Rensa konsollen</translation>
     </message>
     <message>
-        <source>Welcome to the Ion RPC console.</source>
-        <translation>Välkommen till Ion RPC konsoll.</translation>
+        <source>Welcome to the MMRRPC console.</source>
+        <translation>Välkommen till MMRRPC konsoll.</translation>
     </message>
     <message>
         <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
@@ -1392,8 +1392,8 @@ Detta betyder att en avgift på minst %2 krävs.</translation>
         <translation>Kopiera signaturen till systemets Urklipp</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Ion address</source>
-        <translation>Signera meddelandet för att verifiera att du äger denna Ion adressen</translation>
+        <source>Sign the message to prove you own this MMRaddress</source>
+        <translation>Signera meddelandet för att verifiera att du äger denna MMRadressen</translation>
     </message>
     <message>
         <source>Reset all sign message fields</source>
@@ -1416,24 +1416,24 @@ Detta betyder att en avgift på minst %2 krävs.</translation>
         <translation>Adressen meddelandet var signerad med (t.ex. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Ion address</source>
-        <translation>Verifiera meddelandet för att vara säker på att det var signerat med den angivna Ion adressen</translation>
+        <source>Verify the message to ensure it was signed with the specified MMRaddress</source>
+        <translation>Verifiera meddelandet för att vara säker på att det var signerat med den angivna MMRadressen</translation>
     </message>
     <message>
         <source>Reset all verify message fields</source>
         <translation>Rensa alla fält</translation>
     </message>
     <message>
-        <source>Enter a Ion address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation>Fyll i en Ion adress (t.ex. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+        <source>Enter a MMRaddress (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
+        <translation>Fyll i en MMRadress (t.ex. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
     </message>
     <message>
         <source>Click "Sign Message" to generate signature</source>
         <translation>Klicka "Signera Meddelande" för att få en signatur</translation>
     </message>
     <message>
-        <source>Enter Ion signature</source>
-        <translation>Fyll i Ion signatur</translation>
+        <source>Enter MMRsignature</source>
+        <translation>Fyll i MMRsignatur</translation>
     </message>
     <message>
         <source>The entered address is invalid.</source>
@@ -1857,16 +1857,16 @@ Detta betyder att en avgift på minst %2 krävs.</translation>
 <context>
     <name>bitcoin-core</name>
     <message>
-        <source>Ion version</source>
-        <translation>Ion version</translation>
+        <source>MMRversion</source>
+        <translation>MMRversion</translation>
     </message>
     <message>
         <source>Usage:</source>
         <translation>Användning:</translation>
     </message>
     <message>
-        <source>Send command to -server or xiond</source>
-        <translation>Skicka kommando till -server eller xiond</translation>
+        <source>Send command to -server or mmrd</source>
+        <translation>Skicka kommando till -server eller mmrd</translation>
     </message>
     <message>
         <source>List commands</source>
@@ -1885,8 +1885,8 @@ Detta betyder att en avgift på minst %2 krävs.</translation>
         <translation>Ange konfigurationsfilen (standard: ion.conf)</translation>
     </message>
     <message>
-        <source>Specify pid file (default: xiond.pid)</source>
-        <translation>Ange pid filen (standard xiond.pid)</translation>
+        <source>Specify pid file (default: mmrd.pid)</source>
+        <translation>Ange pid filen (standard mmrd.pid)</translation>
     </message>
     <message>
         <source>Specify wallet file (within data directory)</source>
@@ -2153,12 +2153,12 @@ Detta betyder att en avgift på minst %2 krävs.</translation>
         <translation>Fel vid inläsningen av wallet.dat: Plånboken är skadad</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of Ion</source>
-        <translation>Kunde inte ladda wallet.dat: En nyare version av Ion krävs</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of MMR</source>
+        <translation>Kunde inte ladda wallet.dat: En nyare version av MMRkrävs</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart Ion to complete</source>
-        <translation>Plånboken måste skrivas om: Starta om Ion för att slutföra</translation>
+        <source>Wallet needed to be rewritten: restart MMRto complete</source>
+        <translation>Plånboken måste skrivas om: Starta om MMRför att slutföra</translation>
     </message>
     <message>
         <source>Error loading wallet.dat</source>
@@ -2205,8 +2205,8 @@ Detta betyder att en avgift på minst %2 krävs.</translation>
         <translation>Lägg till en nod att koppla upp mot och försök att hålla anslutningen öppen</translation>
     </message>
     <message>
-        <source>Unable to bind to %s on this computer. Ion is probably already running.</source>
-        <translation>Kan inte binda till %s på denna dator. Ion är sannolikt redan startad.</translation>
+        <source>Unable to bind to %s on this computer. MMRis probably already running.</source>
+        <translation>Kan inte binda till %s på denna dator. MMRär sannolikt redan startad.</translation>
     </message>
     <message>
         <source>Fee per KB to add to transactions you send</source>

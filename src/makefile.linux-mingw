@@ -2,14 +2,14 @@
 # Distributed under the MIT/X11 software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-TARGET_PLATFORM:=i686
+TARGET_PLATFORM:=i586
 #TARGET_PLATFORM:=x86_64
 
-DEPSDIR:=/usr/$(TARGET_PLATFORM)-w64-mingw32
-CC:=$(TARGET_PLATFORM)-w64-mingw32-gcc
-CXX:=$(TARGET_PLATFORM)-w64-mingw32-g++
-RANLIB=$(TARGET_PLATFORM)-w64-mingw32-ranlib
-STRIP=$(TARGET_PLATFORM)-w64-mingw32-strip
+DEPSDIR:=~/Downloads
+CC:=$(TARGET_PLATFORM)-mingw32msvc-gcc
+CXX:=$(TARGET_PLATFORM)-mingw32msvc-g++
+RANLIB=$(TARGET_PLATFORM)-mingw32msvc-ranlib
+STRIP=$(TARGET_PLATFORM)-mingw32msvc-strip
 
 USE_UPNP:=0
 USE_WALLET:=1
@@ -19,13 +19,13 @@ INCLUDEPATHS= \
  -I"$(CURDIR)"/obj \
  -I"$(DEPSDIR)/boost_1_55_0" \
  -I"$(DEPSDIR)/db-6.0.20/build_unix" \
- -I"$(DEPSDIR)/openssl-1.0.1f/include" \
+ -I"$(DEPSDIR)/openssl-1.0.1u/include" \
  -I"$(DEPSDIR)"
 
 LIBPATHS= \
  -L"$(DEPSDIR)/boost_1_55_0/stage/lib" \
  -L"$(DEPSDIR)/db-6.0.20/build_unix" \
- -L"$(DEPSDIR)/openssl-1.0.1f"
+ -L"$(DEPSDIR)/openssl-1.0.1u"
 
 LIBS= \
  -l boost_system-mt \
@@ -40,7 +40,7 @@ LIBS= \
 
 DEFS=-D_MT -DWIN32 -D_WINDOWS -DBOOST_THREAD_USE_LIB -DBOOST_SPIRIT_THREADSAFE
 DEBUGFLAGS=-g
-CFLAGS=-O2 -msse2 -w -Wall -Wextra -Wno-ignored-qualifiers -Wformat -Wformat-security -Wno-unused-parameter $(DEBUGFLAGS) $(DEFS) $(INCLUDEPATHS)
+CFLAGS=-O2 -msse2 -w -Wall -Wextra -Wformat -Wformat-security -Wno-unused-parameter $(DEBUGFLAGS) $(DEFS) $(INCLUDEPATHS)
 LDFLAGS=-Wl,--dynamicbase -Wl,--nxcompat -static-libgcc -static-libstdc++
 
 ifndef USE_UPNP
@@ -100,7 +100,7 @@ ifeq (${USE_WALLET}, 1)
         obj/walletdb.o
 endif
 
-all: xiond.exe
+all: mmrd.exe
 
 LIBS += $(CURDIR)/leveldb/libleveldb.a $(CURDIR)/leveldb/libmemenv.a
 DEFS += -I"$(CURDIR)/leveldb/include"
@@ -118,13 +118,13 @@ DEFS += -DHAVE_BUILD_INFO
 obj/%.o: %.cpp $(HEADERS)
 	$(CXX) -c $(CFLAGS) -o $@ $<
 
-xiond.exe: $(OBJS:obj/%=obj/%)
+mmrd.exe: $(OBJS:obj/%=obj/%)
 	$(CXX) $(CFLAGS) $(LDFLAGS) -o $@ $(LIBPATHS) $^ $(LIBS) -lshlwapi
-	$(STRIP) xiond.exe
+	$(STRIP) mmrd.exe
 
 clean:
 	-rm -f obj/*.o
-	-rm -f xiond.exe
+	-rm -f mmrd.exe
 	-rm -f obj/build.h
 	cd leveldb && TARGET_OS=OS_WINDOWS_CROSSCOMPILE $(MAKE) clean && cd ..
 

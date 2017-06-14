@@ -1,10 +1,9 @@
 <!--- Remove sections that do not apply -->
 
-This issue tracker is only for technical issues related to ion-core.
+This issue tracker is only for technical issues related to mmr-core.
 
-General ion questions and/or support requests and are best directed to the [IonTalk Forums](https://www.iontalk.net) or [Slack](https://ionomy.slack.com).
+General ion questions and/or support requests and are best directed to the [Freedom.Social Forums](https://www.freedom.social).
 
-For reporting security issues, please email [support@ionomy.com](mailto:support@ionomy.com).
 
 ### Describe the issue
 

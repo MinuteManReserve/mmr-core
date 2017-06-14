@@ -2,11 +2,11 @@
 <context>
     <name>AboutDialog</name>
     <message>
-        <source>About Ion</source>
+        <source>About MMR</source>
         <translation>ブラックコインについて</translation>
     </message>
     <message>
-        <source>&lt;b&gt;Ion&lt;/b&gt; version</source>
+        <source>&lt;b&gt;MMR&lt;/b&gt; version</source>
         <translation>&lt;b&gt;ブラックコイン&lt;/b&gt;バージョン</translation>
     </message>
     </context>
@@ -36,7 +36,7 @@
         <translation>新しいアドレス</translation>
     </message>
     <message>
-        <source>These are your Ion addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <source>These are your MMR addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
         <translation>これは支払いを受けるためのブラックコインのアドレス。支払い管理をするのため、各送信者へ、それぞれのアドレスを伝えたほうがいいです。</translation>
     </message>
     <message>
@@ -48,7 +48,7 @@
         <translation>QRコードを表す</translation>
     </message>
     <message>
-        <source>Sign a message to prove you own a Ion address</source>
+        <source>Sign a message to prove you own a MMR address</source>
         <translation>所有権の証明するためのメサッジを署名する。</translation>
     </message>
     <message>
@@ -60,7 +60,7 @@
         <translation>選択されたアドレスを一覧から削除する</translation>
     </message>
     <message>
-        <source>Verify a message to ensure it was signed with a specified Ion address</source>
+        <source>Verify a message to ensure it was signed with a specified MMR address</source>
         <translation>受け取ったメッセージの署名を確保のため、メッセージを確認する。</translation>
     </message>
     <message>
@@ -190,7 +190,7 @@
         <translation>ウォレットは暗号化されました</translation>
     </message>
     <message>
-        <source>Ion will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
+        <source>MMR will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
         <translation>ただいま、暗号化手順を完成するため、ブラックコインQTは閉じます。尚、ウォレットを暗号化をされたにしても、PCのウイルスから盗難防止の報償できないことを、ご理解をお願い足します。</translation>
     </message>
     <message>
@@ -263,7 +263,7 @@
         <translation>アプリケーションを終了</translation>
     </message>
     <message>
-        <source>Show information about Ion</source>
+        <source>Show information about MMR</source>
         <translation>ブラックコインの情報を表示</translation>
     </message>
     <message>
@@ -295,11 +295,11 @@
         <translation>(&amp;E)書き出す...</translation>
     </message>
     <message>
-        <source>Send coins to a Ion address</source>
+        <source>Send coins to a MMR address</source>
         <translation>ブラックコインアドレスへコインを送る</translation>
     </message>
     <message>
-        <source>Modify configuration options for Ion</source>
+        <source>Modify configuration options for MMR</source>
         <translation>ブラックコインの設定を変化する</translation>
     </message>
     <message>
@@ -331,7 +331,7 @@
         <translation>メッセージの検証... (&amp;V)</translation>
     </message>
     <message>
-        <source>Ion</source>
+        <source>MMR</source>
         <translation>ブラックコイン</translation>
     </message>
     <message>
@@ -339,7 +339,7 @@
         <translation>ウォレット</translation>
     </message>
     <message>
-        <source>&amp;About Ion</source>
+        <source>&amp;About MMR</source>
         <translation>ブラックコインについて</translation>
     </message>
     <message>
@@ -379,11 +379,11 @@
         <translation>[testnet]</translation>
     </message>
     <message>
-        <source>Ion client</source>
+        <source>MMR client</source>
         <translation>ブラックコインクライアントソフトウェア</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Ion network</source>
+        <source>%n active connection(s) to MMR network</source>
         <translation><numerusform>ブラックコインネットワークへの%n アクティブな接続</numerusform></translation>
     </message>
     <message>
@@ -446,7 +446,7 @@ Address: %4
         <translation>URIの取り扱い</translation>
     </message>
     <message>
-        <source>URI can not be parsed! This can be caused by an invalid Ion address or malformed URI parameters.</source>
+        <source>URI can not be parsed! This can be caused by an invalid MMR address or malformed URI parameters.</source>
         <translation>URIのパーズができませんでした！。原因は無効なブラックコインアドレスか不正なURIパラメータ。</translation>
     </message>
     <message>
@@ -494,7 +494,7 @@ Address: %4
         <translation>賭けていません</translation>
     </message>
     <message>
-        <source>A fatal error occurred. Ion can no longer continue safely and will quit.</source>
+        <source>A fatal error occurred. MMR can no longer continue safely and will quit.</source>
         <translation>致命的エラー。安全に続きができないため、バラックコインQTは閉じます。</translation>
     </message>
 </context>
@@ -758,7 +758,7 @@ This label turns red, if the priority is smaller than "medium".
         <translation>入力されたアドレス "%1" は既にアドレス帳にあります。</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Ion address.</source>
+        <source>The entered address "%1" is not a valid MMR address.</source>
         <translation>入力されたアドレス "%1" 、有効なブラックコインアドレスではない。</translation>
     </message>
     <message>
@@ -844,11 +844,11 @@ This label turns red, if the priority is smaller than "medium".
         <translation>貯金</translation>
     </message>
     <message>
-        <source>Automatically start Ion after logging in to the system.</source>
+        <source>Automatically start MMR after logging in to the system.</source>
         <translation>システムのログイン次第、自動的にブラックコインをスタート。</translation>
     </message>
     <message>
-        <source>&amp;Start Ion on system login</source>
+        <source>&amp;Start MMR on system login</source>
         <translation>システムログイン次第、ブラックコインをスタート</translation>
     </message>
     <message>
@@ -856,7 +856,7 @@ This label turns red, if the priority is smaller than "medium".
         <translation>ネットワーク (&amp;N)</translation>
     </message>
     <message>
-        <source>Automatically open the Ion client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <source>Automatically open the MMR client port on the router. This only works when your router supports UPnP and it is enabled.</source>
         <translation>自動的にルーターでブラックコインクライエントソフトウェアのポートを開く。ルーターはUPnPのサポートあり、UPnPを有効にするならできる。</translation>
     </message>
     <message>
@@ -908,7 +908,7 @@ This label turns red, if the priority is smaller than "medium".
         <translation>ユーザインターフェースの言語 (&amp;l) :</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting Ion.</source>
+        <source>The user interface language can be set here. This setting will take effect after restarting MMR.</source>
         <translation>ユーザのインターフェースの言語の設定です。リスタートの後、有効します。</translation>
     </message>
     <message>
@@ -948,7 +948,7 @@ This label turns red, if the priority is smaller than "medium".
         <translation>警告</translation>
     </message>
     <message>
-        <source>This setting will take effect after restarting Ion.</source>
+        <source>This setting will take effect after restarting MMR.</source>
         <translation>この設定はブラックコインをリスタートした後に有効する。</translation>
     </message>
     <message>
@@ -963,7 +963,7 @@ This label turns red, if the priority is smaller than "medium".
         <translation>フォーム</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Ion network after a connection is established, but this process has not completed yet.</source>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the MMR network after a connection is established, but this process has not completed yet.</source>
         <translation>表示されている情報は時間遅れている。接続したら、ウォレットは自動的にブラックコインネットワークと同期しますが過程は完了してません。</translation>
     </message>
     <message>
@@ -1122,7 +1122,7 @@ This label turns red, if the priority is smaller than "medium".
         <translation>デバッグ用ログファイル</translation>
     </message>
     <message>
-        <source>Open the Ion debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <source>Open the MMR debug log file from the current data directory. This can take a few seconds for large log files.</source>
         <translation>現行のディレクトリからデバッグログファイルを開く。大きなファイルのばい、少し時間かかる。</translation>
     </message>
     <message>
@@ -1130,7 +1130,7 @@ This label turns red, if the priority is smaller than "medium".
         <translation>コンソールをクリア</translation>
     </message>
     <message>
-        <source>Welcome to the Ion RPC console.</source>
+        <source>Welcome to the MMR RPC console.</source>
         <translation>ブラックコインRPCコンソールへようこそ。</translation>
     </message>
     <message>
@@ -1391,7 +1391,7 @@ This label turns red, if the priority is smaller than "medium".
         <translation>現在の署名をシステムのクリップボードにコピーする</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Ion address</source>
+        <source>Sign the message to prove you own this MMR address</source>
         <translation>所有権の証明するためこのメサッジを署名する</translation>
     </message>
     <message>
@@ -1415,7 +1415,7 @@ This label turns red, if the priority is smaller than "medium".
         <translation>メッセージの署名するアドレス(例：B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Ion address</source>
+        <source>Verify the message to ensure it was signed with the specified MMR address</source>
         <translation>受け取ったメッセージの署名を確保のため、メッセージを確認する。</translation>
     </message>
     <message>
@@ -1423,7 +1423,7 @@ This label turns red, if the priority is smaller than "medium".
         <translation>入力項目の内容をすべて消去します</translation>
     </message>
     <message>
-        <source>Enter a Ion address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
+        <source>Enter a MMR address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
         <translation>ブラックコインのアドレスを入力(例：B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
     </message>
     <message>
@@ -1431,7 +1431,7 @@ This label turns red, if the priority is smaller than "medium".
         <translation>署名を作成するには"メッセージの署名"をクリック</translation>
     </message>
     <message>
-        <source>Enter Ion signature</source>
+        <source>Enter MMR signature</source>
         <translation>ブラックコインのデジタル署名を入力</translation>
     </message>
     <message>
@@ -1856,7 +1856,7 @@ This label turns red, if the priority is smaller than "medium".
 <context>
     <name>bitcoin-core</name>
     <message>
-        <source>Ion version</source>
+        <source>MMR version</source>
         <translation>ブラックコインバージョン</translation>
     </message>
     <message>
@@ -1864,7 +1864,7 @@ This label turns red, if the priority is smaller than "medium".
         <translation>使用法:</translation>
     </message>
     <message>
-        <source>Send command to -server or xiond</source>
+        <source>Send command to -server or mmrd</source>
         <translation>-server か xiondへコマンドを送る。</translation>
     </message>
     <message>
@@ -1884,8 +1884,8 @@ This label turns red, if the priority is smaller than "medium".
         <translation>設定ファイルを特定する (デファルト: ion.conf)</translation>
     </message>
     <message>
-        <source>Specify pid file (default: xiond.pid)</source>
-        <translation>pid ファイルを特定する (デフォルト: xiond.pid)</translation>
+        <source>Specify pid file (default: mmrd.pid)</source>
+        <translation>pid ファイルを特定する (デフォルト: mmrd.pid)</translation>
     </message>
     <message>
         <source>Specify wallet file (within data directory)</source>
@@ -2152,11 +2152,11 @@ This label turns red, if the priority is smaller than "medium".
         <translation>wallet.dat 読み込みエラー: ウォレットが壊れました</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of Ion</source>
+        <source>Error loading wallet.dat: Wallet requires newer version of MMR</source>
         <translation>wallet.dat 読み込みエラー: 　ブラックコインQTの最新バージョンが必要です</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart Ion to complete</source>
+        <source>Wallet needed to be rewritten: restart MMR to complete</source>
         <translation>ウォレットのデータをリライトしなければならい：ブラックコインQTをリスタートしてください</translation>
     </message>
     <message>
@@ -2204,7 +2204,7 @@ This label turns red, if the priority is smaller than "medium".
         <translation>接続するノードを追加し接続を持続するように試します</translation>
     </message>
     <message>
-        <source>Unable to bind to %s on this computer. Ion is probably already running.</source>
+        <source>Unable to bind to %s on this computer. MMR is probably already running.</source>
         <translation>このコンピューターで%sに結ぶことができなかった。ブラックコインQTは、もう発行してるでしょう。</translation>
     </message>
     <message>

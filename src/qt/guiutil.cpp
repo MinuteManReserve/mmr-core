@@ -493,12 +493,12 @@ TableViewLastColumnResizingFixer::TableViewLastColumnResizingFixer(QTableView* t
 #ifdef WIN32
 boost::filesystem::path static StartupShortcutPath()
 {
-    return GetSpecialFolderPath(CSIDL_STARTUP) / "Ion.lnk";
+    return GetSpecialFolderPath(CSIDL_STARTUP) / "MMR.lnk";
 }
 
 bool GetStartOnSystemStartup()
 {
-    // check for Ion.lnk
+    // check for MMR.lnk
     return boost::filesystem::exists(StartupShortcutPath());
 }
 
@@ -616,7 +616,7 @@ bool SetStartOnSystemStartup(bool fAutoStart)
         // Write a ion.desktop file to the autostart directory:
         optionFile << "[Desktop Entry]\n";
         optionFile << "Type=Application\n";
-        optionFile << "Name=Ion\n";
+        optionFile << "Name=MMR\n";
         optionFile << "Exec=" << pszExePath << " -min\n";
         optionFile << "Terminal=false\n";
         optionFile << "Hidden=false\n";

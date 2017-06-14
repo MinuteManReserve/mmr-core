@@ -2,8 +2,8 @@
 <context>
     <name>AboutDialog</name>
     <message>
-        <source>About Ion</source>
-        <translation>Sobre o Ion</translation>
+        <source>About MMR</source>
+        <translation>Sobre o MMR</translation>
     </message>
     <message>
         <source>&lt;b&gt;Ion&lt;/b&gt; version</source>
@@ -36,8 +36,8 @@
         <translation>&amp;Novo Endereço</translation>
     </message>
     <message>
-        <source>These are your Ion addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
-        <translation>Estes são os seus endereços Ion para receber pagamentos. Você pode dar um diferente a cada remetente para que você possa acompanhar quem está pagando.</translation>
+        <source>These are your MMRaddresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <translation>Estes são os seus endereços MMRpara receber pagamentos. Você pode dar um diferente a cada remetente para que você possa acompanhar quem está pagando.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -48,8 +48,8 @@
         <translation>Mostrar &amp;QR Code</translation>
     </message>
     <message>
-        <source>Sign a message to prove you own a Ion address</source>
-        <translation>Assine a mensagem para provar que você possui um endereço Ion</translation>
+        <source>Sign a message to prove you own a MMRaddress</source>
+        <translation>Assine a mensagem para provar que você possui um endereço MMR</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -60,8 +60,8 @@
         <translation>Excluir os endereços selecionados da lista</translation>
     </message>
     <message>
-        <source>Verify a message to ensure it was signed with a specified Ion address</source>
-        <translation>Verifique a mensagem para garantir que ela foi assinada com um endereço Ion específico</translation>
+        <source>Verify a message to ensure it was signed with a specified MMRaddress</source>
+        <translation>Verifique a mensagem para garantir que ela foi assinada com um endereço MMRespecífico</translation>
     </message>
     <message>
         <source>&amp;Verify Message</source>
@@ -190,8 +190,8 @@
         <translation>Carteira criptografada</translation>
     </message>
     <message>
-        <source>Ion will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
-        <translation>Ion vai fechar agora para concluir o processo de criptografia. Lembre-se que a criptografia de sua carteira não pode proteger totalmente suas moedas de serem roubados por malwares infectem seu computador.</translation>
+        <source>MMRwill close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
+        <translation>MMRvai fechar agora para concluir o processo de criptografia. Lembre-se que a criptografia de sua carteira não pode proteger totalmente suas moedas de serem roubados por malwares infectem seu computador.</translation>
     </message>
     <message>
         <source>Wallet encryption failed</source>
@@ -263,8 +263,8 @@
         <translation>Sair da aplicação</translation>
     </message>
     <message>
-        <source>Show information about Ion</source>
-        <translation>Mostrar informações sobre o Ion</translation>
+        <source>Show information about MMR</source>
+        <translation>Mostrar informações sobre o MMR</translation>
     </message>
     <message>
         <source>About &amp;Qt</source>
@@ -295,12 +295,12 @@
         <translation>&amp;Exportar...</translation>
     </message>
     <message>
-        <source>Send coins to a Ion address</source>
-        <translation>Enviar moedas para um endereço Ion</translation>
+        <source>Send coins to a MMRaddress</source>
+        <translation>Enviar moedas para um endereço MMR</translation>
     </message>
     <message>
-        <source>Modify configuration options for Ion</source>
-        <translation>Modificar opções de configuração para Ion</translation>
+        <source>Modify configuration options for MMR</source>
+        <translation>Modificar opções de configuração para MMR</translation>
     </message>
     <message>
         <source>Export the data in the current tab to a file</source>
@@ -339,8 +339,8 @@
         <translation>Carteira</translation>
     </message>
     <message>
-        <source>&amp;About Ion</source>
-        <translation>Sobre o Ion</translation>
+        <source>&amp;About MMR</source>
+        <translation>Sobre o MMR</translation>
     </message>
     <message>
         <source>&amp;Show / Hide</source>

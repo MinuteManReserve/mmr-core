@@ -1,8 +1,8 @@
 *.tar.gz
 
 *.exe
-src/ion
-src/iond
+src/mmr
+src/mmrd
 
 # autoreconf
 share/qt/Info.plist
@@ -10,8 +10,8 @@ share/qt/Info.plist
 # Compilation and Qt preprocessor part
 *.qm
 Makefile
-ionx-Qt
-ionx-Qt.app
+mmr-Qt
+mmr-Qt.app
 
 # Resources cpp
 qrc_*.cpp

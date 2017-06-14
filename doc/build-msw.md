@@ -7,7 +7,7 @@ cryptographic software written by Eric Young (eay@cryptsoft.com) and UPnP
 software written by Thomas Bernard.
 
 
-See readme-qt.rst for instructions on building Ion QT, the
+See readme-qt.rst for instructions on building MMR QT, the
 graphical user interface.
 
 WINDOWS BUILD NOTES
@@ -97,4 +97,4 @@ DOS prompt:
 
     cd \ion\src
     mingw32-make -f makefile.mingw
-    strip xiond.exe
+    strip mmrd.exe

@@ -1,6 +1,6 @@
 // Copyright (c) 2010 Satoshi Nakamoto
 // Copyright (c) 2009-2017 The Bitcoin developers
-// Copyright (c) 2017 Empinel/The Ion Developers
+// Copyright (c) 2017 Empinel/The MMR Developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -44,73 +44,67 @@ static void convertSeed6(std::vector<CAddress> &vSeedsOut, const SeedSpec6 *data
     }
 }
 
-static CBlock CreateGenesisBlock(const char* pszTimestamp, const CScript& genesisOutputScript, const uint64_t nTime, const uint32_t nNonce, const uint32_t nBits, const int32_t nVersion, const CAmount& genesisReward)
-{
-	std::vector<CTxIn> vin;
-	vin.resize(1);
-	vin[0].scriptSig = CScript() << nTime << CScriptNum(4) << std::vector<unsigned char>((const unsigned char*)pszTimestamp, (const unsigned char*)pszTimestamp + strlen(pszTimestamp));
-	std::vector<CTxOut> vout;
-	vout.resize(1);
-	vout[0].nValue = genesisReward;
-	vout[0].scriptPubKey = genesisOutputScript;
-	CTransaction txNew(1, nTime, vin, vout, 0);
-		
-    CBlock genesis;
-    genesis.nTime    = nTime;
-    genesis.nBits    = nBits;
-    genesis.nNonce   = nNonce;
-    genesis.nVersion = nVersion;
-    genesis.vtx.push_back(txNew);
-    genesis.hashPrevBlock.SetNull();
-    genesis.hashMerkleRoot = genesis.BuildMerkleTree();
-
-    return genesis;
-}
-
-static CBlock CreateGenesisBlock(uint64_t nTime, uint32_t nNonce, uint32_t nBits, int32_t nVersion, const CAmount& genesisReward)
-{
-	const char* pszTimestamp = "The Guardian: [2nd Feb 2017] Finsbury Park mosque wins apology and damages from Thomson Reuters";
-    const CScript genesisOutputScript = CScript() << ParseHex("045622582bdfad9366cdff9652d35a562af17ea4e3462d32cd988b32919ba2ff4bc806485be5228185ad3f75445039b6e744819c4a63304277ca8d20c99a6acec8") << OP_CHECKSIG;
-    return CreateGenesisBlock(pszTimestamp, genesisOutputScript, nTime, nNonce, nBits, nVersion, genesisReward);
-}
-
 class CMainParams : public CChainParams {
 public:
     CMainParams() {
         // The message start string is designed to be unlikely to occur in normal data.
         // The characters are rarely used upper ASCII, not valid as UTF-8, and produce
         // a large 4-byte int at any alignment.
-        pchMessageStart[0] = 0xc4;
-        pchMessageStart[1] = 0xe1;
-        pchMessageStart[2] = 0xd8;
-        pchMessageStart[3] = 0xec;
-        vAlertPubKey = ParseHex("040fd972dba056779d9f998cba8d5866e47fb875fd8cb9c4d36baf88db738a6ffbc581e0fad7f2f129c7f814d81baeda567a3735aaf0bfbc339f40359d4a52b4bf");
-        nDefaultPort = 12700;
-        nRPCPort = 12705;
+        pchMessageStart[0] = 0xc1;
+        pchMessageStart[1] = 0xe3;
+        pchMessageStart[2] = 0xd7;
+        pchMessageStart[3] = 0xed;
+        vAlertPubKey = ParseHex("04678afdb0fe5548271967f1a67130b7105cd6a828e03909a67962e0ea1f61deb649f6bc3f4cef38c4f35504e51ec112de5c384df7ba0b8d578a4c702b6bf11d5f");
+        nDefaultPort = 17760;
+        nRPCPort = 17780;
         nProofOfWorkLimit = uint256S("000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffff");
         nProofOfStakeLimit = uint256S("00000fffffffffffffffffffffffffffffffffffffffffffffffffffffffffff");
 
-		genesis = CreateGenesisBlock(1486045800, 28884498, 0x1e00ffff, 1, (1 * COIN));
-		hashGenesisBlock = genesis.GetHash();
-	
-        assert(hashGenesisBlock == uint256("0x0000004cf5ffbf2e31a9aa07c86298efb01a30b8911b80af7473d1114715084b"));
-        assert(genesis.hashMerkleRoot == uint256("0x7af2e961c5262cb0411edcb7414ab7178133fc06257ceb47d349e4e5e35e2d40"));
+        char* pszTimestamp = "CNN 08/Jun/2017 For Trump, the ‘Cloud’ Just Grew That Much Darker ";
+        std::vector<CTxIn> vin;
+        vin.resize(1);
+        vin[0].scriptSig = CScript() << 1497398963 << CScriptNum(4) << std::vector<unsigned char>((const unsigned char*)pszTimestamp, (const unsigned char*)pszTimestamp + strlen(pszTimestamp));
+        std::vector<CTxOut> vout;
+        vout.resize(1);
+        vout[0].nValue = (1 * COIN);
+        vout[0].scriptPubKey = CScript() << ParseHex("04ffff001d010446434e4e2030382f4a756e2f3230313720466f72205472756d702c2074686520e28098436c6f7564e28099204a75737420477265772054686174204d756368204461726b657220") << OP_CHECKSIG;
+        CTransaction txNew(1, 1497398962, vin, vout, 0);
+            
+        CBlock genesis;
+        genesis.nTime    = 1497398963;
+        genesis.nBits    = 0x1e00ffff;
+        genesis.nNonce   = 40615963;
+        genesis.nVersion = 1;
+        genesis.vtx.push_back(txNew);
+        genesis.hashPrevBlock.SetNull();
+        genesis.hashMerkleRoot = genesis.BuildMerkleTree();
 
-        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,103);
-        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,88);
-        base58Prefixes[SECRET_KEY] =     std::vector<unsigned char>(1,153);
-        base58Prefixes[STEALTH_ADDRESS] = std::vector<unsigned char>(1,40);
+		hashGenesisBlock = genesis.GetHash();
+        while (hashGenesisBlock > nProofOfWorkLimit){
+         if (++genesis.nNonce==0) break;
+         hashGenesisBlock = genesis.GetHash();
+        }
+        //printf("GenesisBlock: %s\n", hashGenesisBlock.ToString().c_str());
+        //printf("MerkleRoot: %s\n", genesis.hashMerkleRoot.ToString().c_str());
+        //printf("POW: %x\n", nProofOfWorkLimit.GetCompact());
+        //printf("Nonce: %d\n", genesis.nNonce);
+        assert(hashGenesisBlock == uint256("0x000000275ba4f71cb7819b3bfa5b9cac1027100f4c62f7329b4337a0a443e1d8"));
+        assert(genesis.hashMerkleRoot == uint256("0x4696ce2a2e7fd2a09ec2dc62f45183677b8d9544e9efabe6a09e5400dda039eb"));
+
+        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,51); // M
+        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,110); // m
+        base58Prefixes[SECRET_KEY] =     std::vector<unsigned char>(1,61); // R
+        base58Prefixes[STEALTH_ADDRESS] = std::vector<unsigned char>(1,123); // r
         base58Prefixes[EXT_PUBLIC_KEY] = list_of(0x04)(0x88)(0xB2)(0x1E).convert_to_container<std::vector<unsigned char> >();
         base58Prefixes[EXT_SECRET_KEY] = list_of(0x04)(0x88)(0xAD)(0xE4).convert_to_container<std::vector<unsigned char> >();
 
-		vSeeds.push_back(CDNSSeedData("seeder.baseserv.com", "main.seeder.baseserv.com"));
-        vSeeds.push_back(CDNSSeedData("seeder.uksafedns.net", "main.seeder.uksafedns.net"));
+		vSeeds.push_back(CDNSSeedData("blockchain.freedom.social", "blockchain.freedom.social"));
         
         convertSeed6(vFixedSeeds, pnSeed6_main, ARRAYLEN(pnSeed6_main));
 
 		nPoolMaxTransactions = 3;
-        strDarksendPoolDummyAddress = "iqbMeTpdFfxiNcWHn255T2TneJTrUECCBE";
-        nLastPOWBlock 	= 1000;
+        strDarksendPoolDummyAddress = "MZTD9ZHQfuRGTDvURAToa9YgB3WHuXZjw9";
+        nLastPOWBlock 	= 100000;
     }
 
     virtual const CBlock& GenesisBlock() const { return genesis; }
@@ -147,8 +141,8 @@ public:
    
         nProofOfWorkLimit = uint256S("000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffff");
         nProofOfStakeLimit = uint256S("00000fffffffffffffffffffffffffffffffffffffffffffffffffffffffffff");
-
-	genesis = CreateGenesisBlock(1491737471, 1603027, 0x1e00ffff, 1, (1 * COIN));
+/*
+	CBlock genesis;// = CreateGenesisBlock(1491737471, 1603027, 0x1e00ffff, 1, (1 * COIN));
         
 	hashGenesisBlock = genesis.GetHash();
 	
@@ -161,7 +155,7 @@ public:
         base58Prefixes[STEALTH_ADDRESS] = std::vector<unsigned char>(1,40);
         base58Prefixes[EXT_PUBLIC_KEY] = list_of(0x04)(0x35)(0x87)(0xCF).convert_to_container<std::vector<unsigned char> >();
         base58Prefixes[EXT_SECRET_KEY] = list_of(0x04)(0x35)(0x83)(0x94).convert_to_container<std::vector<unsigned char> >();
-
+*/
         vFixedSeeds.clear();
         vSeeds.clear();
 	vSeeds.push_back(CDNSSeedData("seeder.baseserv.com", "testnet.seeder.baseserv.com"));

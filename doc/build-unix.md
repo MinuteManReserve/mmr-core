@@ -39,7 +39,7 @@ System requirements
 --------------------
 
 C++ compilers are memory-hungry. It is recommended to have at least 1 GB of
-memory available when compiling Ion Core. With 512MB of memory or less
+memory available when compiling MMR Core. With 512MB of memory or less
 compilation will take much longer due to swap thrashing.
 
 Dependency Build Instructions: Ubuntu & Debian
@@ -115,7 +115,7 @@ cd db-4.8.30.NC/build_unix/
 ../dist/configure --enable-cxx --disable-shared --with-pic --prefix=$BDB_PREFIX
 make install
 
-# Configure Ion Core to use our own-built instance of BDB
+# Configure MMR Core to use our own-built instance of BDB
 cd $ION_ROOT
 ./autogen.sh
 ./configure LDFLAGS="-L${BDB_PREFIX}/lib/" CPPFLAGS="-I${BDB_PREFIX}/include/" # (other args...)
@@ -125,7 +125,7 @@ Notes
 -----
 1) You only need Berkeley DB if the wallet is enabled (see the section *Disable-Wallet mode* below).
 
-2) The release is built with GCC and then "strip xiond" to strip the debug
+2) The release is built with GCC and then "strip mmrd" to strip the debug
 symbols, which reduces the executable size by about 90%.
 
 To Build Iond
@@ -135,13 +135,13 @@ With UPNP:
 
     cd src && \
     make -f makefile.unix && \
-    strip xiond
+    strip mmrd
 
 (Recommended) Without UPNP:
 
     cd src && \
     make -f makefile.unix USE_UPNP= && \
-    strip xiond
+    strip mmrd
 
 To Build ionx-Qt
 --------

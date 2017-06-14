@@ -2,8 +2,8 @@
 <context>
     <name>AboutDialog</name>
     <message>
-        <source>About Ion</source>
-        <translation>О Ion-u</translation>
+        <source>About MMR</source>
+        <translation>О MMR-u</translation>
     </message>
     </context>
 <context>

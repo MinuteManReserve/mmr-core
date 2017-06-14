@@ -43,7 +43,7 @@ SendCoinsDialog::SendCoinsDialog(QWidget *parent) :
 
 #if QT_VERSION >= 0x040700
     /* Do not move this to the XML file, Qt before 4.7 will choke on it */
-    ui->lineEditCoinControlChange->setPlaceholderText(tr("Enter a Ion address (e.g. iURTDp3LdR98Cufh9BbSSqUPJFEtPKSLSe)"));
+    ui->lineEditCoinControlChange->setPlaceholderText(tr("Enter a MMR address (e.g. iURTDp3LdR98Cufh9BbSSqUPJFEtPKSLSe)"));
 #endif
 
     addEntry();
@@ -561,7 +561,7 @@ void SendCoinsDialog::processSendCoinsReturn(const WalletModel::SendCoinsReturn 
         msgParams.second = CClientUIInterface::MSG_ERROR;
         break;
     case WalletModel::IXTransactionCreationFailed:
-        msgParams.first = tr("InstantX doesn't support sending values that high yet. Transactions are currently limited to 1000 ION.");
+        msgParams.first = tr("InstantX doesn't support sending values that high yet. Transactions are currently limited to 1000 MMR.");
         msgParams.second = CClientUIInterface::MSG_ERROR;
         break;
     case WalletModel::TransactionCommitFailed:
@@ -689,7 +689,7 @@ void SendCoinsDialog::coinControlChangeEdited(const QString& text)
         }
         else if (!addr.IsValid()) // Invalid address
         {
-            ui->labelCoinControlChangeLabel->setText(tr("Warning: Invalid Ion address"));
+            ui->labelCoinControlChangeLabel->setText(tr("Warning: Invalid MMR address"));
         }
         else // Valid address
         {

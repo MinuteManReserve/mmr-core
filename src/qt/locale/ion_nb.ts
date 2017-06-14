@@ -2,12 +2,12 @@
 <context>
     <name>AboutDialog</name>
     <message>
-        <source>About Ion</source>
-        <translation>Om Ion</translation>
+        <source>About MMR</source>
+        <translation>Om MMR</translation>
     </message>
     <message>
-        <source>&lt;b&gt;Ion&lt;/b&gt; version</source>
-        <translation>&lt;b&gt;Ion&lt;/b&gt; versjon</translation>
+        <source>&lt;b&gt;MMR&lt;/b&gt; version</source>
+        <translation>&lt;b&gt;MMR&lt;/b&gt; versjon</translation>
     </message>
     </context>
 <context>
@@ -36,7 +36,7 @@
         <translation>&amp;Ny Adresse</translation>
     </message>
     <message>
-        <source>These are your Ion addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <source>These are your MMR addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
         <translation>Dette er adressene for å motta betalinger. Du ønsker kanskje å gi ulike adresser til hver avsender så du lettere kan holde øye med hvem som betaler deg.</translation>
     </message>
     <message>
@@ -48,8 +48,8 @@
         <translation>Vis &amp;QR Kode</translation>
     </message>
     <message>
-        <source>Sign a message to prove you own a Ion address</source>
-        <translation>Signer en melding for å bevise din egen Ion adresse.</translation>
+        <source>Sign a message to prove you own a MMR address</source>
+        <translation>Signer en melding for å bevise din egen MMR adresse.</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -60,8 +60,8 @@
         <translation>Slett den valgte adressen fra listen.</translation>
     </message>
     <message>
-        <source>Verify a message to ensure it was signed with a specified Ion address</source>
-        <translation>Verifiser en melding får å forsikre deg om at den er signert med en spesifikk Ion adresse</translation>
+        <source>Verify a message to ensure it was signed with a specified MMR address</source>
+        <translation>Verifiser en melding får å forsikre deg om at den er signert med en spesifikk MMR adresse</translation>
     </message>
     <message>
         <source>&amp;Verify Message</source>
@@ -251,8 +251,8 @@
         <translation>Avslutt applikasjonen</translation>
     </message>
     <message>
-        <source>Show information about Ion</source>
-        <translation>Vis info om Ion</translation>
+        <source>Show information about MMR</source>
+        <translation>Vis info om MMR</translation>
     </message>
     <message>
         <source>About &amp;Qt</source>
@@ -283,12 +283,12 @@
         <translation>&amp;Eksporter...</translation>
     </message>
     <message>
-        <source>Send coins to a Ion address</source>
-        <translation>Send coins til en Ion adresse</translation>
+        <source>Send coins to a MMR address</source>
+        <translation>Send coins til en MMR adresse</translation>
     </message>
     <message>
-        <source>Modify configuration options for Ion</source>
-        <translation>Endre innstillingene til Ion</translation>
+        <source>Modify configuration options for MMR</source>
+        <translation>Endre innstillingene til MMR</translation>
     </message>
     <message>
         <source>Export the data in the current tab to a file</source>
@@ -319,16 +319,16 @@
         <translation>&amp;Verifiser melding...</translation>
     </message>
     <message>
-        <source>Ion</source>
-        <translation>Ion</translation>
+        <source>MMR</source>
+        <translation>MMR</translation>
     </message>
     <message>
         <source>Wallet</source>
         <translation>Lommebok</translation>
     </message>
     <message>
-        <source>&amp;About Ion</source>
-        <translation>&amp;Om Ion</translation>
+        <source>&amp;About MMR</source>
+        <translation>&amp;Om MMR</translation>
     </message>
     <message>
         <source>&amp;Show / Hide</source>
@@ -367,12 +367,12 @@
         <translation>[testnett]</translation>
     </message>
     <message>
-        <source>Ion client</source>
-        <translation>Ion klient</translation>
+        <source>MMR client</source>
+        <translation>MMR klient</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Ion network</source>
-        <translation><numerusform>%n aktiv tilkobling til Ion nettverket</numerusform><numerusform>%n aktive tilkoblinger til Ion nettverket</numerusform></translation>
+        <source>%n active connection(s) to MMR network</source>
+        <translation><numerusform>%n aktiv tilkobling til MMR nettverket</numerusform><numerusform>%n aktive tilkoblinger til MMR nettverket</numerusform></translation>
     </message>
     <message>
         <source>&amp;Unlock Wallet...</source>
@@ -659,8 +659,8 @@ Dette betyr at det trengs en avgift på minimum %2.</translation>
         <translation>Den oppgitte adressen "%1" er allerede i adresseboken.</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Ion address.</source>
-        <translation>Den angitte adressen "%1" er ikke en gyldig Ion adresse.</translation>
+        <source>The entered address "%1" is not a valid MMR address.</source>
+        <translation>Den angitte adressen "%1" er ikke en gyldig MMR adresse.</translation>
     </message>
     <message>
         <source>Could not unlock wallet.</source>
@@ -717,12 +717,12 @@ Dette betyr at det trengs en avgift på minimum %2.</translation>
         <translation>Betal transaksjons&amp;gebyr</translation>
     </message>
     <message>
-        <source>Automatically start Ion after logging in to the system.</source>
-        <translation>Start Ion automatisk ved hver innlogging.</translation>
+        <source>Automatically start MMR after logging in to the system.</source>
+        <translation>Start MMR automatisk ved hver innlogging.</translation>
     </message>
     <message>
-        <source>&amp;Start Ion on system login</source>
-        <translation>&amp;Start Ion ved innlogging</translation>
+        <source>&amp;Start MMR on system login</source>
+        <translation>&amp;Start MMR ved innlogging</translation>
     </message>
     <message>
         <source>&amp;Network</source>
@@ -805,8 +805,8 @@ Dette betyr at det trengs en avgift på minimum %2.</translation>
         <translation>Advarsel</translation>
     </message>
     <message>
-        <source>This setting will take effect after restarting Ion.</source>
-        <translation>Denne innstillingen vil tre i kraft etter Ion er blitt startet på nytt.</translation>
+        <source>This setting will take effect after restarting MMR.</source>
+        <translation>Denne innstillingen vil tre i kraft etter MMR er blitt startet på nytt.</translation>
     </message>
     <message>
         <source>The supplied proxy address is invalid.</source>
@@ -1176,8 +1176,8 @@ Dette betyr at det trengs en avgift på minimum %2.</translation>
         <translation>Klikk "Signer Melding" for å generere signatur</translation>
     </message>
     <message>
-        <source>Enter Ion signature</source>
-        <translation>Skriv inn Ion signatur</translation>
+        <source>Enter MMR signature</source>
+        <translation>Skriv inn MMR signatur</translation>
     </message>
     <message>
         <source>The entered address is invalid.</source>
@@ -1581,8 +1581,8 @@ Dette betyr at det trengs en avgift på minimum %2.</translation>
 <context>
     <name>bitcoin-core</name>
     <message>
-        <source>Ion version</source>
-        <translation>Ion versjon</translation>
+        <source>MMR version</source>
+        <translation>MMR versjon</translation>
     </message>
     <message>
         <source>Usage:</source>

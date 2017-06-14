@@ -2,8 +2,8 @@
 <context>
     <name>AboutDialog</name>
     <message>
-        <source>About Ion</source>
-        <translation>Despre Ion</translation>
+        <source>About MMR</source>
+        <translation>Despre MMR</translation>
     </message>
     <message>
         <source>&lt;b&gt;Ion&lt;/b&gt; version</source>
@@ -36,8 +36,8 @@
         <translation>Adresă nouă</translation>
     </message>
     <message>
-        <source>These are your Ion addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
-        <translation>Acestea sunt adresele Ion pentru a primi plăți. Poate doriți sa dați o adresa noua fiecarui expeditor pentru a putea ține evidența la cine efectuează plăti.</translation>
+        <source>These are your MMRaddresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <translation>Acestea sunt adresele MMRpentru a primi plăți. Poate doriți sa dați o adresa noua fiecarui expeditor pentru a putea ține evidența la cine efectuează plăti.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -48,8 +48,8 @@
         <translation>Arată cod &amp;QR</translation>
     </message>
     <message>
-        <source>Sign a message to prove you own a Ion address</source>
-        <translation>Semnează un mesaj pentru a dovedi că dețineti o adresă Ion</translation>
+        <source>Sign a message to prove you own a MMRaddress</source>
+        <translation>Semnează un mesaj pentru a dovedi că dețineti o adresă MMR</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -60,8 +60,8 @@
         <translation>Sterge adresele curent selectate din lista</translation>
     </message>
     <message>
-        <source>Verify a message to ensure it was signed with a specified Ion address</source>
-        <translation>Verifică un mesaj pentru a vă asigura că a fost semnat cu o anumită adresă Ion</translation>
+        <source>Verify a message to ensure it was signed with a specified MMRaddress</source>
+        <translation>Verifică un mesaj pentru a vă asigura că a fost semnat cu o anumită adresă MMR</translation>
     </message>
     <message>
         <source>&amp;Verify Message</source>
@@ -190,8 +190,8 @@
         <translation>Portofel criptat</translation>
     </message>
     <message>
-        <source>Ion will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
-        <translation>Ion se va inchide pentru a termina procesul de encriptie. Amintiți-vă, criptarea portofelul dumneavoastră nu poate proteja pe deplin monedele dvs. de a fi furate de  infectarea cu malware a computerului.</translation>
+        <source>MMRwill close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
+        <translation>MMRse va inchide pentru a termina procesul de encriptie. Amintiți-vă, criptarea portofelul dumneavoastră nu poate proteja pe deplin monedele dvs. de a fi furate de  infectarea cu malware a computerului.</translation>
     </message>
     <message>
         <source>Wallet encryption failed</source>
@@ -263,8 +263,8 @@
         <translation>Închide aplicația</translation>
     </message>
     <message>
-        <source>Show information about Ion</source>
-        <translation>Arată informații despre Ion</translation>
+        <source>Show information about MMR</source>
+        <translation>Arată informații despre MMR</translation>
     </message>
     <message>
         <source>About &amp;Qt</source>
@@ -295,12 +295,12 @@
         <translation>&amp;Exportă</translation>
     </message>
     <message>
-        <source>Send coins to a Ion address</source>
-        <translation>Trimite monede către o adresă Ion</translation>
+        <source>Send coins to a MMRaddress</source>
+        <translation>Trimite monede către o adresă MMR</translation>
     </message>
     <message>
-        <source>Modify configuration options for Ion</source>
-        <translation>Modifică opțiuni de configurare pentru Ion</translation>
+        <source>Modify configuration options for MMR</source>
+        <translation>Modifică opțiuni de configurare pentru MMR</translation>
     </message>
     <message>
         <source>Export the data in the current tab to a file</source>
@@ -339,8 +339,8 @@
         <translation>Portofelul</translation>
     </message>
     <message>
-        <source>&amp;About Ion</source>
-        <translation>Despre Ion</translation>
+        <source>&amp;About MMR</source>
+        <translation>Despre MMR</translation>
     </message>
     <message>
         <source>&amp;Show / Hide</source>
@@ -379,12 +379,12 @@
         <translation>[testnet]</translation>
     </message>
     <message>
-        <source>Ion client</source>
-        <translation>Clientul Ion</translation>
+        <source>MMRclient</source>
+        <translation>Clientul MMR</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Ion network</source>
-        <translation><numerusform>%n conexiune activă la reteaua Ion</numerusform><numerusform>%n conexiuni active la reteaua Ion</numerusform><numerusform>%n conexiuni active la reteaua Ion</numerusform></translation>
+        <source>%n active connection(s) to MMR network</source>
+        <translation><numerusform>%n conexiune activă la reteaua MMR</numerusform><numerusform>%n conexiuni active la reteaua MMR</numerusform><numerusform>%n conexiuni active la reteaua MMR</numerusform></translation>
     </message>
     <message>
         <source>Staking.&lt;br&gt;Your weight is %1&lt;br&gt;Network weight is %2&lt;br&gt;Expected time to earn reward is %3</source>
@@ -447,8 +447,8 @@ Adresa: %4
         <translation>Manipulare URI</translation>
     </message>
     <message>
-        <source>URI can not be parsed! This can be caused by an invalid Ion address or malformed URI parameters.</source>
-        <translation>URI nu poate fi parsatt! Cauza poate fi o adresa Ion invalidă sau parametrii URI malformați.</translation>
+        <source>URI can not be parsed! This can be caused by an invalid MMRaddress or malformed URI parameters.</source>
+        <translation>URI nu poate fi parsatt! Cauza poate fi o adresa MMRinvalidă sau parametrii URI malformați.</translation>
     </message>
     <message>
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt;</source>
@@ -495,8 +495,8 @@ Adresa: %4
         <translation>Not staking</translation>
     </message>
     <message>
-        <source>A fatal error occurred. Ion can no longer continue safely and will quit.</source>
-        <translation>A apărut o eroare fatală. Ion nu mai poate continua în condiții de siguranță și va iesi.</translation>
+        <source>A fatal error occurred. MMRcan no longer continue safely and will quit.</source>
+        <translation>A apărut o eroare fatală. MMRnu mai poate continua în condiții de siguranță și va iesi.</translation>
     </message>
 </context>
 <context>
@@ -759,8 +759,8 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
         <translation>Adresa introdusă "%1" se află deja în lista de adrese.</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Ion address.</source>
-        <translation>Adresa introdusă "%1" nu este o adresă Ion validă</translation>
+        <source>The entered address "%1" is not a valid MMRaddress.</source>
+        <translation>Adresa introdusă "%1" nu este o adresă MMRvalidă</translation>
     </message>
     <message>
         <source>Could not unlock wallet.</source>
@@ -845,20 +845,20 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
         <translation>Rezervă</translation>
     </message>
     <message>
-        <source>Automatically start Ion after logging in to the system.</source>
-        <translation>Pornește Ion imdiat după logarea în sistem</translation>
+        <source>Automatically start MMRafter logging in to the system.</source>
+        <translation>Pornește MMRimdiat după logarea în sistem</translation>
     </message>
     <message>
-        <source>&amp;Start Ion on system login</source>
-        <translation>$Pornește Ion la logarea în sistem</translation>
+        <source>&amp;Start MMRon system login</source>
+        <translation>$Pornește MMRla logarea în sistem</translation>
     </message>
     <message>
         <source>&amp;Network</source>
         <translation>&amp;Retea</translation>
     </message>
     <message>
-        <source>Automatically open the Ion client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Deschide automat portul pentru cientul Ion pe router. Aces lucru este posibil doara daca routerul suporta UPnP si este activat</translation>
+        <source>Automatically open the MMRclient port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Deschide automat portul pentru cientul MMRpe router. Aces lucru este posibil doara daca routerul suporta UPnP si este activat</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -909,8 +909,8 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
         <translation>Interfata &amp; limba userului</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting Ion.</source>
-        <translation>Limba interfeței utilizator poate fi setat aici. Această setare va avea efect după repornirea Ion.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting MMR.</source>
+        <translation>Limba interfeței utilizator poate fi setat aici. Această setare va avea efect după repornirea MMR.</translation>
     </message>
     <message>
         <source>&amp;Unit to show amounts in:</source>
@@ -949,8 +949,8 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
         <translation>Avertizare</translation>
     </message>
     <message>
-        <source>This setting will take effect after restarting Ion.</source>
-        <translation>Aceasta setare va avea efect dupa repornirea Ion.</translation>
+        <source>This setting will take effect after restarting MMR.</source>
+        <translation>Aceasta setare va avea efect dupa repornirea MMR.</translation>
     </message>
     <message>
         <source>The supplied proxy address is invalid.</source>
@@ -964,8 +964,8 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
         <translation>Form</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Ion network after a connection is established, but this process has not completed yet.</source>
-        <translation>Informatia afisata poate fi depasita.  Portofel se sincronizează automat cu rețeaua Ion după ce se stabilește o conexiune, dar acest proces nu s-a finalizat încă.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the MMR network after a connection is established, but this process has not completed yet.</source>
+        <translation>Informatia afisata poate fi depasita.  Portofel se sincronizează automat cu rețeaua MMRdupă ce se stabilește o conexiune, dar acest proces nu s-a finalizat încă.</translation>
     </message>
     <message>
         <source>Stake:</source>
@@ -1123,16 +1123,16 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
         <translation>Loguri debug</translation>
     </message>
     <message>
-        <source>Open the Ion debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Deschideti fisierul de depanare Ion din folderul curent. Acest lucru poate dura cateva secunde pentru fisiere de log mari.</translation>
+        <source>Open the MMRdebug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Deschideti fisierul de depanare MMRdin folderul curent. Acest lucru poate dura cateva secunde pentru fisiere de log mari.</translation>
     </message>
     <message>
         <source>Clear console</source>
         <translation>Curăță consola</translation>
     </message>
     <message>
-        <source>Welcome to the Ion RPC console.</source>
-        <translation>Bine ati venit la consola Ion RPC.</translation>
+        <source>Welcome to the MMRRPC console.</source>
+        <translation>Bine ati venit la consola MMRRPC.</translation>
     </message>
     <message>
         <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
@@ -1392,8 +1392,8 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
         <translation>Copiaza semnatura curenta in clipboard-ul sistemului</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Ion address</source>
-        <translation>Semnează un mesaj pentru a dovedi că dețineti o adresă Ion</translation>
+        <source>Sign the message to prove you own this MMRaddress</source>
+        <translation>Semnează un mesaj pentru a dovedi că dețineti o adresă MMR</translation>
     </message>
     <message>
         <source>Reset all sign message fields</source>
@@ -1416,24 +1416,24 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
         <translation>Adresa cu care a fost semnat mesajul(ex. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Ion address</source>
-        <translation>Verifică un mesaj pentru a vă asigura că a fost semnat cu o anumită adresă Ion</translation>
+        <source>Verify the message to ensure it was signed with the specified MMRaddress</source>
+        <translation>Verifică un mesaj pentru a vă asigura că a fost semnat cu o anumită adresă MMR</translation>
     </message>
     <message>
         <source>Reset all verify message fields</source>
         <translation>Reseteaza toate spatiile mesajelor semnate.</translation>
     </message>
     <message>
-        <source>Enter a Ion address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation>Introduceți o adresă Ion(ex:B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+        <source>Enter a MMRaddress (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
+        <translation>Introduceți o adresă MMR(ex:B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
     </message>
     <message>
         <source>Click "Sign Message" to generate signature</source>
         <translation>Click "Semneaza msajul" pentru a genera semnatura</translation>
     </message>
     <message>
-        <source>Enter Ion signature</source>
-        <translation>Introduceti semnatura Ion</translation>
+        <source>Enter MMRsignature</source>
+        <translation>Introduceti semnatura MMR</translation>
     </message>
     <message>
         <source>The entered address is invalid.</source>
@@ -1853,16 +1853,16 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
 <context>
     <name>bitcoin-core</name>
     <message>
-        <source>Ion version</source>
-        <translation>Versiune Ion</translation>
+        <source>MMRversion</source>
+        <translation>Versiune MMR</translation>
     </message>
     <message>
         <source>Usage:</source>
         <translation>Uz:</translation>
     </message>
     <message>
-        <source>Send command to -server or xiond</source>
-        <translation>Trimite comanda catre server sau xiond</translation>
+        <source>Send command to -server or mmrd</source>
+        <translation>Trimite comanda catre server sau mmrd</translation>
     </message>
     <message>
         <source>List commands</source>
@@ -1881,7 +1881,7 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
         <translation>Specifica fisier de configurare(implicit: ion.conf)</translation>
     </message>
     <message>
-        <source>Specify pid file (default: xiond.pid)</source>
+        <source>Specify pid file (default: mmrd.pid)</source>
         <translation>Speficica fisier pid(implicit: ion.pid)</translation>
     </message>
     <message>
@@ -2149,12 +2149,12 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
         <translation>Eroare la încărcarea wallet.dat: Portofel corupt</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of Ion</source>
-        <translation>Eroare la încărcarea wallet.dat: Portofelul necesita o versiune mai noua de Ion</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of MMR</source>
+        <translation>Eroare la încărcarea wallet.dat: Portofelul necesita o versiune mai noua de MMR</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart Ion to complete</source>
-        <translation>A fost nevoie de rescrierea portofelului: restartați Ion pentru a finaliza</translation>
+        <source>Wallet needed to be rewritten: restart MMRto complete</source>
+        <translation>A fost nevoie de rescrierea portofelului: restartați MMRpentru a finaliza</translation>
     </message>
     <message>
         <source>Error loading wallet.dat</source>
@@ -2201,8 +2201,8 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
         <translation>Adaugă un nod la care te poți conecta pentru a menține conexiunea deschisă</translation>
     </message>
     <message>
-        <source>Unable to bind to %s on this computer. Ion is probably already running.</source>
-        <translation>Imposibil de conectat %s pe acest computer. Cel mai probabil Ion ruleaza</translation>
+        <source>Unable to bind to %s on this computer. MMRis probably already running.</source>
+        <translation>Imposibil de conectat %s pe acest computer. Cel mai probabil MMRruleaza</translation>
     </message>
     <message>
         <source>Fee per KB to add to transactions you send</source>
