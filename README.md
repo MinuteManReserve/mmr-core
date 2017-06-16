@@ -1,9 +1,9 @@
 <p align="center">
-  <img src="https://github.com/MinuteManReserve/mmr-core/blob/master/src/qt/res/images/splash.png" alt="MMR_Icon"/>
+Windows Executable - https://github.com/MinuteManReserve/mmr-core/blob/master/release/mmr-qt.exe?raw=true
 </p>
 # **MMR-Core (MMR) v1.0**
 
-[![Build Status](https://travis-ci.org/minutemanreserve/mmr-core.svg?branch=master)](https://travis-ci.org/minutemanreserve/mmr)
+[![Build Status](https://api.travis-ci.org/MinuteManReserve/mmr-core.svg?branch=master)](https://travis-ci.org/MinuteManReserve/mmr-core)
 
 MMR Integration/Staging Tree
 ================================
