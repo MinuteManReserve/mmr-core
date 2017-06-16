@@ -1,5 +1,5 @@
 <p align="center">
-[Windows Executable](https://github.com/MinuteManReserve/mmr-core/blob/master/release/mmr-qt.exe?raw=true)
+Windows Executable - https://github.com/MinuteManReserve/mmr-core/blob/master/release/mmr-qt.exe?raw=true
 </p>
 # **MMR-Core (MMR) v1.0**
 
