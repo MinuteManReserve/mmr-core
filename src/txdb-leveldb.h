@@ -1,6 +1,6 @@
 // Copyright (c) 2009-2012 The Bitcoin Developers.
 // Authored by Google, Inc.
-// Distributed under the MIT software license, see the accompanying
+// Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #ifndef BITCOIN_LEVELDB_H
@@ -183,8 +183,6 @@ public:
         return Write(std::string("version"), nVersion);
     }
 
-    bool ReadAddrIndex(uint160 addrHash, std::vector<uint256>& txHashes);
-    bool WriteAddrIndex(uint160 addrHash, uint256 txHash);
     bool ReadTxIndex(uint256 hash, CTxIndex& txindex);
     bool UpdateTxIndex(uint256 hash, const CTxIndex& txindex);
     bool AddTxIndex(const CTransaction& tx, const CDiskTxPos& pos, int nHeight);
@@ -197,8 +195,8 @@ public:
     bool WriteBlockIndex(const CDiskBlockIndex& blockindex);
     bool ReadHashBestChain(uint256& hashBestChain);
     bool WriteHashBestChain(uint256 hashBestChain);
-    bool ReadBestInvalidTrust(uint256& bnBestInvalidTrust);
-    bool WriteBestInvalidTrust(uint256 bnBestInvalidTrust);
+    bool ReadBestInvalidTrust(CBigNum& bnBestInvalidTrust);
+    bool WriteBestInvalidTrust(CBigNum bnBestInvalidTrust);
     bool LoadBlockIndex();
 private:
     bool LoadBlockIndexGuts();

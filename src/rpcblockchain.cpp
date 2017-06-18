@@ -1,12 +1,11 @@
 // Copyright (c) 2010 Satoshi Nakamoto
-// Copyright (c) 2009-2017 The Bitcoin developers
-// Copyright (c) 2017 Empinel/The MMR Developers
-// Distributed under the MIT software license, see the accompanying
+// Copyright (c) 2009-2012 The Bitcoin developers
+// Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #include "rpcserver.h"
 #include "main.h"
-#include "stake.h"
+#include "kernel.h"
 #include "checkpoints.h"
 
 using namespace json_spirit;
@@ -101,8 +100,8 @@ double GetPoSKernelPS()
 
     if (nStakesTime)
         result = dStakeKernelsTriedAvg / nStakesTime;
-
-    result *= STAKE_TIMESTAMP_MASK + 1;
+    else
+        result *= STAKE_TIMESTAMP_MASK + 1;
 
     return result;
 }
@@ -189,10 +188,10 @@ Value getdifficulty(const Array& params, bool fHelp)
             "getdifficulty\n"
             "Returns the difficulty as a multiple of the minimum difficulty.");
 
-    //Object obj;
-    //obj.push_back(Pair("proof-of-work",        GetDifficulty()));
-    //obj.push_back(Pair("proof-of-stake",       GetDifficulty(GetLastBlockIndex(pindexBest, true))));
-    return GetDifficulty(GetLastBlockIndex(pindexBest, true));
+    Object obj;
+    obj.push_back(Pair("proof-of-work",        GetDifficulty()));
+    obj.push_back(Pair("proof-of-stake",       GetDifficulty(GetLastBlockIndex(pindexBest, true))));
+    return obj;
 }
 
 

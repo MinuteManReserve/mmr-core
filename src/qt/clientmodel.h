@@ -5,8 +5,6 @@
 
 class OptionsModel;
 class AddressTableModel;
-class BanTableModel;
-class PeerTableModel;
 class TransactionTableModel;
 class CWallet;
 
@@ -25,11 +23,8 @@ public:
     ~ClientModel();
 
     OptionsModel *getOptionsModel();
-    PeerTableModel *getPeerTableModel();
-    BanTableModel *getBanTableModel();
 
     int getNumConnections() const;
-    QString getMasternodeCountString() const;
     int getNumBlocks() const;
     int getNumBlocksAtStartup();
 
@@ -46,26 +41,21 @@ public:
     bool isImporting() const;
     //! Return warnings to be displayed in status bar
     QString getStatusBarWarnings() const;
-    //! Return network (main, testnet3, regtest)
-    QString getNetworkName() const;
-    
+
     QString formatFullVersion() const;
     QString formatBuildDate() const;
     bool isReleaseVersion() const;
     QString clientName() const;
     QString formatClientStartupTime() const;
-	
+
 private:
     OptionsModel *optionsModel;
-    PeerTableModel *peerTableModel;
-    BanTableModel *banTableModel;
 
     int cachedNumBlocks;
+
     int numBlocksAtStartup;
-    QString cachedMasternodeCountString;
 
     QTimer *pollTimer;
-    QTimer *pollMnTimer;
 
     void subscribeToCoreSignals();
     void unsubscribeFromCoreSignals();
@@ -73,22 +63,16 @@ private:
 signals:
     void numConnectionsChanged(int count);
     void numBlocksChanged(int count);
-    void strMasternodesChanged(const QString &strMasternodes);
     void alertsChanged(const QString &warnings);
     void bytesChanged(quint64 totalBytesIn, quint64 totalBytesOut);
 
     //! Asynchronous message notification
     void message(const QString &title, const QString &message, bool modal, unsigned int style);
 
-    // Show progress dialog e.g. for verifychain
-    void showProgress(const QString &title, int nProgress);
-
 public slots:
     void updateTimer();
-    void updateMnTimer();
     void updateNumConnections(int numConnections);
     void updateAlert(const QString &hash, int status);
-    void updateBanlist();
 };
 
 #endif // CLIENTMODEL_H

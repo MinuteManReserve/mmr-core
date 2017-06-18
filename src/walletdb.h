@@ -1,14 +1,12 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
-// Copyright (c) 2009-2017 The Bitcoin developers
-// Distributed under the MIT software license, see the accompanying
+// Copyright (c) 2009-2012 The Bitcoin developers
+// Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 #ifndef BITCOIN_WALLETDB_H
 #define BITCOIN_WALLETDB_H
 
 #include "db.h"
 #include "key.h"
-#include "keystore.h"
-#include "stealth.h"
 
 #include <list>
 #include <string>
@@ -68,28 +66,6 @@ public:
     }
 };
 
-class CStealthKeyMetadata
-{
-// -- used to get secret for keys created by stealth transaction with wallet locked
-public:
-    CStealthKeyMetadata() {};
-    
-    CStealthKeyMetadata(CPubKey pkEphem_, CPubKey pkScan_)
-    {
-        pkEphem = pkEphem_;
-        pkScan = pkScan_;
-    };
-    
-    CPubKey pkEphem;
-    CPubKey pkScan;
-
-    IMPLEMENT_SERIALIZE
-    (
-        READWRITE(pkEphem);
-        READWRITE(pkScan);
-    )
-
-};
 
 /** Access to the wallet database (wallet.dat) */
 class CWalletDB : public CDB
@@ -109,19 +85,11 @@ public:
     bool WriteTx(uint256 hash, const CWalletTx& wtx);
     bool EraseTx(uint256 hash);
 
-    bool WriteStealthKeyMeta(const CKeyID& keyId, const CStealthKeyMetadata& sxKeyMeta);
-    bool EraseStealthKeyMeta(const CKeyID& keyId);
-    bool WriteStealthAddress(const CStealthAddress& sxAddr);    
-    bool ReadStealthAddress(CStealthAddress& sxAddr);
-
     bool WriteKey(const CPubKey& vchPubKey, const CPrivKey& vchPrivKey, const CKeyMetadata &keyMeta);
     bool WriteCryptedKey(const CPubKey& vchPubKey, const std::vector<unsigned char>& vchCryptedSecret, const CKeyMetadata &keyMeta);
     bool WriteMasterKey(unsigned int nID, const CMasterKey& kMasterKey);
 
     bool WriteCScript(const uint160& hash, const CScript& redeemScript);
-
-    bool WriteWatchOnly(const CScript &script);
-    bool EraseWatchOnly(const CScript &script);
 
     bool WriteBestBlock(const CBlockLocator& locator);
     bool ReadBestBlock(CBlockLocator& locator);
@@ -141,19 +109,12 @@ public:
 private:
     bool WriteAccountingEntry(const uint64_t nAccEntryNum, const CAccountingEntry& acentry);
 public:
-    /// This writes directly to the database, and will not update the CWallet's cached accounting entries!
-    /// Use wallet.AddAccountingEntry instead, to write *and* update its caches.
-    bool WriteAccountingEntry_Backend(const CAccountingEntry& acentry);
-
+    bool WriteAccountingEntry(const CAccountingEntry& acentry);
     int64_t GetAccountCreditDebit(const std::string& strAccount);
     void ListAccountCreditDebit(const std::string& strAccount, std::list<CAccountingEntry>& acentries);
 
     DBErrors ReorderTransactions(CWallet*);
     DBErrors LoadWallet(CWallet* pwallet);
-    
-	DBErrors FindWalletTx(CWallet* pwallet, std::vector<uint256>& vTxHash);
-	DBErrors ZapWalletTx(CWallet* pwallet);
- 
     static bool Recover(CDBEnv& dbenv, std::string filename, bool fOnlyKeys);
     static bool Recover(CDBEnv& dbenv, std::string filename);
 };

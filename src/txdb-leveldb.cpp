@@ -1,6 +1,6 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
-// Copyright (c) 2009-2017 The Bitcoin developers
-// Distributed under the MIT software license, see the accompanying
+// Copyright (c) 2009-2012 The Bitcoin developers
+// Distributed under the MIT/X11 software license, see the accompanying
 // file license.txt or http://www.opensource.org/licenses/mit-license.php.
 
 #include <map>
@@ -14,11 +14,9 @@
 #include <leveldb/filter_policy.h>
 #include <memenv/memenv.h>
 
-#include "stake.h"
-#include "checkpoints.h"
+#include "kernel.h"
 #include "txdb.h"
 #include "util.h"
-#include "amount.h"
 #include "main.h"
 #include "chainparams.h"
 
@@ -29,19 +27,20 @@ leveldb::DB *txdb; // global pointer for LevelDB object instance
 
 static leveldb::Options GetOptions() {
     leveldb::Options options;
-    int nCacheSizeMB = GetArg("-dbcache", 100);
+    int nCacheSizeMB = GetArg("-dbcache", 25);
     options.block_cache = leveldb::NewLRUCache(nCacheSizeMB * 1048576);
     options.filter_policy = leveldb::NewBloomFilterPolicy(10);
     return options;
 }
 
-void init_blockindex(leveldb::Options& options, bool fRemoveOld = false) {
+static void init_blockindex(leveldb::Options& options, bool fRemoveOld = false, bool fCreateBootstrap = false) {
     // First time init.
     filesystem::path directory = GetDataDir() / "txleveldb";
 
     if (fRemoveOld) {
         filesystem::remove_all(directory); // remove directory
         unsigned int nFile = 1;
+        filesystem::path bootstrap = GetDataDir() / "bootstrap.dat";
 
         while (true)
         {
@@ -51,13 +50,15 @@ void init_blockindex(leveldb::Options& options, bool fRemoveOld = false) {
             if( !filesystem::exists( strBlockFile ) )
                 break;
 
-            filesystem::remove(strBlockFile);
+            if (fCreateBootstrap && nFile == 1 && !filesystem::exists(bootstrap)) {
+                filesystem::rename(strBlockFile, bootstrap);
+            } else {
+                filesystem::remove(strBlockFile);
+            }
 
             nFile++;
         }
     }
-
-    options.create_if_missing = true;
 
     filesystem::create_directory(directory);
     LogPrintf("Opening LevelDB in %s\n", directory.string());
@@ -104,7 +105,7 @@ CTxDB::CTxDB(const char* pszMode)
             delete activeBatch;
             activeBatch = NULL;
 
-            init_blockindex(options, true); // Remove directory and create new database
+            init_blockindex(options, true, true); // Remove directory and create new database
             pdb = txdb;
 
             bool fTmp = fReadOnly;
@@ -200,33 +201,6 @@ bool CTxDB::ScanBatch(const CDataStream &key, string *value, bool *deleted) cons
     return scanner.foundEntry;
 }
 
-bool CTxDB::WriteAddrIndex(uint160 addrHash, uint256 txHash)
-{
-    std::vector<uint256> txHashes;
-    if(!ReadAddrIndex(addrHash, txHashes))
-    {
-	txHashes.push_back(txHash);
-        return Write(make_pair(string("adr"), addrHash), txHashes);
-    }
-    else
-    {
-	if(std::find(txHashes.begin(), txHashes.end(), txHash) == txHashes.end()) 
-    	{
-    	    txHashes.push_back(txHash);
-            return Write(make_pair(string("adr"), addrHash), txHashes);
-	}
-	else
-	{
-	    return true; // already have this tx hash
-	}
-    }
-}
-
-bool CTxDB::ReadAddrIndex(uint160 addrHash, std::vector<uint256>& txHashes)
-{
-    return Read(make_pair(string("adr"), addrHash), txHashes);
-}
-
 bool CTxDB::ReadTxIndex(uint256 hash, CTxIndex& txindex)
 {
     txindex.SetNull();
@@ -298,12 +272,12 @@ bool CTxDB::WriteHashBestChain(uint256 hashBestChain)
     return Write(string("hashBestChain"), hashBestChain);
 }
 
-bool CTxDB::ReadBestInvalidTrust(uint256& bnBestInvalidTrust)
+bool CTxDB::ReadBestInvalidTrust(CBigNum& bnBestInvalidTrust)
 {
     return Read(string("bnBestInvalidTrust"), bnBestInvalidTrust);
 }
 
-bool CTxDB::WriteBestInvalidTrust(uint256 bnBestInvalidTrust)
+bool CTxDB::WriteBestInvalidTrust(CBigNum bnBestInvalidTrust)
 {
     return Write(string("bnBestInvalidTrust"), bnBestInvalidTrust);
 }
@@ -398,7 +372,6 @@ bool CTxDB::LoadBlockIndex()
 
         iterator->Next();
     }
-    
     delete iterator;
 
     boost::this_thread::interruption_point();
@@ -432,13 +405,13 @@ bool CTxDB::LoadBlockIndex()
     nBestChainTrust = pindexBest->nChainTrust;
 
     LogPrintf("LoadBlockIndex(): hashBestChain=%s  height=%d  trust=%s  date=%s\n",
-      hashBestChain.ToString(), nBestHeight, nBestChainTrust.ToString(),
+      hashBestChain.ToString(), nBestHeight, CBigNum(nBestChainTrust).ToString(),
       DateTimeStrFormat("%x %H:%M:%S", pindexBest->GetBlockTime()));
 
     // Load bnBestInvalidTrust, OK if it doesn't exist
-    uint256 bnBestInvalidTrust;
+    CBigNum bnBestInvalidTrust;
     ReadBestInvalidTrust(bnBestInvalidTrust);
-    nBestInvalidTrust = bnBestInvalidTrust;
+    nBestInvalidTrust = bnBestInvalidTrust.getuint256();
 
     // Verify blocks in the best chain
     int nCheckLevel = GetArg("-checklevel", 1);
@@ -447,7 +420,6 @@ bool CTxDB::LoadBlockIndex()
         nCheckDepth = 1000000000; // suffices until the year 19000
     if (nCheckDepth > nBestHeight)
         nCheckDepth = nBestHeight;
-        
     LogPrintf("Verifying last %i blocks at level %i\n", nCheckDepth, nCheckLevel);
     CBlockIndex* pindexFork = NULL;
     map<pair<unsigned int, unsigned int>, CBlockIndex*> mapBlockPos;

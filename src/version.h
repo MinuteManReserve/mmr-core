@@ -1,5 +1,5 @@
 // Copyright (c) 2012 The Bitcoin developers
-// Distributed under the MIT software license, see the accompanying
+// Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 #ifndef BITCOIN_VERSION_H
 #define BITCOIN_VERSION_H
@@ -24,45 +24,36 @@ extern const std::string CLIENT_DATE;
 //
 // database format versioning
 //
-static const int DATABASE_VERSION = 70510;
+static const int DATABASE_VERSION = 70000;
 
 //
 // network protocol versioning
 //
 
-static const int PROTOCOL_VERSION = 95605;
+static const int PROTOCOL_VERSION = 60001;
 
 // intial proto version, to be increased after version/verack negotiation
-static const int INIT_PROTO_VERSION = 900;
+static const int INIT_PROTO_VERSION = 200;
 
 // disconnect from peers older than this proto version
-static const int MIN_PEER_PROTO_VERSION = 95050;
-
-// minimum peer version accepted by DarkSendPool
-static const int MIN_POOL_PEER_PROTO_VERSION = 95050; 
-
-static const int MIN_MN_PROTO_VERSION = 95050;
-
-static const int MIN_INSTANTX_PROTO_VERSION = 95050;
-
-//! minimum peer version that can receive masternode payments
-// V1 - Last protocol version before update
-// V2 - Newest protocol version
-static const int MIN_MASTERNODE_PAYMENT_PROTO_VERSION_1 = 95050;
-static const int MIN_MASTERNODE_PAYMENT_PROTO_VERSION_2 = 95050;
+static const int MIN_PEER_PROTO_VERSION = 60000;
 
 // nTime field added to CAddress, starting with this version;
 // if possible, avoid requesting addresses nodes older than this
-static const int CADDR_TIME_VERSION = 95050;
+static const int CADDR_TIME_VERSION = 60000;
 
 // only request blocks from nodes outside this range of versions
-static const int NOBLKS_VERSION_START = 0;
-static const int NOBLKS_VERSION_END = 95050;
+static const int NOBLKS_VERSION_START = 59998;
+static const int NOBLKS_VERSION_END = 60000;
 
 // BIP 0031, pong message, is enabled for all versions AFTER this one
-static const int BIP0031_VERSION = 95000;
+static const int BIP0031_VERSION = 60000;
 
 // "mempool" command, enhanced "getdata" behavior starts with this version:
-static const int MEMPOOL_GD_VERSION = 75000;
+static const int MEMPOOL_GD_VERSION = 60000;
+
+// reject blocks with non-canonical signatures starting from this version
+static const int CANONICAL_BLOCK_SIG_VERSION = 60000;
+static const int CANONICAL_BLOCK_SIG_LOW_S_VERSION = 60000;
 
 #endif

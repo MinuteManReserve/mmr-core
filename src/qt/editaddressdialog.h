@@ -34,8 +34,6 @@ public:
 
     QString getAddress() const;
     void setAddress(const QString &address);
-private slots:
-    void on_EditAddressPasteButton_clicked();
 
 public slots:
     void accept();

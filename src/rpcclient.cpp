@@ -1,6 +1,6 @@
 // Copyright (c) 2010 Satoshi Nakamoto
 // Copyright (c) 2009-2013 The Bitcoin developers
-// Distributed under the MIT software license, see the accompanying
+// Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #include <set>
@@ -8,7 +8,6 @@
 
 #include "rpcprotocol.h"
 #include "util.h"
-#include "amount.h"
 #include "ui_interface.h"
 #include "chainparams.h" // for Params().RPCPort()
 
@@ -33,12 +32,6 @@ using namespace json_spirit;
 
 Object CallRPC(const string& strMethod, const Array& params)
 {
-    if (mapArgs["-rpcuser"] == "" && mapArgs["-rpcpassword"] == "")
-        throw runtime_error(strprintf(
-            _("You must set rpcpassword=<password> in the configuration file:\n%s\n"
-              "If the file does not exist, create it with owner-readable-only file permissions."),
-                GetConfigFile().string()));
-
     // Connect to localhost
     bool fUseSSL = GetBoolArg("-rpcssl", false);
     asio::io_service io_service;
@@ -58,10 +51,28 @@ Object CallRPC(const string& strMethod, const Array& params)
             throw runtime_error("couldn't connect to server");
     } while (fWait);
 
+    // Find credentials to use
+     std::string strRPCUserColonPass;
+     if (mapArgs["-rpcpassword"] == "")
+     {
+         // Try fall back to cookie-based authentication if no password is provided
+         if (!GetAuthCookie(&strRPCUserColonPass)) {
+             throw runtime_error(strprintf(
+                 _("You must set rpcpassword=<password> in the configuration file:\n%s\n"
+                   "If the file does not exist, create it with owner-readable-only file permissions."),
+                     GetConfigFile().string().c_str()));
+
+         }
+     }
+     else
+     {
+         strRPCUserColonPass = mapArgs["-rpcuser"] + ":" + mapArgs["-rpcpassword"];
+     }
+
     // HTTP basic authentication
     string strUserPass64 = EncodeBase64(mapArgs["-rpcuser"] + ":" + mapArgs["-rpcpassword"]);
     map<string, string> mapRequestHeaders;
-    mapRequestHeaders["Authorization"] = string("Basic ") + strUserPass64;
+    mapRequestHeaders["Authorization"] = string("Basic ") + EncodeBase64(strRPCUserColonPass);
 
     // Send request
     string strRequest = JSONRPCRequest(strMethod, params, 1);
@@ -75,7 +86,7 @@ Object CallRPC(const string& strMethod, const Array& params)
     // Receive HTTP reply message headers and body
     map<string, string> mapHeaders;
     string strReply;
-    ReadHTTPMessage(stream, mapHeaders, strReply, nProto, MAX_SIZE);
+    ReadHTTPMessage(stream, mapHeaders, strReply, nProto);
 
     if (nStatus == HTTP_UNAUTHORIZED)
         throw runtime_error("incorrect rpcuser or rpcpassword (authorization failed)");
@@ -112,12 +123,9 @@ static const CRPCConvertParam vRPCConvertParams[] =
     { "getreceivedbyaccount", 1 },
     { "listreceivedbyaddress", 0 },
     { "listreceivedbyaddress", 1 },
-    { "listreceivedbyaddress", 2 },
     { "listreceivedbyaccount", 0 },
     { "listreceivedbyaccount", 1 },
-    { "listreceivedbyaccount", 2 },
     { "getbalance", 1 },
-    { "getbalance", 2 },
     { "getblock", 1 },
     { "getblockbynumber", 0 },
     { "getblockbynumber", 1 },
@@ -128,14 +136,11 @@ static const CRPCConvertParam vRPCConvertParams[] =
     { "sendfrom", 3 },
     { "listtransactions", 1 },
     { "listtransactions", 2 },
-    { "listtransactions", 3 },
     { "listaccounts", 0 },
-    { "listaccounts", 1 },
     { "walletpassphrase", 1 },
     { "walletpassphrase", 2 },
     { "getblocktemplate", 0 },
     { "listsinceblock", 1 },
-    { "listsinceblock", 2 },
     { "sendalert", 2 },
     { "sendalert", 3 },
     { "sendalert", 4 },
@@ -145,8 +150,6 @@ static const CRPCConvertParam vRPCConvertParams[] =
     { "sendmany", 2 },
     { "reservebalance", 0 },
     { "reservebalance", 1 },
-    { "createmultisig", 0 },
-    { "createmultisig", 1 },
     { "addmultisigaddress", 0 },
     { "addmultisigaddress", 1 },
     { "listunspent", 0 },
@@ -159,15 +162,9 @@ static const CRPCConvertParam vRPCConvertParams[] =
     { "signrawtransaction", 2 },
     { "keypoolrefill", 0 },
     { "importprivkey", 2 },
-    { "importaddress", 2 },
     { "checkkernel", 0 },
     { "checkkernel", 1 },
-    { "setban", 2 },
-    { "setban", 3 },
-    { "sendtostealthaddress", 1 },
-    { "searchrawtransactions", 1 },
-    { "searchrawtransactions", 2 },
-    { "searchrawtransactions", 3 },
+    { "submitblock", 1 },
 };
 
 class CRPCConvertTable
@@ -257,16 +254,6 @@ int CommandLineRPC(int argc, char *argv[])
             strPrint = "error: " + write_string(error, false);
             int code = find_value(error.get_obj(), "code").get_int();
             nRet = abs(code);
-
-            if (error.type() != null_type){
-                const Value &errMsg = find_value(error.get_obj(), "message");
-                
-                strPrint = "error code: " +  boost::lexical_cast<std::string>(nRet) + "\n";
-                
-                if (!errMsg.is_null())
-                    strPrint += "error message: " + errMsg.get_str() + "\n";
-            }
-
         }
         else
         {

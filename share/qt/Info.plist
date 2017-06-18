@@ -7,23 +7,23 @@
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleGetInfoString</key>
-	<string>ionx-Qt</string>
+	<string>MinuteManReserve-Qt</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleExecutable</key>
-	<string>ionx-Qt</string>
+	<string>MinuteManReserve-Qt</string>
 	<key>CFBundleIdentifier</key>
-	<string>co.ion.ionx-Qt</string>
+	<string>co.minutemanreserve.MinuteManReserve-Qt</string>
         <key>CFBundleURLTypes</key>
         <array>
           <dict>
             <key>CFBundleTypeRole</key>
             <string>Editor</string>
             <key>CFBundleURLName</key>
-            <string>co.ion.IonPayment</string>
+            <string>co.minutemanreserve.MinuteManReservePayment</string>
             <key>CFBundleURLSchemes</key>
             <array>
-              <string>transfer</string>
+              <string>minutemanreserve</string>
             </array>
           </dict>
         </array>

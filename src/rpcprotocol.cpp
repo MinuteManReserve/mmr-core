@@ -1,14 +1,14 @@
 // Copyright (c) 2010 Satoshi Nakamoto
 // Copyright (c) 2009-2013 The Bitcoin developers
-// Distributed under the MIT software license, see the accompanying
+// Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #include "rpcprotocol.h"
 
 #include "util.h"
-#include "amount.h"
 
 #include <stdint.h>
+#include <fstream>
 
 #include <boost/algorithm/string.hpp>
 #include <boost/asio.hpp>
@@ -27,9 +27,6 @@ using namespace boost;
 using namespace boost::asio;
 using namespace json_spirit;
 
-// Number of bytes to allocate and read at most at once in post data
-const size_t POST_READ_SIZE = 256 * 1024;
-
 //
 // HTTP protocol
 //
@@ -41,7 +38,7 @@ string HTTPPost(const string& strMsg, const map<string,string>& mapRequestHeader
 {
     ostringstream s;
     s << "POST / HTTP/1.1\r\n"
-      << "User-Agent: ion-json-rpc/" << FormatFullVersion() << "\r\n"
+      << "User-Agent: minutemanreserve-json-rpc/" << FormatFullVersion() << "\r\n"
       << "Host: 127.0.0.1\r\n"
       << "Content-Type: application/json\r\n"
       << "Content-Length: " << strMsg.size() << "\r\n"
@@ -64,7 +61,7 @@ string HTTPReply(int nStatus, const string& strMsg, bool keepalive)
     if (nStatus == HTTP_UNAUTHORIZED)
         return strprintf("HTTP/1.0 401 Authorization Required\r\n"
             "Date: %s\r\n"
-            "Server: ion-json-rpc/%s\r\n"
+            "Server: minutemanreserve-json-rpc/%s\r\n"
             "WWW-Authenticate: Basic realm=\"jsonrpc\"\r\n"
             "Content-Type: text/html\r\n"
             "Content-Length: 296\r\n"
@@ -91,7 +88,7 @@ string HTTPReply(int nStatus, const string& strMsg, bool keepalive)
             "Connection: %s\r\n"
             "Content-Length: %u\r\n"
             "Content-Type: application/json\r\n"
-            "Server: ion-json-rpc/%s\r\n"
+            "Server: minutemanreserve-json-rpc/%s\r\n"
             "\r\n"
             "%s",
         nStatus,
@@ -181,30 +178,21 @@ int ReadHTTPHeaders(std::basic_istream<char>& stream, map<string, string>& mapHe
 
 int ReadHTTPMessage(std::basic_istream<char>& stream, map<string,
                     string>& mapHeadersRet, string& strMessageRet,
-                    int nProto, size_t max_size)
+                    int nProto)
 {
     mapHeadersRet.clear();
     strMessageRet = "";
 
     // Read header
     int nLen = ReadHTTPHeaders(stream, mapHeadersRet);
-    if (nLen < 0 || (size_t)nLen > max_size)
+    if (nLen < 0 || nLen > (int)MAX_SIZE)
         return HTTP_INTERNAL_SERVER_ERROR;
 
     // Read message
     if (nLen > 0)
     {
-        vector<char> vch;
-        size_t ptr = 0;
-        while (ptr < (size_t)nLen)
-        {
-            size_t bytes_to_read = std::min((size_t)nLen - ptr, POST_READ_SIZE);
-            vch.resize(ptr + bytes_to_read);
-            stream.read(&vch[ptr], bytes_to_read);
-            if (!stream) // Connection lost while reading
-                return HTTP_INTERNAL_SERVER_ERROR;
-            ptr += bytes_to_read;
-        }
+        vector<char> vch(nLen);
+        stream.read(&vch[0], nLen);
         strMessageRet = string(vch.begin(), vch.end());
     }
 
@@ -265,3 +253,66 @@ Object JSONRPCError(int code, const string& message)
     error.push_back(Pair("message", message));
     return error;
 }
+
+/** Username used when cookie authentication is in use (arbitrary, only for
+  * recognizability in debugging/logging purposes)
+  */
+ static const std::string COOKIEAUTH_USER = "__cookie__";
+ /** Default name for auth cookie file */
+ static const std::string COOKIEAUTH_FILE = "cookie";
+
+ boost::filesystem::path GetAuthCookieFile()
+ {
+     boost::filesystem::path path(GetArg("-rpccookiefile", COOKIEAUTH_FILE));
+     if (!path.is_complete()) path = GetDataDir() / path;
+     return path;
+ }
+
+ bool GenerateAuthCookie(std::string *cookie_out)
+ {
+     unsigned char rand_pwd[32];
+     RAND_bytes(rand_pwd, 32);
+     std::string cookie = COOKIEAUTH_USER + ":" + EncodeBase64(&rand_pwd[0],32);
+
+      /* these are set to 077 in init.cpp unless overridden with -sysperms.
+      */
+     std::ofstream file;
+     boost::filesystem::path filepath = GetAuthCookieFile();
+     file.open(filepath.string().c_str());
+     if (!file.is_open()) {
+         LogPrintf("Unable to open cookie authentication file %s for writing\n", filepath.string());
+         return false;
+     }
+     file << cookie;
+     file.close();
+     LogPrintf("Generated RPC authentication cookie %s\n", filepath.string());
+
+     if (cookie_out)
+         *cookie_out = cookie;
+     return true;
+ }
+
+ bool GetAuthCookie(std::string *cookie_out)
+ {
+     std::ifstream file;
+     std::string cookie;
+     boost::filesystem::path filepath = GetAuthCookieFile();
+     file.open(filepath.string().c_str());
+     if (!file.is_open())
+         return false;
+     std::getline(file, cookie);
+     file.close();
+
+     if (cookie_out)
+         *cookie_out = cookie;
+     return true;
+ }
+
+ void DeleteAuthCookie()
+ {
+     try {
+         boost::filesystem::remove(GetAuthCookieFile());
+     } catch (const boost::filesystem::filesystem_error& e) {
+         LogPrintf("%s: Unable to remove random auth cookie file: %s\n", __func__, e.what());
+     }
+ }

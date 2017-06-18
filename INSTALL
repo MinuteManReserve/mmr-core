@@ -1,9 +1,9 @@
-Building MMR
+Building MinuteManReserve
 
-See doc/readme-qt.rst for instructions on building MMR QT,
+See doc/readme-qt.rst for instructions on building MinuteManReserve QT,
 the intended-for-end-users, nice-graphical-interface, reference
-implementation of MMR.
+implementation of MinuteManReserve.
 
-See doc/build-*.txt for instructions on building mmrd,
+See doc/build-*.txt for instructions on building minutemanreserved,
 the intended-for-services, no-graphical-interface, reference
-implementation of MMR.
+implementation of MinuteManReserve.

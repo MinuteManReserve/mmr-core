@@ -1,24 +1,19 @@
 #ifndef TRANSACTIONVIEW_H
 #define TRANSACTIONVIEW_H
 
-#include "guiutil.h"
-
 #include <QWidget>
-#include <QKeyEvent>
 
-class TransactionFilterProxy;
 class WalletModel;
+class TransactionFilterProxy;
 
 QT_BEGIN_NAMESPACE
-class QComboBox;
-class QDateTimeEdit;
-class QFrame;
-class QItemSelectionModel;
-class QLineEdit;
-class QMenu;
-class QModelIndex;
-class QSignalMapper;
 class QTableView;
+class QComboBox;
+class QLineEdit;
+class QModelIndex;
+class QMenu;
+class QFrame;
+class QDateTimeEdit;
 QT_END_NAMESPACE
 
 /** Widget showing the transaction list for a wallet, including a filter row.
@@ -45,15 +40,6 @@ public:
         Range
     };
 
-    enum ColumnWidths {
-        STATUS_COLUMN_WIDTH = 23,
-        WATCHONLY_COLUMN_WIDTH = 23,
-        DATE_COLUMN_WIDTH = 120,
-        TYPE_COLUMN_WIDTH = 240,
-        AMOUNT_MINIMUM_COLUMN_WIDTH = 120,
-        MINIMUM_COLUMN_WIDTH = 23
-    };
-
 private:
     WalletModel *model;
     TransactionFilterProxy *transactionProxyModel;
@@ -61,7 +47,6 @@ private:
 
     QComboBox *dateWidget;
     QComboBox *typeWidget;
-    QComboBox *watchOnlyWidget;
     QLineEdit *addressWidget;
     QLineEdit *amountWidget;
 
@@ -73,12 +58,6 @@ private:
 
     QWidget *createDateRangeWidget();
 
-    GUIUtil::TableViewLastColumnResizingFixer *columnResizingFixer;
-
-    virtual void resizeEvent(QResizeEvent* event);
-
-    bool eventFilter(QObject *obj, QEvent *event);
-
 private slots:
     void contextualMenu(const QPoint &);
     void dateRangeChanged();
@@ -88,27 +67,18 @@ private slots:
     void copyLabel();
     void copyAmount();
     void copyTxID();
-    //void openThirdPartyTxUrl(QString url);
-    void updateWatchOnlyColumn(bool fHaveWatchOnly);
 
 signals:
     void doubleClicked(const QModelIndex&);
 
-    /**  Fired when a message should be reported to the user */
-    void message(const QString &title, const QString &message, unsigned int style);
-
-    /** Send computed sum back to wallet-view */
-    void trxAmount(QString amount);
-
 public slots:
     void chooseDate(int idx);
     void chooseType(int idx);
-    void chooseWatchonly(int idx);
     void changedPrefix(const QString &prefix);
     void changedAmount(const QString &amount);
     void exportClicked();
     void focusTransaction(const QModelIndex&);
-    void computeSum();
+
 };
 
 #endif // TRANSACTIONVIEW_H

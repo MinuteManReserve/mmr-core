@@ -2,8 +2,6 @@
 #define TRANSACTIONRECORD_H
 
 #include "uint256.h"
-#include "util.h"
-#include "amount.h"
 
 #include <QList>
 #include <QString>
@@ -49,17 +47,14 @@ public:
     /** @name Reported status
        @{*/
     Status status;
-    qint64 depth;
-    qint64 open_for; /**< Timestamp if status==OpenUntilDate, otherwise number
+    int64_t depth;
+    int64_t open_for; /**< Timestamp if status==OpenUntilDate, otherwise number
                        of additional blocks that need to be mined before
                        finalization */
     /**@}*/
 
     /** Current number of blocks (to know whether cached status is still valid) */
     int cur_num_blocks;
-
-    //** Know when to update transaction for ix locks **/
-    int cur_num_ix_locks;
 };
 
 /** UI model for a transaction. A core transaction can be represented by multiple UI transactions if it has
@@ -76,13 +71,7 @@ public:
         SendToOther,
         RecvWithAddress,
         RecvFromOther,
-        SendToSelf,
-        RecvWithDarksend,
-        DarksendDenominate,
-        DarksendCollateralPayment,
-        DarksendMakeCollaterals,
-        DarksendCreateDenominations,
-        Darksent
+        SendToSelf
     };
 
     /** Number of confirmation recommended for accepting a transaction */
@@ -99,9 +88,9 @@ public:
     {
     }
 
-    TransactionRecord(uint256 hash, qint64 time,
+    TransactionRecord(uint256 hash, int64_t time,
                 Type type, const std::string &address,
-                CAmount debit, CAmount credit):
+                int64_t debit, int64_t credit):
             hash(hash), time(time), type(type), address(address), debit(debit), credit(credit),
             idx(0)
     {
@@ -118,8 +107,8 @@ public:
     qint64 time;
     Type type;
     std::string address;
-    CAmount debit;
-    CAmount credit;
+    qint64 debit;
+    qint64 credit;
     /**@}*/
 
     /** Subtransaction index, for sort key */
@@ -127,9 +116,6 @@ public:
 
     /** Status: can change with block chain update */
     TransactionStatus status;
-
-    /** Whether the transaction was sent/received with a watch-only address */
-    bool involvesWatchAddress;
 
     /** Return the unique identifier for this transaction (part) */
     QString getTxID() const;

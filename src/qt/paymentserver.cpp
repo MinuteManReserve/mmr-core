@@ -1,5 +1,5 @@
-// Copyright (c) 2009-2017 The Bitcoin developers
-// Distributed under the MIT software license, see the accompanying
+// Copyright (c) 2009-2012 The Bitcoin developers
+// Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #include <QApplication>
@@ -9,7 +9,6 @@
 #include "guiconstants.h"
 #include "ui_interface.h"
 #include "util.h"
-#include "amount.h"
 
 #include <QByteArray>
 #include <QDataStream>
@@ -24,7 +23,7 @@
 using namespace boost;
 
 const int BITCOIN_IPC_CONNECT_TIMEOUT = 1000; // milliseconds
-const QString BITCOIN_IPC_PREFIX("ion:");
+const QString BITCOIN_IPC_PREFIX("minutemanreserve:");
 
 //
 // Create a name that is unique for:
@@ -33,7 +32,7 @@ const QString BITCOIN_IPC_PREFIX("ion:");
 //
 static QString ipcServerName()
 {
-    QString name("IonQt");
+    QString name("MinuteManReserveQt");
 
     // Append a simple hash of the datadir
     // Note that GetDataDir(true) returns a different path
@@ -105,7 +104,7 @@ PaymentServer::PaymentServer(QApplication* parent) : QObject(parent), saveURIs(t
     uriServer = new QLocalServer(this);
 
     if (!uriServer->listen(name))
-        qDebug() << tr("Cannot start ion: click-to-pay handler");
+        qDebug() << tr("Cannot start minutemanreserve: click-to-pay handler");
     else
         connect(uriServer, SIGNAL(newConnection()), this, SLOT(handleURIConnection()));
 }

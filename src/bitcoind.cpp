@@ -1,13 +1,12 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
-// Copyright (c) 2009-2017 The Bitcoin developers
-// Distributed under the MIT software license, see the accompanying
+// Copyright (c) 2009-2012 The Bitcoin developers
+// Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #include "rpcserver.h"
 #include "rpcclient.h"
 #include "init.h"
 #include <boost/algorithm/string/predicate.hpp>
-
 
 void WaitForShutdown(boost::thread_group* threadGroup)
 {
@@ -34,7 +33,6 @@ bool AppInit(int argc, char* argv[])
     boost::thread_group threadGroup;
 
     bool fRet = false;
-    fHaveGUI = false;
     try
     {
         //
@@ -52,12 +50,12 @@ bool AppInit(int argc, char* argv[])
         if (mapArgs.count("-?") || mapArgs.count("--help"))
         {
             // First part of help message is specific to bitcoind / RPC client
-            std::string strUsage = _("MMR version") + " " + FormatFullVersion() + "\n\n" +
+            std::string strUsage = _("MinuteManReserve version") + " " + FormatFullVersion() + "\n\n" +
                 _("Usage:") + "\n" +
-                  "  mmrd [options]                     " + "\n" +
-                  "  mmrd [options] <command> [params]  " + _("Send command to -server or mmrd") + "\n" +
-                  "  mmrd [options] help                " + _("List commands") + "\n" +
-                  "  mmrd [options] help <command>      " + _("Get help for a command") + "\n";
+                  "  minutemanreserved [options]                     " + "\n" +
+                  "  minutemanreserved [options] <command> [params]  " + _("Send command to -server or minutemanreserved") + "\n" +
+                  "  minutemanreserved [options] help                " + _("List commands") + "\n" +
+                  "  minutemanreserved [options] help <command>      " + _("Get help for a command") + "\n";
 
             strUsage += "\n" + HelpMessage();
 
@@ -67,7 +65,7 @@ bool AppInit(int argc, char* argv[])
 
         // Command-line RPC
         for (int i = 1; i < argc; i++)
-            if (!IsSwitchChar(argv[i][0]) && !boost::algorithm::istarts_with(argv[i], "ion:"))
+            if (!IsSwitchChar(argv[i][0]) && !boost::algorithm::istarts_with(argv[i], "minutemanreserve:"))
                 fCommandLine = true;
 
         if (fCommandLine)
@@ -79,7 +77,7 @@ bool AppInit(int argc, char* argv[])
             int ret = CommandLineRPC(argc, argv);
             exit(ret);
         }
-#if !WIN32
+#if !defined(WIN32)
         fDaemon = GetBoolArg("-daemon", false);
         if (fDaemon)
         {
@@ -103,7 +101,7 @@ bool AppInit(int argc, char* argv[])
         }
 #endif
 
-		fRet = AppInit2(threadGroup);
+        fRet = AppInit2(threadGroup);
     }
     catch (std::exception& e) {
         PrintException(&e, "AppInit()");
@@ -129,6 +127,7 @@ extern void noui_connect();
 int main(int argc, char* argv[])
 {
     bool fRet = false;
+    fHaveGUI = false;
 
     // Connect bitcoind signal handlers
     noui_connect();

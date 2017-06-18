@@ -115,13 +115,15 @@ OBJS= \
     obj/rpcnet.o \
     obj/rpcblockchain.o \
     obj/rpcrawtransaction.o \
+    obj/timedata.o \
     obj/script.o \
     obj/sync.o \
     obj/txmempool.o \
     obj/util.o \
     obj/hash.o \
     obj/noui.o \
-    obj/stake.o \
+    obj/kernel.o \
+    obj/pbkdf2.o \
     obj/chainparams.o
 
 ifeq (${USE_WALLET}, 1)
@@ -136,7 +138,7 @@ ifeq (${USE_WALLET}, 1)
         obj/walletdb.o
 endif
 
-all: mmrd
+all: minutemanreserved
 
 LIBS += $(CURDIR)/leveldb/libleveldb.a $(CURDIR)/leveldb/libmemenv.a
 DEFS += $(addprefix -I,$(CURDIR)/leveldb/include)
@@ -161,11 +163,11 @@ obj/%.o: %.cpp
 	      -e '/^$$/ d' -e 's/$$/ :/' < $(@:%.o=%.d) >> $(@:%.o=%.P); \
 	  rm -f $(@:%.o=%.d)
 
-mmrd: $(OBJS:obj/%=obj/%)
+minutemanreserved: $(OBJS:obj/%=obj/%)
 	$(LINK) $(xCXXFLAGS) -o $@ $^ $(xLDFLAGS) $(LIBS)
 
 clean:
-	-rm -f mmrd
+	-rm -f minutemanreserved
 	-rm -f obj/*.o
 	-rm -f obj/*.P
 	-rm -f obj/build.h

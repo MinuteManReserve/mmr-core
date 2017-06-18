@@ -1,5 +1,5 @@
-// Copyright (c) 2009-2017 The Bitcoin developers
-// Distributed under the MIT software license, see the accompanying
+// Copyright (c) 2009-2012 The Bitcoin developers
+// Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 #ifndef BITCOIN_CHECKPOINT_H
 #define  BITCOIN_CHECKPOINT_H
@@ -7,7 +7,6 @@
 #include <map>
 #include "net.h"
 #include "util.h"
-#include "amount.h"
 
 class uint256;
 class CBlockIndex;
@@ -17,7 +16,6 @@ class CBlockIndex;
  */
 namespace Checkpoints
 {
-
     // Returns true if block passes checkpoint checks
     bool CheckHardened(int nHeight, const uint256& hash);
 
