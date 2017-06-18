@@ -51,10 +51,10 @@ inline bool MoneyRange(int64_t nValue) { return (nValue >= 0 && nValue <= MAX_MO
 /** Threshold for nLockTime: below this value it is interpreted as block number, otherwise as UNIX timestamp. */
 static const unsigned int LOCKTIME_THRESHOLD = 500000000; // Tue Nov  5 00:53:20 1985 UTC
 
-static const int64_t COIN_YEAR_REWARD = 7 * CENT; // 7% per year
+static const int64_t COIN_YEAR_REWARD = 1.5 * CENT; // 1.5% per year
 
 inline int64_t FutureDrift(int64_t nTime) { return nTime + 60 * 60 * 20; }
-inline unsigned int GetTargetSpacing(int nHeight) { return 300; } // Block target during PoW phase is 2,5min, after PoW its 5min
+inline unsigned int GetTargetSpacing(int nHeight) { return 75; } // Block target during PoW phase is 2,5min, after PoW its 5min
 
 extern CScript COINBASE_FLAGS;
 extern CCriticalSection cs_main;
@@ -124,7 +124,7 @@ void ThreadImport(std::vector<boost::filesystem::path> vImportFiles);
 
 bool CheckProofOfWork(uint256 hash, unsigned int nBits);
 unsigned int GetNextTargetRequired(const CBlockIndex* pindexLast, bool fProofOfStake);
-int64_t GetProofOfWorkReward(int64_t nFees);
+int64_t GetProofOfWorkReward(int64_t nHeight, int64_t nFees);
 int64_t GetProofOfStakeReward(const CBlockIndex* pindexPrev, int64_t nCoinAge, int64_t nFees);
 bool IsInitialBlockDownload();
 bool IsConfirmedInNPrevBlocks(const CTxIndex& txindex, const CBlockIndex* pindexFrom, int nMaxDepth, int& nActualDepth);
