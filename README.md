@@ -1,5 +1,3 @@
-[Windows Executable](https://github.com/MinuteManReserve/mmr-core/blob/master/release/mmr-qt.exe?raw=true)
-
 # **MMR-Core (MMR) v1.0**
 
 [![Build Status](https://api.travis-ci.org/MinuteManReserve/mmr-core.svg?branch=master)](https://travis-ci.org/MinuteManReserve/mmr-core)
