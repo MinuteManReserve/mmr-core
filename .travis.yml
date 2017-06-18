@@ -42,5 +42,5 @@ script:
   - cd src
   - make -f makefile.unix
   - cd ..
-  - qmake USE_UPNP=- 
+  - qmake USE_UPNP=- "QMAKE_CXX=$CXX" "QMAKE_CC=$CC" minutemanreserve-qt.pro
   - make
